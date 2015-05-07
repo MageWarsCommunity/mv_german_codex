@@ -1,0 +1,49 @@
+\documentclass[a4paper, 8pt]{scrartcl}
+% set document boundries
+\usepackage[a4paper, top=25mm, bottom=25mm, left=16.25mm, right=16.25mm]{geometry}
+% set the spacing before and after sections and subsections
+\RedeclareSectionCommands[
+  beforeskip=-.4\baselineskip,
+  afterskip=.25\baselineskip
+]{section,subsection}
+% use a fancy header and set some attributes
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{Seite \thepage\ von \pageref*{LastPage}}
+% use Avenir as font
+\usepackage{fontspec}
+\setmainfont{Avenir}
+% use xcolor
+\usepackage[HTML]{xcolor}
+\definecolor{orange}{HTML}{FF7F00}
+% set links in document
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor={orange},
+  pdftitle={Mage Wars Codex - DE},
+  bookmarks=true,
+  pdfstartview=FitH
+}
+% enable German 'Umlaute'
+\usepackage{polyglossia}
+\setdefaultlanguage{german}
+% use a two sided column
+\usepackage{multicol}
+\setlength{\columnsep}{10mm}
+% the document beginns here
+\begin{document}
+\begin{multicols}{2}
+
+<% @data.sort.each do |key, value| %>
+  \section*{<%= value['title'].sub(/\*(.*?)\*/, "\\textit{\\1}") %>\hypertarget{<%= key %>}{}}
+  <%= "\\subsubsection*{#{value['trait']}}" unless value['trait'].empty? %>
+  <%= value['text'].gsub(/\*\*(.*?)\*\*/, "\\textbf{\\1}").gsub(/\*(.*?)\*/, "\\textit{\\1}").gsub(/\[(.*?)\]\(#(.*?)\)/, "\\hyperlink{\\2}{\\1}") %>\\
+<% end %>
+
+\end{multicols}
+% and ends here
+\end{document}
