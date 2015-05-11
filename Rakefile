@@ -5,6 +5,7 @@ require 'erb'
 require 'active_support/inflector'
 
 FILE_BASE_NAME = 'Mage_Wars_Codex_DE'
+XELATEX_BINARY = '/usr/texbin/xelatex'
 
 desc 'create Markdown file'
 task :markdown do
@@ -14,7 +15,7 @@ task :markdown do
     yaml['terms'].sort_by{|k, v| ActiveSupport::Inflector.transliterate(v['title'])}.each do |key, value|
       file.write "## <a id='#{key}'></a>#{value['title']}\n\n"
       file.write "#### *#{value['trait']}*\n\n" unless value['trait'].empty?
-      file.write "#{value['text']}\n"
+      file.write "#{value['txt']}\n"
     end
   end
 end
@@ -38,7 +39,7 @@ end
 
 desc 'create PDF file'
 task :pdf => [:default] do
-  2.times {system ( "/usr/texbin/xelatex #{FILE_BASE_NAME}.tex" )}
+  2.times {system ( "#{XELATEX_BINARY} #{FILE_BASE_NAME}.tex" )}
 end
 
 desc 'create all files needed except the PDF file'
