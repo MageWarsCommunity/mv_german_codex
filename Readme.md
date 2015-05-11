@@ -20,6 +20,7 @@ The `PDF` file is generated manually by `xelatex` or invoking `rake pdf`.
 ## TODOs
 
 * add **traits** to all game terms
+* finish translating German **terms**
 
 ## Legal stuff
 
