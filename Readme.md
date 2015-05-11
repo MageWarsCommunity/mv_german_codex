@@ -6,9 +6,9 @@ This is a written down list of all **Mage Wars®** game terms by [Arcane Wonders
 
 This Codex is compiled into `Markdown`, `HTML` and `LaTeX` using [Ruby](http://ruby-lang.org/).
 
-Simply execute the `rake` command inside this folder.
+Simply install all the gems with `bundle install` and execute the `rake` command inside this folder.
 
-The `PDF` file is generated manually by `xelatex`.
+The `PDF` file is generated manually by `xelatex` or invoking `rake pdf`.
 
 ## How to contribute
 

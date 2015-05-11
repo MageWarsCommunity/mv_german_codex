@@ -1,6 +1,9 @@
 \documentclass[a4paper, 8pt]{scrartcl}
 % set document boundries
 \usepackage[a4paper, top=25mm, bottom=25mm, left=16.25mm, right=16.25mm]{geometry}
+% no paragraph indentation and paragraph spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
 % set the spacing before and after sections and subsections
 \RedeclareSectionCommands[
   beforeskip=-.4\baselineskip,
@@ -37,8 +40,9 @@
 % the document beginns here
 \begin{document}
 \begin{multicols}{2}
+  \raggedcolumns
 
-<% @data.sort.each do |key, value| %>
+<% @data['terms'].sort_by{|k, v| ActiveSupport::Inflector.transliterate(v['title'])}.each do |key, value| %>
   \section*{<%= value['title'].sub(/\*(.*?)\*/, "\\textit{\\1}") %>\hypertarget{<%= key %>}{}}
   <%= "\\subsubsection*{#{value['trait']}}" unless value['trait'].empty? %>
   <%= value['text'].gsub(/\*\*(.*?)\*\*/, "\\textbf{\\1}").gsub(/\*(.*?)\*/, "\\textit{\\1}").gsub(/\[(.*?)\]\(#(.*?)\)/, "\\hyperlink{\\2}{\\1}") %>\\

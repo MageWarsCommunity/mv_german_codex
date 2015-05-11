@@ -1,867 +1,884 @@
-abfangen:
-  title: 'Abfangen'
-  trait: 'Objektmerkmal'
-  text: |
-    Wenn diese Kreatur [Wache](#wache_halten) hällt und einen [Fernangriff](#fernangriff) ein nicht [fliegendes](#fliegen) Objekt in derselben [Zone](#zone) zum Ziel hat, darf dise Kreatur den Fernangriff auf sich selbst lenken, vorausgesetzt, sie ist ein erlaubtes Ziel für diesen Angriff. Ein **Abfangen** muss sofort nach dem Schritt *Angriff erklären* angesagt werden und findet sofort statt, noch vor dem Schritt *Angriff vermeiden*. Die Kreatur verliert ihr Plättchen Wache am Ende des Angriffs, den sie abfängt. Ein [Zonenangriff](#zonenangriff) kann nicht abgefangen werden.
-    [Gezügelte](#gezuegelt) oder [Handlungsunfähige](#handlungsunfaehig) Kreaturen können nicht abfangen.
-abgebrochen_aufgehoben:
-  title: 'Abgebrochen, aufgehoben'
-  trait: 'Spielbegriff'
-  text: |
-    Wenn ein Zauber, Angriff oder Effekt **abgebrochen** bzw. **aufgehoben** wird, stoppt er und hat keine weitere Auswirkung.
-ablagestapel:
-  title: 'Ablagestapel'
-  trait: 'Spielbegriff'
-  text: |
-    Jeder Spieler hat seinen eigenen Ablagestapel, auf dem er zerstörte [Objekte](#objekt) oder Zauber ablegt, nachdem er diese angewendet hat.
-    Siehe *Zauber ablegen* auf Seite 13.
-aktivieren:
-  title: 'Aktivieren'
-  trait: 'Spielbegriff'
-  text: |
-    Wenn du mit einer Kreatur eine Aktionsphase ausführst, aktivierst du sie. Drehe ihren Aktionsstein um und entferne ihr Plättchen [Wache](#wache_halten), falls sie eins besitzt.
-angeschlagen:
-  title: 'Angeschlagen'
-  trait: 'Spielbegriff'
-  text: |
-    Wenn eine Kreatur durch einen [Stoß](#stoss) in einen [Wall](#wall) gedrückt wird, der das Merkmal [Durchgang blockiert](#durchgang_blockiert) hat, erhält sie das Merkmal **Angeschlagen**. Sie erleidet einen unvermeidbaren Angriff mit 3 Angriffswürfeln Schaden. Die Wände, die die Arena umgeben, besitzen alle das Merkmal [Durchgang blockiert](#durchgang_blockiert).
-angriff:
-  title: 'Angriff (Zauber)'
-  trait: 'Spielbegriff'
-  text: |
-    Angriffszauber erlauben es dem Anwender, ein Ziel in der Arena anzugreifen. Angriffszauber besitzen eine **Angriffsleiste**, in der sich alle Informationen zum Ausführen des Angriffs befinden, darunter die Anzahl der Anrgiffswürfel, Auflistung zusätzlicher Effekte, Merkmale usw. Angriffszauber sind immer Fernangriffe. Siehe *Angriffe* auf Seite 22.
-angriff_bei_durchgang:
-  title: 'Angriff bei Durchgang'
-  trait: ''
-  text: |
-    Alle Kreaturen, die sich durch einen solchen [Wall](#wall) bewegen, werden automatisch von diesem Wall angegriffen. Der Angriff findet statt, bevor die Kreatur sich bewegt. Siehe *Wälle* auf Seite 17.
-ansturm:
-  title: 'Ansturm +X'
-  trait: 'Angriffs- oder Objektmerkmal'
-  text: |
-    Die Kreatur erhält +X Angriffswürfel für ihren unmittelbar nächsten [Nahkampfangriff](#nahkampfangriff), wenn sie diesen Angriff sofort nach einer Bewegungsaktion ausführt, in der sie sich um mindestens **1** [Zone](#zone) bewegt hat.
-anwender:
-  title: 'Anwender'
-  trait: ''
-  text: |
-    Die Karte, von der aus eine Zauberkarte ausgespielt wird, ist der *Anwender* des Zaubers. Meistens handelt es sich dabei um deinen [Magier](#magier) – Zauber können aber auch von Vertrauten oder Zauberquellen angewendet werden. Man beachte den Unterschied zwischen *Anwenden* und *Ausführen* eines Zaubers (siehe *Zauber anwenden* auf Seite 13).
-aufdeckkosten:
-  title: 'Aufdeckkosten'
-  trait: ''
-  text: |
-    Wenn man eine verdeckte Verzauberung aufdeckt, dreht man ihre Karte auf die Vorderseite. Der Kontrollierende bezahlt die Aufdeckkosten in Mana, falls gefordert (sie stehen über dem Symbol „*offenes Auge*“ der Karte), ansonsten wird die Verzauberung zerstört. Siehe *Verzauberungen aufdecken* auf Seite 18.
-ausdehnung:
-  title: 'Ausdehnung'
-  trait: 'Objektmerkmal'
-  text: |
-    Wenn du einen solchen [Wall](#wall) beschwörst, kannst du zusätzliche Kosten in Höhe der Manakosten und des Levels des Walls zahlen, wenn du den Zauber anwendest. Wenn du das tust, darfst du dir beim Ausführen des Zaubers einen zusätzlichen Wall des gleichen Namens aus deinem Zauberbuch nehmen und auf irgendeinen [Zonenrand](#zonenrand) legen, der mit dem Zonenrand des ersten Walls verbunden ist. Der zweite Wall muss in SL gelegt werden, darf aber außerhalb der Reichweite des Zaubers liegen. Siehe *Wälle* auf Seite 17.
-ausloeschen:
-  title: 'Auslöschen'
-  trait: 'Effekt'
-  text: |
-    Wenn du ein [Objekt](#objekt) **auslöscht**, ist es endgültig und spurlos zerstört. Das Objekt wird zerstört und dann aus dem Spiel genommen. Es wird weder auf den [Ablagestapel](#ablagestapel) gelegt, noch in ein Zauberbuch zurückgelegt. Alle Eigenschaften und Effekte, die auf diesem Objekt beschrieben oder daran *angefügt* sind (wie [Plättchen](#plaettchen) oder [Verzauberungen](#verzauberung)), und bei der Zerstörung ausgelöst wurden, sind [aufgehoben](#abgebrochen_aufgehoben). Andere Zerstörungseffekte, die nicht Teil des augelöschten Objekts oder daran angefügt sind, können trotzdme geschehen.
-    *Beispiel: Wenn du ein Goblin-Grenadier auslöscht, wird er nicht explodieren. Wenn du eine Kreatur mit dem Plättchen* Ichthelliden-Larve *auslöscht, wird die Larve nicht ausschlüpfen. Wenn du eine Kreatur eines Gegners auslöscht, wird dessen Valshalla trotzdem einene* Zornmarker *erhalten.*
-ausruestung:
-  title: 'Ausrüstung (Zauber)'
-  trait: ''
-  text: |
-    Ausrüstungszauber verleihen deinem [Magier](#magier) neue oder stärkere Eigenschaften. Solche Zauber können nur auf einen Magier angewendet werden. Wenn du einen Ausrüstungszauber anwendest, wird er deinem Magier angefügt. Er wird sich mit ihm bewegen und gilt als Teil von ihm, bis er zerstört wird. Jeder Ausrüstungszauber zeigt einen *Ort* am Körper deines Magiers. Dein Magier darf nur **1** Ausrüstungszauber pro Ort besitzen, außer bei Ringen, von denen er 2 haben darf. Außerdem darf der Magier nicht mehrere Ausrüstung mit demselben Namen tragen.
-ausweichend:
-  title: 'Ausweichend'
-  trait: 'Objektmerkmal'
-  text: |
-    Eine solche Kreatur ist [schnell](#schnell) und gerissen. Sie ignoriert gegnerische Kreaturen. Gegnerische Kreaturen können ihre Bewegung nicht einschränken. Sie ist nicht gezwungen, gegnerische [Wachen](#wache_halten) anzugreifen, wenn sie einen [Nahkampfangriff](#nahkampfangriff) ausführt.
-aetherisch:
-  title: 'Ätherisch'
-  trait: 'Angriffsmerkmal'
-  text: |
-    Dieser Angriff ist magisch verstärkt. Er fügt [körperlosen](#koerperlos) [Objekten](#objekt) vollen Schaden zu (alle Zahlen auf den Würfeln zählen, nicht nur die 1er). Körperlose Objekte können durch solche Angriffe Effekte und Zustände erleiden.
-befreundet:
-  title: 'Befreundet'
-  trait: 'Spielbegriff'
-  text: |
-    Ein befreundetes [Objekt](#objekt) ist eins, das derzeit vom Spieler selbst kontrolliert wird, oder (im Mehrpersonenspiel) von einem Spieler seines Teams.
-begrenztes_leben:
-  title: 'Begrenztes Leben'
-  trait: 'Objektmerkmal'
-  text: |
-    Diese Kreatur kann nicht geheilt werden, nicht regenerieren und kein Leben dazu erhalten. Wenn die Kreatur Leben dazu erhalten hatte, bevor sie dieses Merkmal erhält, behält sie diese Lebenspunkte, kann aber kein weiteres Leben dazu erhalten. Alle [nicht lebenden](#nicht_lebend) [Objekte](#objekt) besitzen das Merkmal [Begrenztes Leben](#begrenztes_leben).
-beschwoerung:
-  title: 'Beschwörung (Zauber)'
-  trait: 'Zauberart'
-  text: |
-    Ein Beschwörungszauber ruft ein [Objekt](#objekt) in der Arena hervor, das im Spiel bleibt, bis es zerstört wird. Beschwörungen besitzen genau wie Kreaturen Lebenskraft, können angegriffen werden, Schaden erleiden und zerstört werden. Im Gegensatz zu Kreaturen können Beschwörungen aber keine Aktionen ausführen und erhalten daher auch keinen Aktionsstein.
-    Wenn die Karte nichts anderes besagt, haben alle Beschwörungen folgende Merkmale: [Nicht Lebend](#nicht_lebend), [Immun gegen Übersinnlich](#immun_gegen_uebersinnlich) und [Unbeweglich](#unbeweglich). Einige Beschwörungen besitzen dass Merkmal [Lebend](#lebend), welches das sonst bei Beschwörungen übliche Merkmal [Nicht Lebend](#nicht_lebend) ersetzt. Die meisten Beschwörungen haben eine [Zone](#zone) zum Ziel, und werden dieser Zone angefügt. Einige wenige Beschwörungen haben Objekte zum Ziel. Solche Zauber werden an das Zielobjekt angefügt und bewegen sich mit ihm. Wird das Zielobjekt zerstört oder [teleportiert](#teleportation) weg, wird die Beschwörung weggenommen und zerstört.
-    Fast alle Beschwörungen haben spezielle Effekte, so lange sie im Spiel sind.
-beseitigungskosten:
-  title: 'Beseitigungskosten'
-  trait: ''
-  text: |
-    Die meisten Zustände haben Beseitigungskosten, die auf dem Plättchen als kleine schwarze Zahl in einem grauen Punkt gedruckt sind. Bestimmte Zauber oder Eigenschaften können dem Spieler erlauben, durch Bezahlung dieser Kosten den Zustand zu entfernen. Siehe *Beseitigungskosten* auf Seite 27.
-besitzer:
-  title: 'Besitzer'
-  trait: ''
-  text: |
-    Der Besitzer eines Zaubers ist der Spieler, der diesen Zauber zu Beginn des Spiels in seinem Zauberbuch hatte.
-betaeubt:
-  title: 'Betäubt'
-  trait: 'Zustandsplättchen'
-  text: |
-    Die Kreatur ist [handlungsunfähig](#handlungsunfaehig). Alle Plättchen Betäubt werden am Ende der Aktionsphase dieser Kreatur von ihr entfernt. Erleidet die Kreatur ein Plättchen „Betäubt“ durch eine [Schadensbarriere](#schadensbarriere) oder einen [Gegenschlag](#gegenschlag), gilt der Effekt erst in der nächsten Aktionsphase. Betäubt hat [Beseitigungskosten](#beseitigungskosten) von 4. Es hat keine Auswirkungen auf Beschwörungen.
-bewegungsaktion:
-  title: 'Bewegungsaktion'
-  trait: ''
-  text: |
-    Während ihrer Aktionsphase kann eine Kreatur eine Bewegungsaktion ausführen, die ihr erlaubt, sich von einer [Zone](#zone) in eine benachbarte Zone zu bewegen. Danach kann sie eine [Schnelle Aktion](#schnelle_aktion) ausführen. Siehe *Bewegung* auf Seite 9.
-blitz:
-  title: 'Blitz +/-X'
-  trait: ''
-  text: |
-    Eine [Schadensart](#schadensart), siehe *Schadensarten* auf Seite 26. Das Merkmal Blitz +/-X modifiziert diesen Schaden, siehe unter *Schadensart* im Kodex.
-blockiert_sl:
-  title: 'Blockiert SL'
-  trait: 'Objektmerkmal'
-  text: |
-    Dieser [Wall](#wall) blockiert die [Sichtlinie](#sichtlinie) (kurz: SL). Du kannst kein [Objekt](#objekt) oder eine [Zone](#zone) als Ziel wählen, wenn die Sichtlinie dorthin blockiert ist. Siehe *Sichtlinie* auf Seite 17.
-blutdurstig:
-  title: 'Blutdurstig +X'
-  trait: 'Objektmerkmal'
-  text: |
-    Diese Kreatur ist ein wildes Raubtier mit einem Verlangen nach Blut. Sie erhält +X Angriffswürfel, wenn sie einen [Nahkampfangriff](#nahkampfangriff) gegen eine [lebende](#lebend) Kreatur ausführt, die 1 oder mehr Schaden erlitten hat. Wenn der Angriff [mehrere Schläge](#mehrfachangriff) gegen dasselbe oder mehrere [Objekte](#objekt) ausführt, erhält er den Bonus lediglich für den ersten Angriff, bei dem dieser Bonus anwendbar ist. Sollte sich während der Aktionsphase der blutdurstigen Kreatur in ihrer [Zone](#zone) eine [lebende](#lebend) Gegnerkreatur mit **Schaden** befinden, **muss** sie diese im Nahkampf angreifen (wenn möglich). Gibt es mehr als eine zur Auswahl, oder wurde sie gleichzeitig [verhöhnt](#verhoehnen), kann sie sich die anzugreifende Kreatur aussuchen.
-blutend:
-  title: 'Blutend'
-  trait: 'Zustandsplättchen'
-  text: |
-    Diese Kreatur hat eine tiefe, blutende Wunde erlitten. **Blutend** betritt nur [lebende Kreaturen](#lebend) (keine *Pflanzen*). Lege in der Erhaltungsphase **1** direkten Schaden auf diese Kreatur. Immer wenn diese Kreatur [geheilt](#heilung) wird oder sich [regeneriert](#regenerieren), darfst du **1** Plättchen **Blutend** entfernen pro **1** Schaden, den du dafür weniger entfernst. [Begrenztes Leben](#begrenztes_leben) verhindert Heilung und Regeneration. Daher können in diesem Fall Plättchen **Blutend** nicht durch Heilung entfernt werden. Effekte, die [Zustandsplättchen](#zustand) entfernen können, können Plättchen **Blutend** trotzdem entfernen. **Blutend** hat [Beseitigungsosten](#beseitigungskosten) von **2**.
-direkter_schaden:
-  title: 'Direkter Schaden'
-  trait: 'Spielbegriff'
-  text: |
-    Ein Schaden, den die Kreatur sofort erleidet. Der Schaden ist [kritisch](#kritischer_schaden) (geht an [Rüstung](#ruestung) vorbei). Er gilt nicht als Angriff und die Kreatur kann keine [Verteidigung](#verteidigung) benutzen, um den Schaden zu vermeiden. Siehe *direkter Schaden* auf Seite 26.
-doppelschlag:
-  title: 'Doppelschlag'
-  trait: 'Angriffsmerkmal'
-  text: |
-    Dieser Angriff führt einen zweiten Angriff gegen dasselbe Ziel als Teil derselben Angriffsaktion aus. Der zusätzliche Angriff erfolgt im Schritt 5: *Zusatzschläge*.
-dreifacher_schlag:
-  title: 'Dreifacher Schlag'
-  trait: ''
-  text: |
-    Dieser Angriff führt zwei zusätzliche Angriffe gegen dasselbe Ziel als Teil derselben Angriffsaktion aus. Die zusätzlichen Angriffe erfolgen im Schritt 5: *Zusatzschläge*.
-durchdringen:
-  title: 'Durchdringen +X'
-  trait: ''
-  text: |
-    Dieser Angriff zieht X von der [Rüstung](#ruestung) des Ziels ab, wenn man den Schaden ermittelt. Er kann die Rüstung des Ziels nicht unter 0 senken.
-durchgang_blockiert:
-  title: 'Durchgang blockiert'
-  trait: ''
-  text: |
-    Kreaturen dürfen sich nicht durch diesen [Wall](#wall) bewegen. Wenn eine Kreatur in einen solchen Wall [gestoßen](#stoss) wird, ist sie [angeschlagen](#angeschlagen). Die Wände, die die Arena umgeben, besitzen alle das Merkmal **Durchgang blockiert**, und wirken sich auch auf fliegende Kreaturen aus. Siehe *Wälle* auf Seite 17.
-effektwuerfel:
-  title: 'Effektwürfel'
-  trait: 'Spielbegriff'
-  text: |
-    Der 12-seitige Würfel (auch: **W12**) wird Effektwürfel genannt; er wird für das Ermitteln zusätzlicher Effekte bei Angriffen benutzt, für [Rettungswürfe](#rettungswurf) und bestimmte andere Würfelwürfe.
-eigenstaendig:
-  title: 'Eigenständig'
-  trait: 'Objektmerkmal'
-  text: |
-    Diese [Ausrüsung](#ausruestung) wird einer Kreatur angefügt und funktioniert unabhängig von der Kreatur. Sie benötigt keinen Ausrüsungsort. Merkmale, Eigenschaften oder Zustände der Kreatur, der sie angefügt sind, beeinflussen die Ausrüsung nicht und können sie auch nicht verändern. Sie kann jedoch durch andere Ursachen und [Objekte](#objekt) beeinflusst werden. Wenn die Ausrüsung einen [Angriff](#angriff) erlaubt, kann dieser einmal pro Runde als freie Aktion am Ende der Aktionsphase der Kreatur genutzt werden. Wenn der Angriff ein [Nahkampfangriff](#nahkampfangriff) ist, gelten für ihn die normalen Regeln wie beim [Wache halten](#wache_halten); er löst jedoch weder einen [Gegenschlag](#gegenschlag) noch eine Schadensbarriere aus, und er entfernt auch kein Plättchen Wache von seinem Ziel.
-einschraenken:
-  title: 'Einschränken'
-  trait: 'Spielbegriff'
-  text: |
-    Eine Kreatur, die ihre Aktionsphase in einer [Zone](#zone) mit irgendeiner gegnerischen Kreatur beginnt, wird in ihrer [Bewegung](#bewegungsaktion) eingeschränkt und darf sich in ihrer Aktionsphase nur um **1** Zone bewegen (sogar, wenn sie das Merkmal [Schnell](#schnell) besitzt). Sollte sie sich in eine Zone bewegen, die von einer gegnerischen Kreatur besetzt ist, wird sie eingeschränkt, muss anhalten, und kann in dieser Aktionsphase keine weiteren Bewegungsaktionen mehr ausführen. Kreaturen mit den Merkmalen [Handlungsunfähig](#handlungsunfaehig), [Gezügelt](#gezuegelt) oder [Plage](#plage) schränken die Bewegung nicht ein. Fliegende Kreaturen können die Bewegung nicht fliegender Kreaturen nicht einschränken und umgekehrt. Ausweichende Kreaturen können in ihrer Bewegung nicht durch andere Kreaturen eingeschränkt werden.
-einzigartig:
-  title: 'Einzigartig'
-  trait: ''
-  text: |
-    Jeder Spieler darf höchstens 1 Exemplar dieses [Objekts](#objekt) gleichzeitig im Spiel haben. Ähnlich wie [legendär](#legendaer), allerdings darf jeder Spieler sein eigenes Exemplar im Spiel haben.
-entfrosten:
-  title: 'Entfrosten'
-  trait: 'Angriffsmerkmal'
-  text: |
-    Dies ist ein Merkmal von [Flammenangriffen](#flammen). Es wird in späteren Erweiterungen eine Bedeutung bekommen, wenn [Frostschaden](#frost) ins Spiel kommt.
-entwurzeln_x:
-  title: 'Entwurzeln X'
-  trait: 'Objektmerkmal'
-  text: |
-    Diese Kreatur kann ihre Wurzeln aus den Boden ziehen und sich frei bewegen. Wenn diese Kreatur aktiviert wird, darfst du X Mana bezahlen. Wenn du das tust, verliert sie das Merkmal [Verwurzelt](#verwurzelt) bis zum Ende Ihre Aktionsphase.
-episch:
-  title: 'Episch'
-  trait: 'Zaubermerkmal'
-  text: |
-    Nur **1** Exemplar dieses Zaubers darf sich im Zauberbuch eines [Magiers](#magier) befinden.
-erfolgreich:
-  title: 'Erfolgreich'
-  trait: ''
-  text: |
-    Ein [Angriff](#angriff) gilt als erfolgreich und als *Treffer*, wenn er weder durch den Zustand [Schwindlig](#schwindlig) *verfehlt* hat, noch durch eine [Verteidigung](#verteidigung) vermieden wurde.
-ergreifen:
-  title: 'Ergreifen'
-  trait: 'Effekt'
-  text: |
-    Diese [Angriff](#angriff) kann [Kreaturen](#kreatur) packen und in die eigene [Zone](#zone) zerren. **Ergreifen** ist ein [Stoß-Effekt](#stoss), bei der das Objekt eine Zone näher **in Richtung der Ursache des Stoßes bewegt** wird. Ergreifen hat keine Auswirkung auf [unhaltbare](#unhaltbar) oder [unbewegliche](#unbeweglich) Kreaturen.
-erhaltung:
-  title: 'Erhaltung +X'
-  trait: ''
-  text: |
-    Der [Kontrollierende](#kontrollierender) dieses [Objekts](#objekt) bezahlt X Mana während jeder Erhaltungsphase, nicht der Kontrollierende der betroffenen Kreatur. Eine Ausnahme bildet Essensschwund. Es besitzt keine eigenen Erhaltungskosten, sondern gibt der betroffenen Kreatur das Merkmal **Erhaltung +2**, sodass der [Besitzer](#besitzer) der Kreatur diese Kosten bezahlen muss.
-erreichen:
-  title: 'Erreichen'
-  trait: ''
-  text: |
-    Mit diesem [Nahkampfangriff](#nahkampfangriff) kann man [fliegende](#fliegen) Kreaturen in derselben [Zone](#zone) zum Ziel haben und angreifen.
-falle:
-  title: 'Falle'
-  trait: ''
-  text: |
-    Eine Verzauberung, die ausgelöst wird, wenn ein Gegner die [Zone](#zone) betritt. Siehe *Fallen* auf Seite 20.
-faeulnis:
-  title: 'Fäulnis'
-  trait: ''
-  text: |
-    Dies ist ein [Giftzustand](#gift). Dieses [Objekt](#objekt) erhält jede Runde 1 [direkten Schaden](#direkter_schaden) während der Erhaltungsphase. Fäulnis hat [Beseitigungskosten](#beseitigungskosten) von 2.
-fernangriff:
-  title: 'Fernangriff'
-  trait: ''
-  text: |
-    Dieser Angriff kann gegen Ziele innerhalb seiner kürzesten und weitesten Reichweite genutzt werden, und wenn sie sich in [Sichtlinie](#sichtlinie) befinden. Ein Fernangriff kann immer gegen eine [fliegende](#fliegen) Kreatur in derselben [Zone](#zone) ausgeführt werden, selbst wenn seine minimale Reichweite unterschritten wird. Fernangriffe lösen keine [Schadensbarrieren](#schadensbarriere) oder [Gegenschläge](#gegenschlag) aus. Fernangriffe ignorieren Wachen und entfernen keine Plättchen [Wache](#wache_halten) von Kreaturen, die Wache halten.
-fernangriff_x:
-  title: 'Fernangriff +X'
-  trait: ''
-  text: |
-    Diese Kreatur erhält +X Angriffswürfel, wenn sie einen [Fernangriff](#fernangriff) ausführt. Wenn der Angriff [mehrere Schläge](#mehrfachangriff) gegen dasselbe oder mehrere [Objekte](#objekt) ausführt, erhält er den Bonus lediglich für den ersten Angriff, bei dem dieser Bonus anwendbar ist. Das hat keine Auswirkung auf [Zonenangriffe](#zonenangriff). Dies ermöglicht aber keinen Fernangriff, falls die Kreatur keinen haben sollte.
-festhaengend:
-  title: 'Festhängend'
-  trait: 'Zustandsplättchen'
-  text: |
-    Diese Kreatur erhält die Merkmale [Gezügelt](#gezuegelt) und [Unbeweglich](#unbeweglich). Am Ende jeder ihrer Aktionsphasen darf eine festhängende Kreatur einen [Rettungswurf](#rettungswurf) versuchen: Bei einem Wurf von **7** oder mehr entfernt man **Festhängend**. Wird die Kreatur [teleportiert](#teleportation), zerstört man alle ihre Zustandsplättchen **Festhängend**. **Festhängend** hat keine Wirkung auf [unhaltbare](#unhaltbar) Kreaturen und [Beseitigungsosten](#beseitigungskosten) von **4**.
-feuer_loeschen:
-  title: 'Feuer löschen'
-  trait: 'Angriffsmerkmal'
-  text: |
-    Dieser Angriff löscht [Feuer](#flammen). Man reduziert im Schritt: *Würfel werfen* die Anzahl der [Angriffswürfel](#angriff) um **X** und zieht **X** vom Ergebnis des [Effektwürfels](#effektwuerfel) ab. Wie bei jedem [Angriff](#angriff) wird mindestens **1** Würfel geworfen. **X** = Anzahl der Zustandsplättchen [In Brand](#in_brand) auf dem Verteidiger. Danach entfernt man alle Zustandsplättchen *In Brand* vom Verteidiger.
-    Ein [Wasserangriff](#wasser) (oder *Wasserangriffszauber*), der das Merkmal **Feuer löschen** hat, kann auch ein [Objekt](#objekt) mit dem Merkmal [Immun gegen Wasser](#immunitaet) als Ziel haben. In diesem Falle verursacht er keinen Schaden oder Effekte, außer alle Plättchen *In Brand* zu entfernen. Dies ist eine Ausnahme zu den normalen Immunitätsregeln. Daher können Wasserangriffe auch Feuer von brennenden Pflanzen-Objekten löschen, obwohl die Angriffe Pflanzen nicht schaden können.
-feuerfest:
-  title: 'Feuerfest'
-  trait: 'Objektmerkmal'
-  text: |
-    Das [Objekt](#objekt) kann nie den Zustand *In Brand* erhalten. Es kann zwar [Flammenschaden](#flammen) erleiden, aber nie *brennen*. Alle [körperlosen](#koerperlos) Objekte sind feuerfest.
-flammen:
-  title: 'Flammen'
-  trait: ''
-  text: |
-    Eine [Schadensart](#schadensart), siehe *Schadensarten* auf Seite 26. Das Merkmal **Flammen +/-X** modifiziert diesen Schaden, siehe unter *Schadensart* im Kodex.
-fliegen:
-  title: 'Fliegen'
-  trait: 'Objektmerkmal'
-  text: |
-    Eine Kreatur darf bei einem [Fernangriff](#fernangriff) gegen ein [Objekt](#objekt) in derselben [Zone](#zone) die minimale Reichweite des Angriffs ignorieren, wenn entweder der Angreifer oder der [Verteidiger](#verteidiger) (oder beide) das Merkmal **Fliegen** besitzen. Für weitere Regeln siehe *Fliegende Kreaturen* auf Seite 15.
-formel:
-  title: 'Formel (Zauber)'
-  trait: ''
-  text: |
-    Formelzauber haben eine nur kurzzeitige Wirkung auf das Spiel. Beim Ausführen des Zaubers befolgst du die Anweisungen auf der Zauberkarte und legst sie dann auf deinen [Ablagestapel](#ablagestapel).
-frost:
-  title: 'Frost'
-  trait: ''
-  text: |
-    Eine [Schadensart](#schadensart), siehe *Schadensarten* auf Seite 26. Das Merkmal **Frost +/-X** modifiziert diesen Schaden, siehe unter Schadensart im Kodex. *Hinweis*: Frostschaden wird erst in späteren Erweiterungen eine Bedeutung bekommen.
-gegenschlag:
-  title: 'Gegenschlag'
-  trait: 'Angriffsmerkmal'
-  text: |
-    Wenn eine Kreatur [Verteidiger](#verteidiger) bei einem [Nahkampfangriff](#nahkampfangriff) ist, und sie einen Nahkampfangriff als [Schnelle Aktion](#schnelle_aktion) mit dem Merkmal **Gegenschlag** besitzt, kann sie diesen Angriff im Schritt 7: *Gegenschlag* des Angriffs gegen den Angreifer einsetzen. Siehe *Gegenschlag* auf Seite 28.
-gegner:
-  title: 'Gegner'
-  trait: 'Spielbegriff'
-  text: |
-    Jedes gegnerische [Objekt](#objekt), das zurzeit von einem gegnerischen Spieler kontrolliert wird.
-geschmettert:
-  title: 'Geschmettert'
-  trait: 'Zustandsplättchen'
-  text: |
-    Die Kreatur ist [Handlungsunfähig](#handlungsunfaehig). Wenn diese Kreatur aktiviert wird, entfernt man das Plättchen **Geschmettert** und ersetzt es durch ein Zustandsplättchen [Schwindlig](#schwindlig). [Unbewegliche](#unbeweglich) Kreaturen erhalten statt **Geschmettert** den Zustand *Schwindlig*. Wie gewohnt werden alle Plättchen *Schwindlig* am Ende der Aktionsphase der Kreatur weggenommen.
-    Geschmettert hat [Beseitigungskosten](#beseitigungskosten) von **3**.
-gezuegelt:
-  title: 'Gezügelt'
-  trait: ''
-  text: |
-    Wenn eine Kreatur das Merkmal **Gezügelt** besitzt, kann sie keine [Bewegungsaktionen](#bewegungsaktion) ausführen. Sie kann immer noch [gestoßen](#stoss) oder [teleportiert](#teleportation) werden. Abgesehen von Bewegungsaktionen kann eine gezügelte Kreatur weiterhin [Schnelle](#schnelle_aktion) oder [Vollständige Aktionen](#vollstaendige_aktion) in ihrer Aktionsphase ausführen. Eine gezügelte Kreatur kann die Bewegung von Gegnern nicht einschränken. Eine gezügelte Kreatur kann [Wache halten](#wache_halten), allerdings dürfen angreifende Kreaturen sie ignorieren (es besteht kein Zwang, sie anzugreifen). Der einzige Vorteil einer gezügelten Kreatur, [Wache zu halten](#wache_halten), besteht im Merkmal [Gegenschlag](#gegenschlag), das sie dadurch erhält. Fliegende Kreaturen verlieren das Merkmal [Fliegen](#fliegen) und können es auch nicht wieder erhalten, so lange sie gezügelt sind. Eine gezügelte Kreatur erleidet **–2** auf alle [Verteidigungswürfe](#verteidigung).
-    [Unhaltbare](#unhaltbar) Kreaturen und alle [Beschwörungen](#beschwoerung) können nicht gezügelt werden.
-gift:
-  title: 'Gift'
-  trait: ''
-  text: |
-    Einige Angriffe besitzen das Merkmal **Gift**. Man beachte, dass viele Angriffe, selbst wenn sie nicht von der [Schadensart](#schadensart) *Gift* sind, dennoch Giftzustände hervorrufen können.
-handlungsunfaehig:
-  title: 'Handlungsunfähig'
-  trait: 'Effekt'
-  text: |
-    Eine **handlungsunfähige** Kreatur kann keine Aktionen ausführen, inklusive [Bewegung](#bewegungsaktion), [Angriff](#angriff), [Wache halten](#wache_halten), Zauber anwenden oder [Gegenschlag](#gegenschlag). Sie kann keinerlei [Verteidigungen](#verteidigung) nutzen. Sollte ein Plättchen Wache auf ihr liegen, wird es sofort weggenommen. Eine fliegende Kreatur verliert das Merkmal [Fliegen](#fliegen) und kann es nicht wieder erlangen, so lange sie handlungsunfähig ist. Irgendwelche [Schadensbarrieren](#schadensbarriere) auf handlungsunfähigen Kreaturen funktionieren weiterhin normal.
-    Eine handlungsunfähige Kreatur behindert die Bewegung von Gegnern nicht. Andere Kreaturen können die handlungsunfähige Kreatur ignorieren. Eine handlungsunfähige Kreatur hat weiterhin ihre Aktionsphase in der Runde, kann aber keine Aktionen dabei ausführen (normalerweise wird ihr Aktionsstein einfach umgedreht).
-    [Beschwörungen](#beschwoerung) können nicht handlungsunfähig werden.
-    Handlungsunfähige Magier funktionieren anders. Der Geist eines Magiers ist derart mächtig, dass er seine Magie trotz seiner Handlungsunfähigkeit weiterhin anwenden kann! Ein handlungsunfähiger [Magier](#magier) kann immer noch Aktionen zum Anwenden von [Schnellen Zaubern](#schneller_zauber) (keine Angriffe) einsetzen. Er kann keine Vollständigen Zauber oder [Angriffszauber](#angriff) anwenden.
-heilung:
-  title: 'Heilung'
-  trait: 'Effekt'
-  text: |
-    Heilung entfernt Schaden von [lebenden](#lebend) Kreaturen und [Beschwörungen](#beschwoerung). Siehe *Schaden entfernen* auf Seite 26.
-herbeirufen:
-  title: 'Herbeirufen'
-  trait: ''
-  text: |
-    Wenn du einen [Kreaturenzauber](#kreatur) anwendest, wird das auch *Herbeirufung* einer Kreatur genannt.
-ichthelliden_larve:
-  title: 'Ichthelliden-Larve'
-  trait: 'Zustandsplättchen'
-  text: |
-    Einer Kreatur mit diesen Zustandsplättchen wurde eine **Ichthelliden-Larve** eingepflanzt. Die **Ichthelliden-Larve** ist ein [Giftzustand](#gift) mit [Beseitigungsosten](#beseitigungskosten) von **5**. Die **Ichthelliden-Larve** wird vom [Kontrolleur](#kontrollierender) des *Ichthelliden* kontrolliert, der das Plättchen eingesetzt hat. Auf einer Kreatur darf höchstens **1** Plättchen **Ichthelliden-Larve** liegen. Wenn die von einer Larve betroffene Kreatur [zerstört](#zerstoert) wird, darf der Kontrolleur der **Ichthelliden-Larve** eine *Ichthellidenkreatur* aus seinem Zauberbuch oder seinem [Ablagestapel](#ablagestapel) wählen und sie verdeckt in die [Zone](#zone) legen, in der sich die Kreatur befand, bevor sie zerstört wurde. Dieser *Ichthellide* kommt am Ende der Runde ohne zu bezahlende Manakosten ins Spiel (vergleichbar mit dem [Reanimieren](#reanimieren)-Effekt.)
-ignorieren:
-  title: 'Ignorieren'
-  trait: 'Spielbegriff'
-  text: |
-    Eine ignorierte gegnerische [Kreatur](#kreatur) kann die Bewegung [befreundeter](#befreundet) Kreaturen nicht [einschränken](#einschraenken). Eine ignorierte gegnerische Kreatur, die [Wache](#wache_halten) hält, muss nicht zwingend angegriffen werden, wenn man einen [Nahkampfangriff](#nahkampfangriff) ausführt.
-immun_gegen_gift:
-  title: 'Immun gegen Gift'
-  trait: ''
-  text: |
-    [Nicht lebende](#nicht_lebend) Kreaturen sind immun gegen Gift. Siehe [Immunität](#immunitaet), hier im Kodex.
-immun_gegen_uebersinnlich:
-  title: 'Immun gegen Übersinnlich'
-  trait: ''
-  text: |
-    Dieses [Objekt](#objekt) hat entweder ungeheuer mächtige Geistesgaben oder gar keine. Alle [Beschwörungen](#beschwoerung) sind immun gegen Übersinnlich. Siehe [Immunität](#immunitaet), hier im Kodex.
-immunitaet:
-  title: 'Immunität'
-  trait: ''
-  text: |
-    Dieses [Objekt](#objekt) ist immun gegen alle Angriffe, Schaden, Zustände und Effekte der angegebenen [Schadensart](#schadensart), inklusive [kritischer Schaden](#kritischer_schaden) und [direkter Schaden](#direkter_schaden). Es kann nicht zum Ziel eines Zaubers der angegebenen Art oder davon beeinflusst werden.
-in_brand:
-  title: 'In Brand'
-  trait: 'Zustandsplättchen'
-  text: |
-    Das [Objekt](#objekt) brennt. Es handelt sich um einen [Flammenzustand](#flammen). In jeder Erhaltungsphase wirfst du mit **1** Angrifswürfel den [direkten Schaden](#direkter_schaden) pro Plättchen *In Brand* auf jedem Objekt. Bei einer **0** entfernst du das Plättchen *In Brand*. Plättchen *In Brand* haben [Beseitigungskosten](#beseitigungskosten) von **2**.
-indirekt:
-  title: 'Indirekt'
-  trait: ''
-  text: |
-    Die [Sichtlinie](#sichtlinie) (SL) dieses [Fernangriffs](#fernangriff) wird nicht durch [Wälle](#wall) blockiert.
-initiative:
-  title: 'Initiative'
-  trait: ''
-  text: |
-    Die Spieler haben abwechselnd die Initiative, die mit dem Plättchen *Initiative* angezeigt wird. Wer gerade die Initiative hat, darf als erster seine [Schnellzauberaktion](#schnellzauberaktion) in einer [Schnellzauberphase](#schnellzauberphase) ausführen, und er hat die erste Aktionsphase in der Aktionsstufe. Außerdem dient die Initiative dazu, alle Fragen der Reihenfolge zu klären.
-klettern:
-  title: 'Klettern'
-  trait: 'Objektmerkmal'
-  text: |
-    Die Kreatur kann eine besondere [Vollständige Aktion](#vollstaendige_aktion) ausführen, um über irgendeinen [körperlichen](#koerperlich) [Wall](#wall) zu klettern und sich in die benachbarte [Zone](#zone) zu bewegen. Wenn der Wall das Merkmal [Angriff bei Durchgang](#angriff_bei_durchgang) hat, greift er die Kreatur vor ihrer Bewegung an.
-kontern:
-  title: 'Kontern'
-  trait: 'Spielbegriff'
-  text: |
-    Ein Zauber, der gekontert wird, kann nicht ausgeführt werden. Er wird zerstört und kommt auf den [Ablagestapel](#ablagestapel). Alle Kosten und Aktionen, die zum Anwenden des Zaubers ausgegeben wurden, sind verloren, falls nicht anders angegeben.
-kontrollierender:
-  title: 'Kontrollierender'
-  trait: 'Spielbegriff'
-  text: |
-    Alle Zauber oder [Objekte](#objekt) im Spiel werden von dem Spieler kontrolliert, der sie angewendet hat. Der *Kontrollierende* kann seine Objekte benutzen und damit agieren, und er trifft alle Entscheidungen und Auswahlen für seine Zauber oder irgendwelche Eigenschaften, die seine Objekte haben.
-koerperlich:
-  title: 'Körperlich'
-  trait: 'Objektmerkmal'
-  text: |
-    Körperliche Objekte sind normale, physische [Objekte](#objekt). Alle [Kreaturen](#kreatur) und [Beschwörungen](#beschwoerung) sind körperlich, wenn sie nicht das Merkmal [Körperlos](#koerperlos) besitzen.
-koerperlos:
-  title: 'Körperlos'
-  trait: ''
-  text: |
-    Ein substanzloses, amorphes [Objekt](#objekt), dem Schaden fast nichts anhaben kann. Bei allen Angrifswürfeln, die diesem Objekt Schaden zufügen sollen, zählen nur die **1er** (die **2er** werden ignoriert), es sei denn, der Angriff hat das Merkmal [Ätherisch](#aetherisch). Effekte oder Zustände von Angriffen, die nicht ätherisch sind, können ihm nichts anhaben. Alle körperlosen Objekte besitzen außerdem die Merkmale [Nicht Lebend](#nicht_lebend), [Feuerfest](#feuerfest) und [Unhaltbar](#unhaltbar). Körperlose Objekte haben kein Rüstungsattribut und können keine [Rüstung](#ruestung) erhalten. Siehe *Körperlos* auf Seite 15.
-kreatur:
-  title: 'Kreatur (Zauber)'
-  trait: 'Zauberart'
-  text: |
-    Kreaturenzauber rufen eine Kreatur herbei, die in der Arena für dich bis zu ihrer Zerstörung kämpft. Lege die Karte offen in die [Zielzone](#zone) des Spielplans. Kreaturenzauber haben die Reichweite **0-0**, und kommen daher immer in die [Zone](#zone), in der du sie anwendest. Lege einen Aktionsstein mit seiner inaktiven Seite nach oben auf die Kreatur (Kreaturen kommen immer inaktiv ins Spiel). Genau wie dein [Magier](#magier) haben Kreaturen Lebenskraft- und Rüstungs-Attribute und generell einen oder mehrere Angriffe. Wenn eine Kreatur Schaden in Höhe ihres Lebens (oder mehr) erleidet, ist sie [zerstört](#zerstoert). Die meisten Kreaturen besitzen ein oder mehr besondere Merkmale, die auf der Karte abgedruckt sind, wodurch sie besondere Eigenschaften erhalten.
-kritischer_schaden:
-  title: 'Kritischer Schaden'
-  trait: 'Spielbegriff'
-  text: |
-    **Kritischer Schaden** geht an [Rüstung](#ruestung) vorbei (diese reduziert den erlittenen Schaden nicht). Kritischer Schaden wird auf den Würfeln als Ziffer in einem Stern angezeigt.
-langsam:
-  title: 'Langsam'
-  trait: ''
-  text: |
-    Diese Kreatur ist sehr langsam. Wenn diese Kreatur eine [Bewegungsaktion](#bewegungsaktion) ausgeführt, endet ihre Aktionsphase sofort. Sie erhält keine [Schnelle Aktion](#schnelle_aktion) nach der Bewegung. Wenn eine langsame Kreatur das Merkmal [Schnell](#schnell) erhält, heben sich die beiden Merkmale auf.
-leben:
-  title: 'Leben'
-  trait: ''
-  text: |
-    Kreaturen und Beschwörungen haben ein Lebensattribut. Leben ist der maximale Schaden, den sie erleiden können, bevor sie zerstört werden.
-leben_x:
-  title: 'Leben +/-X'
-  trait: ''
-  text: |
-    Das [Objekt](#objekt) erhält oder verliert X [Leben](#leben). Leben erhalten ist nicht gleich Heilen und Leben verlieren ist nicht gleich Schaden. Änderungen beim Leben ändern die Menge an Schaden, die ein Objekt erleiden kann, bevor es zerstört wird.
-lebend:
-  title: 'Lebend'
-  trait: ''
-  text: |
-    Lebende [Objekte](#objekt) können [geheilt](#heilung) werden, [regenerieren](#regenerieren) und [Leben erhalten](#leben_x). Alle [Kreaturen](#kreatur) sind lebend, wenn sie nicht das Merkmal [Nicht Lebend](#nicht_lebend) besitzen. Alle [Beschwörungen](#beschwoerung) sind nicht lebend, wenn sie nicht das Merkmal **Lebend** besitzen.
-lebensbund_x:
-  title: 'Lebensbund +X'
-  trait: 'Objektmerkmal'
-  text: |
-    Während der Erhaltungsphase darfst du entweder **X** Schaden von deinem [Magier](#magier) auf dieses [Objekt](#objekt) oder von diesem Objekt auf deinen Magier verschieben, ungeachtet der Entfernung und der [SL](#sichtlinie). Diese Eigenschaft wird nicht durch das Merkmal [Begrenztes Leben](#begrenztes_leben) beeinflusst.
-legendaer:
-  title: 'Legendär'
-  trait: ''
-  text: |
-    Nur **1** Exemplar dieses [Objekts](#objekt) darf gleichzeitig im Spiel sein. Man darf keinen legendären Zauber anwenden, wenn ein Objekt mit dem gleichen Namen bereits im Spiel ist (erst, wenn das erste zerstört ist). Legendäre Objekte können nicht vom [Ablagestapel](#ablagestapel) zurück ins Spiel gebracht werden, wenn ein anderes Exemplar davon bereits im Spiel ist.
-level:
-  title: 'Level'
-  trait: ''
-  text: |
-    Alle Zauber haben einen Level, der als kleine Zahl neben der Schule dieses Zaubers aufgedruckt ist. Der Level entspricht der ungefähren Macht dieses Zaubers. [Magier](#magier) gelten als Kreaturen mit dem **Level 6**. Manchmal wird der Level dazu benutzt, die Kosten eines Zaubers zu bestimmen, außerdem ist er wichtig beim Zusammenstellen von Zauberbüchern. Siehe Zauberlevel unter *Ausbildung* auf Seite 35.
-magier:
-  title: 'Magier'
-  trait: ''
-  text: |
-    Diese Kreatur ist ein Magier, und sie stellt den Spieler im Spiel dar. Der Magier kann Mana sammeln, Zauber anwenden und er kann jede Runde eine spezielle [Schnellzauberaktion](#schnellzauberaktion) ausführen. Der Magier ist eine Kreatur mit **Level 6**. Wenn dein Magier zerstört wurde, verlierst du das Spiel!
-magierbindung:
-  title: 'Magierbindung +X'
-  trait: ''
-  text: |
-    Eine solche [Verzauberung](#verzauberung) ist nicht so einfach auf einen [Magier](#magier) anwendbar. Wenn diese Verzauberung einem Magier angefügt wird, werden die [Aufdeckkosten](#aufdeckkosten) um X erhöht. Diese angepassten Aufdeckkosten gelten allgemein für Zauber, Eigenschaften oder Effekte, die sich auf die Aufdeckkosten dieses Zaubers beziehen.
-manaabzug:
-  title: 'Manaabzug +X'
-  trait: ''
-  text: |
-    Wenn dieser Angriff einer gegnerischen [Kreatur](#kreatur) Schaden zufügt, verliert der Kontrollierende der Kreatur X Mana aus seinem Manavorrat (wenn er welches hat). Wenn der Angriff [mehrere Schläge](#mehrfachangriff) gegen dasselbe oder mehrere [Objekte](#objekt) ausführt, erhält er den Bonus lediglich für den ersten Angriff, bei dem dieser Bonus anwendbar ist.
-manasammlung:
-  title: 'Manasammlung'
-  trait: 'Objektattribut'
-  text: |
-    Einige [Objekte](#objekt) haben das Manasammlungsattribut. Es gibt an, wie viel Mana sie jede Runde während der Manasammlungsphase bekommen.
-manasammlung_x:
-  title: 'Manasammlung +/- X'
-  trait: 'Objektmerkmal'
-  text: |
-    Modifiziert das [Manasammlungsattribut](#manasammlung) einer [Kreatur](#kreatur) um **+/– X**. Die Manasammlung kann nie unter **0** fallen. Modifiziert nur einen vorhandenen Manasammlungswert, [Objekte](#objekt) ohne Manasammlungsattribut sind davon nicht betroffen.
-manauebertragung:
-  title: 'Manaübertragung +X'
-  trait: ''
-  text: |
-    Genau wie [Manaabzug +X](#manaabzug), mit folgendem Zusatz: Wer diesen Angriff [kontrolliert](#kontrollierender), erhält Mana in Höhe des Manaverlustes.
-marker:
-  title: 'Marker'
-  trait: ''
-  text: |
-    Ein Marker ist ein kleiner Markierungschip, der der einen an bestimmte Dinge erinnern soll. Mage Wars liegen keine Marker bei – wenn im Spiel Marker gefordert werden, nimm geeignetes, gerade nicht benötigtes Ersatzmaterial aus diesem Spiel, bzw. Münzen oder Glassteine etc. Dies betrifft die Effekte *Bann* (Karte: Verbannen), *Zorn* (Valshalla) und *Rüstung* (Krone des Schutzes).
-mehrfachangriff:
-  title: 'Mehrfachangriff'
-  trait: ''
-  text: |
-    Einige [Angriffe](#angriff) bestehen aus mehreren separaten Angriffen gegen dasselbe oder unterschiedliche Ziele. Mehrfachangriffe sind solche mit den Merkmalen [Doppelschlag](#doppelschlag), [Dreifacher Schlag](#dreifacher_schlag) und [Rundschlag](#rundschlag).
-nahkampf_x:
-  title: 'Nahkampf +X'
-  trait: ''
-  text: |
-    Diese Kreatur erhält +X Angriffswürfel, wenn sie einen [Nahkampfangriff](#nahkampfangriff) ausführt. Wenn der [Angriff](#angriff) [mehrere Schläge](#mehrfachangriff) gegen dasselbe oder mehrere [Objekte](#objekt) ausführt, erhält er den Bonus lediglich für den ersten Angriff, bei dem dieser Bonus anwendbar ist. Dies ermöglicht aber keinen Nahkampfangriff, falls die Kreatur keinen haben sollte. Es hat keinen Einfluss auf [Fernangriffe](#fernangriff_x), [Schadensbarrieren](#schadensbarriere) oder andere Nicht-Nahkampfangriffe.
-nahkampfangriff:
-  title: 'Nahkampfangriff'
-  trait: ''
-  text: |
-    Ein Angriff aus nächster Nähe, der nur Ziele in der gleichen [Zone](#zone) betreffen kann. Er kann eine [Schadensbarriere](#schadensbarriere) oder einen [Gegenschlag](#gegenschlag) auslösen. Beim Ausführen eines Nahkampfangriffs musst du eine gegnerische [Wache](#wache_halten) angreifen, falls sich eine in deiner Zone aufhält. Ein Nahkampfangriff entfernt das Plättchen Wache von einer Wache haltenden Kreatur.
-nicht_lebend:
-  title: 'Nicht Lebend'
-  trait: ''
-  text: |
-    Alle nicht lebenden [Kreaturen](#kreatur) haben die Merkmale [Immun gegen Gift](#immun_gegen_gift) und [Begrenztes Leben](#begrenztes_leben). Alle Kreaturen sind lebend, wenn sie nicht das Merkmal **Nicht Lebend** besitzen. Alle [Beschwörungen](#beschwoerung) sind nicht lebend, wenn sie nicht das Merkmal [Lebend](#lebend) besitzen. [Körperlose Objekte](#koerperlos) haben dieses Merkmal immer.
-novize:
-  title: 'Novize'
-  trait: ''
-  text: |
-    Grundlegende Lehrlingszauber. Alle Magier können für 1 Zauberpunkt Novizenzauber in ihr Zauberbuch stecken, selbst wenn sie in dieser Art Schule nicht ausgebildet oder ihr gegenüber feindlich eingestellt sind.
-nur_fuer_magier:
-  title: 'Nur für Magier'
-  trait: ''
-  text: |
-    Einige Zauber sind auf bestimmte Magierklassen beschränkt. Beispielsweise kann ein Zauber das Merkmal *Nur für Hexenmeister* oder *Nur für heiligen Magier* besitzen. Siehe *Zaubermerkmale, die das Zauberbuch beeinflussen* auf Seite 36.
-obhut:
-  title: 'Obhut X'
-  trait: 'Objektmerkmal'
-  text: |
-    Alle [Angriffe](#angriff) gegen dieses [Objekt](#objekt) haben X Angriffswürfel weniger. Es darf aber nie weniger als 1 Angriffswürfel geworfen werden. Das Merkmal **Obhut** kann nicht mit anderen Obhutmerkmalen kombiniert oder zusammengezählt werden. Wenn ein Objekt mehr als ein Merkmal Obhut besitzt, benutzt du nur das höchste. Dieses Merkmal kann einen Angriff nie auf unter 1 Würfel reduzieren.
-objekt:
-  title: 'Objekt'
-  trait: ''
-  text: |
-    [Verzauberungen](#verzauberung), [Ausrüstung](#ausruestung), [Kreaturen](#kreatur) und [Beschwörungen](#beschwoerung) sind Zauber, die im Spiel zu Objekten werden und die nach dem Anwenden im Spiel bleiben. Auch der [Magier](#magier) gilt als Objekt. [Formeln](#formel) und [Angriffszauber](#angriff) werden nie zu Objekten.
-oder_angriffe:
-  title: 'ODER-Angriffe'
-  trait: ''
-  text: |
-    Einige [Angriffe](#angriff) haben in ihrer Angriffsleiste ein *ODER*. Beispielsweise gibt Ludwig Boltstorms Angriffsleiste **2** Alternativen an; der Angriff kann entweder das Merkmal [Rundschlag](#rundschlag) haben oder ein [Zonenangriff](#zonenangriff) mit dem Merkmal [Unvermeidbar](#unvermeidbar) sein. Wenn der Angriff erklärt wird, muss der [Kontrollierende](#kontrollierender) entscheiden, welche dieser Alternativen für diesen Angriff gelten soll.
-plage:
-  title: 'Plage'
-  trait: ''
-  text: |
-    Eine kleine, nervige Kreatur, die Gegner nicht [behindern](#einschraenken) kann. Gegnerische Kreaturen können eine **Plage** mit Plättchen [Wache](#wache_halten) ignorieren, wenn sie einen [Nahkampfangriff](#nahkampfangriff) gegen ein anderes Ziel ausführen wollen.
-plaettchen:
-  title: 'Plättchen *Bereit*'
-  trait: ''
-  text: |
-    Plättchen *Bereit* werden benutzt, um anzuzeigen, wenn Eigenschaften benutzt wurden. Wenn eine [Kreatur](#kreatur) beispielsweise eine [Verteidigung](#verteidigung) besitzt, braucht sie ein Plättchen *Bereit*, das deren Verwendung anzeigt (dann zeigt das Plättchen die graue *Benutzt*-Seite), und wenn die Verteidigung wieder einsetzbar ist (dann wird das Plättchen auf seine grüne *Bereit*-Seite gedreht). Plättchen *Bereit* werden alle in der Grundstellungsphase auf die grüne *Bereit*-Seite gedreht.
-ranken:
-  title: 'Ranken'
-  trait: 'Spieleplättchen'
-  text: |
-    *Rankenplättchen* sind lebende [Beschwörungen](#beschwoerung) mit Lebenskraft **1**, keiner [Rüstung](#ruestung), und sie können keine Rüstung erhalten. Gegnerische, nicht [fliegende](#fliegen) Kreaturen werden durch *Rankenplättchen* in der Bewegung [eingeschränkt](#einschraenken). Jede beliebige Anzahl an Schaden zerstört ein *Rankenplättchen*, egal wie hoch dessen Lebenskraft sein sollte. Sie können nicht Ziel von [Fernangriffen](#fernangriff) sein. In einer [Zone](#zone) fürfen beliebig viele *Rankenplättchen* liegen.
-    Wenn die Druidin, ein [Vertrauter](#vertrauter) oder eine *Baum-Zauberquelle* unter ihrer Kontrolle einen *Rankenzauber* anwenden, darfst du als zusätzliche Kosten zur Anwendung des Zaubers ein *Rankenplättchen* unter ihrer Kontrolle zerstören. Wenn du das tust, darfst du die Reichweite des Zaubers ignorieren, wenn du die Zone des zerstörten *Rankenplättchens*, ein [Objekt](#objekt) in dieser Zone oder einen inhrer [Zonenränder](#zonenrand) zum Ziel wählst. Dieser *Rankenzauber* muss ein erlaubtes Ziel haben. Wenn zwei oder mehr Druiden mitspielen, sollte jeder eine andere Seite der *Rankenplättchen* benutzten, damit sie zuzuordnen sind.
-reanimieren:
-  title: 'Reanimieren'
-  trait: 'Effekt'
-  text: |
-    Diese [Kreatur](#kreatur) wird vom Tode wiedererweckt. Wenn diese Kreatur [zerstört](#zerstoert) wird, wird sie vom [Ablagestapel](#ablagestapel) in die [Zone](#zone) bewegt, in der sie gerade zerstört wurde, und zwar verdeckt mit einem verdeckten Aktionsstein drauf. Diese Kreatur gilt zunächst als aus dem Spiel. Am Ende der Runde wird die Kreaturkarte aufgdeckt und ins Spiel herbeigerufen. **Reanimieren** geschieht nicht, wenn die Kreatur bei der Zerstörung aus dem Spiel genommen wird. Siehe [Auslöschen](#ausloeschen).
-    Beachte, dass der Magier, der den Effekt der Reanimation [kontrolliert](#kontrollierender), das Objekt ist, das die Kreatur ins Spiel beschwört, falls nicht etwas anderes besagt.
-regenerieren:
-  title: 'Regenerieren X'
-  trait: ''
-  text: |
-    Dieses [Objekt](#objekt) heilt X Schaden von sich (wegnehmen) in jeder Erhaltungsphase. Das Merkmal **Regenerieren** kann nicht mit anderen Merkmalen Regenerieren kombiniert oder zusammengezählt werden. Wenn ein Objekt mehr als ein Merkmal Regenerieren besitzt, benutzt du nur das höchste. Das Merkmal [Begrenztes Leben](#begrenztes_leben) verhindert regenerieren.
-rekonstruieren:
-  title: 'Rekonstruieren'
-  trait: 'Effekt'
-  text: |
-    **Rekonstruieren** ist ein Effekt, der Schaden von [nicht lebenden](#nicht_lebend) Kreaturen entfernt. Es gilt nicht als [Regeneration](#regenerieren) oder [Heilung](#heilung) und wird nicht durch das Merkmal [Begrenztes Leben](#begrenztes_leben) beeinflusst.
-rettungswurf:
-  title: 'Rettungswurf'
-  trait: 'Spielbegriff'
-  text: |
-    Einige [Zustände](#zustand) und [Verzauberungen](#verzauberung) benötigen einen **Rettungswurf** (mit dem [Effektwürfel](#effektwuerfel)), um zu erfahren, ob man sie von der Kreatur nehmen kann, der sie angefügt sind.
-rundschlag:
-  title: 'Rundschlag'
-  trait: ''
-  text: |
-    Dieser [Angriff](#angriff) geschieht in einem weiten, ausladenden Bogen und kann **2** unterschiedliche Ziele in derselben [Zone](#zone) haben und treffen. Der zweite Angriff geschieht am Ende des Angriffsablaufs des ersten Angriffs. Man beginnt einen neuen Angriffsablauf mit dem Schritt 1: *Angriff erklären*. *Hinweis*: Der zweite Angriff kann nicht gegen dasselbe Ziel des ersten Angriffs erfolgen. Wenn es kein anderes, erlaubtes Ziel für den zweiten Angriff gibt, hat das Merkmal **Rundschlag** keine Auswirkung in dieser Runde.
-ruestung:
-  title: 'Rüstung'
-  trait: 'Objektattribut'
-  text: |
-    Während eines [Angriffs](#angriff) wird die **Rüstung** vom Normalen Schaden der Angriffswürfel abgezogen. [Kritischen Schaden](#kritischer_schaden) reduziert sie nicht. Wenn das Rüstungssymbol eines Objekts rot durchgestrichen ist, darf es niemals eine Rüstung besitzen; der Rüstungswert dieser Kreatur ist immer **null**.
-ruestung_x:
-  title: 'Rüstung +/- X'
-  trait: 'Objektmerkmal'
-  text: |
-    Modifiziert ein [Rüstungsattribut](#ruestung) um +/– X. Rüstung kann nie unter **0** fallen.
-schadensart:
-  title: 'Schadensart'
-  trait: 'Angriffsattribut'
-  text: |
-    Schaden kann zu einer bestimmter Art gehören – wie *Flammen* oder *Blitz*. Siehe *Schadensarten* auf Seite 26.
-schadensart_x:
-  title: 'Schadensart +/- X'
-  trait: 'Objektmerkmal'
-  text: |
-    Bei [Angriffen](#angriff) gegen das [Objekt](#objekt), die dieser [Schadensart](#schadensart) angehören, wird die Anzahl ihrer Angriffswürfel um X verändert, außerdem wird das Ergebnis des [Effektwurfs](#effektwuerfel) um X verändert. Gleiche Schadensartmodifikatoren werden zusammengerechnet. Bei einem Angriff kann aber nie weniger als **1** Angriffswürfel geworfen werden. Siehe *Schadensmodifikatoren* auf Seite 26.
-schadensbarriere:
-  title: 'Schadensbarriere'
-  trait: 'Objektmerkmal'
-  text: |
-    Eine **Schadensbarriere** umgibt ein [Objekt](#objekt) und führt einen automatischen Angriff gegen jeden Gegner aus, der ein Objekt im Nahkampf angreift, das von einer solchen Barriere umgeben ist. Siehe *Schadensbarrieren* auf Seite 27.
-schlaf:
-  title: 'Schlaf'
-  trait: ''
-  text: |
-    Dies ist ein übersinnlicher Zustand. Diese Kreatur ist in einen tiefen Schlaf gefallen und ist [handlungsunfähig](#handlungsunfaehig). Sollte diese Kreatur Schaden erleiden (z. B. durch den Angriff einer befreundeten Kreatur), wird Schlaf entfernt und durch ein Plättchen [Schwindlig](#schwindlig) ersetzt (es ist der Einfachheit halber auf die Rückseite des Plättchens gedruckt). **Schlaf** hat [Beseitigungskosten](#beseitigungskosten), die dem [Level](#level) der schlafenden Kreatur entsprechen.
-schnell:
-  title: 'Schnell'
-  trait: 'Objektmerkmal'
-  text: |
-    Diese Kreatur darf **2** [Bewegungsaktionen](#bewegungsaktion) ausführen, bevor sie eine [Schnelle Aktion](#schnelle_aktion) ausführt. Sie darf ein Maximum von **2** Bewegungsaktionen während ihrer Aktionsphase ausführen. Wenn eine schnelle Kreatur das Merkmal [Langsam](#langsam) erhält, heben sich die Merkmale auf. Siehe *Schnelle Kreaturen* auf Seite 14.
-schnelle_aktion:
-  title: 'Schnelle Aktion'
-  trait: ''
-  text: |
-    In ihrer Aktionsphase können [Kreaturen](#kreatur) eine [Bewegungsaktion](#bewegungsaktion) ausführen, gefolgt von einer **Schnellen Aktion**. Schnelle Aktionen umfassen [Wache halten](#wache_halten), einen [Schnellen Zauber](#schneller_zauber) anwenden, ein zweite Bewegungsaktion ausführen oder einen Angriff als Schnelle Aktion ausführen: Siehe *Schnelle Aktionen* auf Seite 11.
-schneller_zauber:
-  title: 'Schneller Zauber'
-  trait: ''
-  text: |
-    Ein **Schneller Zauber** benötigt eine [Schnelle Aktion](#schnelle_aktion), um angewendet zu werden. Er hat das Symbol für Schnelle Aktion (Blitz) in seiner Wirkungsleiste, direkt rechts von seinen Zauberkosten.
-schnellzauberaktion:
-  title: 'Schnellzauberaktion'
-  trait: ''
-  text: |
-    Jeder [Magier](#magier) kann pro Runde eine besondere zusätzliche Aktion ausführen, die **Schnellzauberaktion**. Sie erlaubt es ihm, einen [Schnellen Zauber](#schneller_zauber) anzuwenden, zusätzlich zu anderen Aktionen, die er in dieser Runde ausführen möchte. Die **Schnellzauberaktion** kann vor oder nach einer beliebigen, befreundeten Aktionsphase genutzt werden, oder in einer [Schnellzauberphase](#schnellzauberphase), und es wird ein Schnellzauberstein benutzt, um sie anzuzeigen. Siehe *Schnellzauberaktion* auf Seite 8.
-schnellzauberphase:
-  title: 'Schnellzauberphase'
-  trait: ''
-  text: |
-    Es gibt eine **Schnellzauberphase** zu Beginn und Ende jeder Aktionsstufe. Sie stellt eine Möglichkeit für jeden Spieler dar, seine [Schnellzauberaktion](#schnellzauberaktion) zum Anwenden eines [Schnellen Zaubers](#schneller_zauber) zu nutzen, in Reihenfolge der [Initiative](#initiative). Siehe *Schnellzauberphase* auf Seite 8.
-schwach:
-  title: 'Schwach'
-  trait: ''
-  text: |
-    Ein [Giftzustand](#gift), der eine [Kreatur](#kreatur) schwächt. Pro Plättchen **Schwach** verliert die Kreatur **1** Angriffswüfel bei allen Angriffen ohne Zauber, die sie ausführt. Das kann einen Angriff nie auf **0** Würfel reduzieren. Es hat keine Auswirkung auf [Schadensbarrieren](#schadensbarriere) oder [Angriffszauber](#angriff). Schwach hat [Beseitigungskosten](#beseitigungskosten) von **2**.
-schwerfaellig:
-  title: 'Schwerfällig'
-  trait: 'Objektmerkmal'
-  text: |
-    Diese Kreatur ist ungeschickt und/oder humpelt. Sie gilt in ihrer Bewegung immer als [eingeschränkt](#einschraenken) und kann daher nur bis zu **1** Bewegungsaktion während ihrer Aktionsphase ausführen, auch dann, wenn sie das Merkmal [Schnell](#schnell) erhält.
-schwindlig:
-  title: 'Schwindlig'
-  trait: 'Zustandsplättchen'
-  text: |
-    Die [Kreatur](#kreatur) ist orientierungslos und/oder geblendet. Immer, wenn sie einen Angriff ausführt, wird der [Effektwürfel](#effektwuerfel) geworfen. Normalerweise geschieht das am Ende des Schritts 1: *Angriff erklären*; wenn der Angriff diesen Schritt jedoch überspringen sollte, wirft man den Effektwürfel, sobald der Angriff beginnt. Wenn das Ergebnis **7** oder mehr ist, wird der Angriff normal ausgeführt. Wenn das Ergebnis **6** oder weniger ist, *verfehlt* der Angriff sein Ziel und gilt als vermieden (auch wenn er [unvermeidbar](#unvermeidbar) ist).
-    Wenn es sich um einen [Zonenangriff](#zonenangriff), [Rundschlag](#rundschlag) oder [mehrfachen Angriff](#mehrfachangriff) handelt, wird nur einmal geprüft: Der gesamte Angriff schlägt entweder fehl oder ist ganz normal erfolgreich.
-    Wenn eine Kreatur mehr als ein Plättchen **Schwindlig** hat, wird der Würfel trotzdem nur einmal geworfen. Zusätzlich erleidet eine schwindlige Kreatur jedoch einen Strafabzug von **2** auf alle [Verteidigungswürfe](#verteidigung) pro Plättchen **Schwindlig**, das auf ihr liegt. Alle Plättchen **Schwindlig** werden am Ende der Aktionsphase der Kreatur weggenommen.
-    Schwindlig hat [Beseitigungskosten](#beseitigungskosten) von **2**.
-    [Beschwörungen](#beschwoerung) können nie schwindlig werden.
-sichtlinie:
-  title: 'SL (Sichtlinie)'
-  trait: ''
-  text: |
-    Du kannst kein [Objekt](#objekt) und keine [Zone](#zone) zum Ziel haben, wenn die **Sichtlinie** dorthin blockiert ist. Einige [Wälle](#wall) besitzen das Merkmal [Blockiert SL](#blockiert_sl). Siehe *Wälle* auf Seite 17.
-stoss:
-  title: 'Stoß'
-  trait: ''
-  text: |
-    Der Effekt **Stoß** wird durch einige Zauber und [Angriffe](#angriff) ausgelöst, die das Ziel in eine benachbarte [Zone](#zone) bewegen. Wenn der Effekt nichts anderes besagt, muss sich die gestoßene [Kreatur](#kreatur) um **1** Zone weit in die entgegengesetzte Richtung der Ursache des Stoßes bewegen. Wenn es eine Richtungswahl geben sollte (wenn eine Kreatur diagonal gegenüber gestoßen wird oder die Ursache des Stoßes in derselben Zone ist), legt der **Verursacher** des Stoßes die Richtung fest.
-    Einige Zauber stoßen in eine Zufallsrichtung. Um die Richtung festzulegen, bestimmst du eine Seite des Spielplans als *Norden* und wirfst den [Effektwürfel](#effektwuerfel): 1 bis 3 stößt die Kreatur nach Norden, 4–6 = Osten, 7–9 = Süden, 10–12 = Westen.
-    Eine Kreatur kann durch einen [Wall](#wall) gestoßen werden, aber nur, wenn dieser Wall nicht das Merkmal [Durchgang blockiert](#durchgang_blockiert) besitzt. Die gestoßene Kreatur erleidet jegliche Angriffe des Walls, falls dieser das Merkmal [Angriff bei Durchgang](#angriff_bei_durchgang) besitzt. Wenn eine Kreatur in einen Wall mit dem Merkmal Durchgang blockiert gestoßen wird, wird sie durch diesen Wall angeschlagen und erleidet einen [unvermeidbaren](#unvermeidbar) Angriff mit **3** Angriffswürfeln. Beachte, dass die Wälle, welche die Arena umgeben, alle das Merkmal Durchgang blockiert besitzen. Beachte außerdem, dass [fliegende](#fliegen) Kreaturen Wälle ignorieren, außer denen, welche die Arena umgeben.
-    Einige Kreaturen und alle Beschwörungen besitzen das Merkmal [Unbeweglich](#unbeweglich). Sie können nicht gestoßen werden und ignorieren alle Stoßeffekte.
-teleportation:
-  title: 'Teleportation'
-  trait: ''
-  text: |
-    Ein Effekt, der ein Objekt direkt in eine andere [Zone](#zone) bewegt, und dabei [Wälle](#wall) und [Objekte](#objekt) ignoriert. Siehe *Teleportation* auf Seite 10.
-thorgs_verhoehnen:
-  title: 'Thorgs Verhöhnen'
-  trait: 'Zustandsplättchen'
-  text: |
-    Thorg, das Oberhaupt der Leibwache, kann seine Feinde [verhöhnen](#verhoehnen). Wenn sich die verhöhnte Kreatur in einer [Zone](#zone) befindet, die zu Thorg angrenzend ist, muss sie sich entweder in Thorgs Zone bewegen oder, falls möglich, einen [Fernkampfangriff](#fernangriff) ausführen, der Thorg zum Ziel hat. Wenn sie in Thorgs Zone ist oder sich in Thorgs Zone bewegt, muss sie nach Möglichkeit einen Angriff auf Thorg ausführen.
-    **Thorgs Verhöhnen** wirkt nicht bei [Magiern](#magier) oder Kreaturen, die [Immun gegen Übersinnlich](#immun_gegen_uebersinnlich) sind. Außerdem kann Thorg sich nicht selbst verhöhnen. Thorgs Verhöhnen zwingt eine Kreatur nicht, sich durch einen [Wall](#wall) mit dem Merkmal [Angriff bei Durchgang](#angriff_bei_durchgang) zu bewegen. Sollte die verhöhnte Kreatur gezwungen sein, eine dazu konkurrierende Aktion durch einen anderen Effekt auszuführen (etwa durch [Blutdurstig](#blutdurstig)), entscheidet der [Kontrollierende](#kontrollierender), welche dieser Aktionen er ausführt.
-    Man entfernt Thorgs Plättchen Verhöhnt am Ende der Aktionsphase der verhöhnten Kreatur, oder sobald Thorg aktiviert wird, je nachdem, was früher eintritt.
-trick:
-  title: 'Trick'
-  trait: 'Objektmerkmal'
-  text: |
-    Immer, wenn dieser Zauber [zerstört](#zerstoert) oder abgelegt wird, kommt er nicht auf den [Ablagestapel](#ablagestapel), sondern ins Zauberbuch seines Besitzers zurück.
-unbeweglich:
-  title: 'Unbeweglich'
-  trait: ''
-  text: |
-    Das Objekt kann nicht [gestoßen](#stoss) werden. Alle [Beschwörungen](#beschwoerung) besitzen das Merkmal **Unbeweglich**.
-unhaltbar:
-  title: 'Unhaltbar'
-  trait: ''
-  text: |
-    Diese Kreatur hat einen glatten und/oder amorphen Körper, was es schwierig macht, sie festzuhalten. Einige Zauber, Zustände und Effekte funktionieren gegen unhaltbare Kreaturen nicht. Alle [körperlosen](#koerperlos) Kreaturen haben das Merkmal **Unhaltbar**.
-unrein:
-  title: 'Unrein'
-  trait: 'Zustandsplättchen'
-  text: |
-    Dieser Fluch- oder Giftangriff verursacht eine unreine oder infizierte Wunde, die nicht heilen wird. Dies ist ein [Giftzustand](#gift). Das Plättchen **Unrein** zählt als **3** Schäden, die nicht [geheilt](#heilung) oder [regeneriert](#regenerieren) werden können. Das Plättchen hat [Beseitigungskosten](#beseitigungskosten) von **3** und kann nirmal durch Zauber oder Eigenschaften entfernt werden, die Zustände beseitigen, sogar wenn das unreine [Objekt](#objekt) das Merkmal [Begrenztes Leben](#begrenztes_leben) besitzt.
-    Wird ein Plättchen **Unrein** durch einen Angriff platziert, zählt der Schaden durch *Unrein* **nicht** als Schaden des Angriffs, da der Schaden durch den *Giftzustand* verursacht wird.
-unsichtbar:
-  title: 'Unsichtbar'
-  trait: ''
-  text: |
-    Dieses Objekt ist **unsichtbar** und kann nicht zum Ziel werden (es gibt keine [SL](#sichtlinie) zu diesem Objekt). Es kann jedoch von Angriffen, Zaubern oder Eigenschaften betroffen sein, die es nicht direkt zum Ziel haben, wie etwa [Zonenangriffe oder -zauber](#zonenangriff). Es kann ebenso von [Schadensbarrieren](#schadensbarriere) und [Gegenschlägen](#gegenschlag) angegriffen werden. So lange es das Merkmal **Unsichtbar** besitzt, erhält es auch die Merkmale Plage und Ausweichen. Auch Verzauberungen und Ausrüstungen, die an ein Objekt mit dem Merkmal **Unsichtbar** angefügt sind, erhalten das Merkmal **Unsichtbar** (angefügte Beschwörungen jedoch nicht).
-unvermeidbar:
-  title: 'Unvermeidbar'
-  trait: ''
-  text: |
-    [Verteidigungen](#verteidigung) können nicht eingesetzt werden, um den Angriff zu vermeiden. Siehe *Verteidigung* auf Seite 24.
-unverwuestlich:
-  title: 'Unverwüstlich'
-  trait: 'Objektmerkmal'
-  text: |
-    Dieses [Objekt](#objekt) ist unglaublich widerstandsfähig, was Schaden angeht. Es ignoriert sämtlichen *nicht kritischen* Schaden aus Angriffen. Direkter Schaden und *Angriffseffekte* gelten wie üblich.
-unzerstoerbar:
-  title: 'Unzerstörbar'
-  trait: ''
-  text: |
-    Dieses Objekt kann weder beschädigt noch durch Schaden [zerstört](#zerstoert) werden. Es kann allerdings durch andere Effekte oder Eigenschaften zerstört werden, die eine Zerstörung ohne das Zufügen von Schaden bewirken.
-ureigenes_leben_x:
-  title: 'Ureigenes Leben +X'
-  trait: 'Objektmerkmal'
-  text: |
-    Die Lebenskraft dieser [Kreatur](#kreatur) ist höher als normalerweise. Dies liegt üblicherweise an einer erhöhten Größe oder Masse. **Ureigenes Leben** umgeht das Merkmal [Begrenztes Leben](#begrenztes_leben).
-vampirisch:
-  title: 'Vampirisch'
-  trait: ''
-  text: |
-    Wenn dieser Angriff einer [lebenden](#lebend) Kreatur Schaden zufügt, [heilt](#heilung) sich der Angreifer (Schaden wegnehmen) um den **halben** verursachten Schaden (aufrunden). Wenn der Angriff mehr Schaden verursacht, als die Kreatur noch restliche Lebenspunkte besitzt, zählt der überzählige Schaden **nicht** für die Heilung. Die restlichen Lebenspunkte einer Kreatur bestehen aus ihrem Leben minus der bereits erlittenen Schadenspunkte.
-    Wenn der Angriff mehrere Angriffe gegen dasselbe oder mehrere Objekte ausführt, erhält er den Bonus lediglich für den ersten Angriff, den er ausführt.
-    Mehrere Merkmale **Vampirisch** werden nicht zusammengezählt oder kombiniert; wenn eine Kreatur das Merkmal mehrmals erwirbt, wird sie behandelt, als ob sie es nur einmal hätte.
-verdeckte_verzauberung:
-  title: 'Verdeckte Verzauberung'
-  trait: 'Spielbegriff'
-  text: |
-    Alle [Verzauberungen](#verzauberung) werden verdeckt angewendet und bleiben so für deinen Gegner unkenntlich. Alle Verzauberungen haben Zauberkosten von **2** Mana, wie über dem Symbol des geschlossenen Auges auf der Zauberkarte ablesbar. Wenn sie aufgedeckt werden (Vorderseite nach oben), bezahlt der sie [kontrollierende](#kontrollierender) Spieler ihre [Aufdeckkosten](#aufdeckkosten). Siehe *Verzauberungen* auf Seite 18.
-verdunkelt:
-  title: 'Verdunkelt'
-  trait: 'Objektmerkmal'
-  text: |
-    Dieses [Objekt](#objekt) ist schlecht zu sehen. Es kann nicht zum Ziel werden, wenn es mehr als **1** [Zone](#zone) entfernt ist (das gilt auch für alle Zwecke: [Fernangriffe](#fernangriff), Zauber, Eigenschaften usw.). Alle [Verzauberungen](#verzauberung) und [Ausrüstungen](#ausruestung), die dem Objekt angefügt sind, erhalten ebenfalls das Merkmal **Verdunkelt**, angefügte [Beschwörungen](#beschwoerung) jedoch nicht.
-verhoehnen:
-  title: 'Verhöhnen'
-  trait: ''
-  text: |
-    Das ist ein besonderer Zustand, der durch den Angriff bestimmter Kreaturen entstehen kann (im Basisspiel: *Sosruko, Frettchen-Vertrauter*). Lege das Plättchen **Verhöhnen** auf die Kreatur.
-    Die Verhöhnte Kreatur **muss** einen [Nahkampfangriff](#nahkampfangriff) gegen Sosruko in ihrer nächsten Aktionsphase ausführen, wenn sie kann, und wenn Sosruko in ihrer [Zone](#zone) ist. Sollte es nötig sein, wegen eines hierzu im Widerspruch stehenden Effekts einen Angriff auf ein anderes Ziel auszuführen (etwa durch das Merkmal [Blutdurstig](#blutdurstig)), entscheidet der [Kontrollierende](#kontrollierender), welches Ziel er angreift. Man entfernt das Plättchen **Verhöhnen** am Ende der Aktionsphase dieser Kreatur oder immer, wenn Sosruko aktiviert wird.
-    Greift sich die Kreatur selber an, darf sie sich nicht selbst verhöhnen; in diesem Fall wird das Plättchen Verhöhnen nicht auf die Kreatur gelegt.
-verhinderungseffekte:
-  title: 'Verhinderungseffekte'
-  trait: ''
-  text: |
-    Einige Zauber können ein Ereignis verhindern, falls bestimmte Kosten nicht bezahlt werden. Beispiele dafür sind *Rüstungsschutz* und *Wächterstein der Verzauberungen*. Diese Kosten müssen für jedes betroffene Objekt bezahlt werden, ansonsten wird der Effekt für das jeweilige Objekt aufgehoben. Man hat die Wahl, für welche Objekte man die Kosten bezahlt.
-verkrueppelt:
-  title: 'Verkrüppelt'
-  trait: 'Zustandsplättchen'
-  text: |
-    Dies ist ein [Giftzustand](#gift). Die Kreatur ist [gezügelt](#gezuegelt). Am Ende jeder ihrer Aktionsphasen können verkrüppelte Kreaturen einen [Rettungswurf](#rettungswurf) versuchen: bei einem Wurf von **7** oder höher wird **Verkrüppelt** entfernt. **Verkrüppelt** hat [Beseitigungskosten](#beseitigungskosten) von **4**. Es hat keine Auswirkungen auf [Beschwörungen](#beschwoerung).
-verrostend:
-  title: 'Verrostend'
-  trait: 'Zustandsplättchen'
-  text: |
-    **Verrostend** ist ein *Säurezustand*, der [Rüstung](#ruestung) wegfrisst. Für jedes Zustandsplättchen **Verrostend** auf einer [Kreatur](#kreatur) oder [Beschwörung](#beschwoerung) erhält sie Rüstung **-1**. Objekte können nie so viele Plättchen **Verrostend** auf sich haben, dass ihre Rüstung unter **0** fallen würde (etwaige zusätzliche Plättchen werden sofort zerstört). Wenn ein Objekt so viele Zustandsplättchen **Verrostend** erhalten würde, dass seine Rüstung auf unter **0** fällt, erhält es stattdessen nur so viele Plättchen **Verrostend**, dass seine Rüstung **0** beträgt und erleidet je **1** Punkt **direkten** Säureschaden pro überzähligen Plättchen. **Verrostend** hat keine Wirkung auf [körperlose](#koerperlos) Kreaturen und [Beseitigungskosten](#beseitigungskosten) von **2**.
-    *Beispiel: Eine Druidin hat 2 Plättchen* Verrostend *auf sich und eine Bärenfellrüstung. Ihr aktueller Rüstungswert beträgt 0. Erhielte sie einen weiteren Zustand* Verrostend*, würde sie stattdessen 1 direkten Säureschaden erleiden. Sie entscheidet sich, Windwurmhaut anzuwenden, die an denselben Ort wie die Bärenfellrüstung kommt und letztere damit ersetzt. Dadurch, dass die Bärenfellrüstung entfernt wird, hat die Druidin 0 Rüstung, weswegen beide Plättchen* Verrostend *sofort zerstört werden. Danach kommt die Windwurmhaut ins Spiel und die Druidin hat jetzt eine Rüstung von 2.*
-verschlingen:
-  title: 'Verschlingen'
-  trait: 'Angriffsmerkmal'
-  text: |
-    Diese Kreatur frisst andere Kreaturen! Wenn ein Angriff mit **Verschlingen** eine [körperliche](#koerperlich) Kreatur zerstören würde, wird die Kreatur stattdessen [ausgelöscht](#ausloeschen).
-verteidiger:
-  title: 'Verteidiger'
-  trait: 'Spielbegriff'
-  text: |
-    Eine [Kreatur](#kreatur) oder [Beschwörung](#beschwoerung), die angegriffen wird. Sie ist nicht notwendigerweise das Ziel dieses Angriffs (siehe [Zonenangriff](#zonenangriff) im Kodex).
-verteidigung:
-  title: 'Verteidigung'
-  trait: 'Objektattribut'
-  text: |
-    Einige Objekte besitzen das Attribut **Verteidigung**, welches die Fähigkeit zur Vermeidung eines Angriffs darstellt. Die Zahl auf der Verteidigung gibt an, was man mit dem [Effektwürfel](#effektwuerfel) erzielen muss, um den Angriff erfolgreich zu vermeiden. Siehe *Verteidigung* auf Seite 24.
-vertrauter:
-  title: 'Vertrauter'
-  trait: 'Objektmerkmal'
-  text: |
-    Dieses [Objekt](#objekt) kann Zauber anwenden. Siehe *Vertraute* auf Seite 16.
-verwurzelt:
-  title: 'Verwurzelt'
-  trait: 'Objektmerkmal'
-  text: |
-    Diese Kreatur ist fest im Boden verwachsen. Sie kann keine [Bewegungsaktionen](#bewegungsaktion) ausführen und hat das Merkmal [Unbeweglich](#unbeweglich). Sie ist nicht [gezügelt](#gezuegelt), also kann sie normal [Wache halten](#wache_halten), Gegner in der Bewegung [einschränken](#einschraenken) und [abfangen](#abfangen). Eine verwurzelte Kreatur verliert das Merkmal [Fliegen](#fliegen) und kann es nicht erhalten.
-verzauberung:
-  title: 'Verzauberung (Zauber)'
-  trait: ''
-  text: |
-    **Verzauberungen** unterscheiden sich von allen anderen Arten von Zaubern, weil sie verdeckt gespielt werden. Dein Gegner weiß erst, was deine **Verzauberung** macht, wenn du sie aufdeckst (siehe [verdeckte Verzauberung](#verdeckte_verzauberung) im Kodex). **Verzauberungen** erzeugen ein Objekt in der Arena, das im Spiel bleibt, bis es zerstört wird. Da **Verzauberungen** keine Lebenskraft besitzen, können sie nicht angegriffen werden und keinen Schaden erleiden. **Verzauberungen** werden immer ihrem Ziel angefügt. Verzauberungen haben keinerlei Auswirkung, so lange sie verdeckt liegen! Du kannst deine Verzauberung **jederzeit** aufdecken, außer Verzauberungen mit roten Aufdeckkosten, die du zu einem bestimmten Zeitpunkt aufdecken musst. (siehe [Aufdeckkosten](#aufdeckkosten) im Kodex).
-vollstaendige_aktion:
-  title: 'Vollständige Aktion'
-  trait: 'Spielbegriff'
-  text: |
-    Wenn eine Kreatur in ihrer Aktionsphase keine [Bewegungsaktion](#bewegungsaktion) ausführt, darf sie eine **Vollständige Aktion** ausführen. Vollständige Aktionen umfassen [Vollständige Zauber](#vollstaendiger_zauber) oder das Ausführen Vollständiger Angriffe (die auf der Kreaturenkarte mit dem Symbol für **Vollständige Aktion** gekennzeichnet sind, einer Sanduhr). Siehe *Vollständige Aktionen* auf Seite 11.
-vollstaendiger_zauber:
-  title: 'Vollständiger Zauber'
-  trait: 'Spielbegriff'
-  text: |
-    Ein Vollständiger Zauber benötigt eine [Vollständige Aktion](#vollstaendige_aktion), um ihn anzuwenden. Er hat das Symbol für Vollständige Aktion (Sanduhr) in seiner Wirkungsleiste, direkt rechts von seinen Zauberkosten.
-vom_magier_angewendet:
-  title: 'Vom Magier angewendet'
-  trait: ''
-  text: |
-    Dieser Zauber kann nur durch einen [Magier](#magier) angewendet werden. Andere [Objekte](#objekt), die Zauber anwenden können, dürfen ihn nicht anwenden.
-wache_halten:
-  title: 'Wache halten'
-  trait: 'Spielbegriff'
-  text: |
-    Als [Schnelle Aktion](#schnelle_aktion) kann eine Kreatur wählen, **Wache zu halten**, um ihre [Zone](#zone) zu schützen und um das Merkmal [Gegenschlag](#gegenschlag) zu erhalten. Siehe *Wache halten* auf Seite 29.
-wachsam:
-  title: 'Wachsam'
-  trait: 'Objektmerkmal'
-  text: |
-    Diese Kreatur [bewacht](#wache_halten), schützt und behütet befreundete Objekte dauerhaft. Am Ende ihrer Aktionsphase darfst du das Plättchen [Wache](#wache_halten) auf diese Kreatur legen, wenn es noch keines haben sollte.
-wall:
-  title: 'Wall'
-  trait: ''
-  text: |
-    **Wälle** sind eine Unterart eines [Beschwörungszaubers](#beschwoerung). Sie sind querformatig gedruckt. Anders als andere Beschwörungen werden sie immer auf einen [Zonenrand](#zonenrand) gelegt (die Grenze zwischen zwei Zonen). Wallkarten können ein oder mehrere besondere Merkmale besitzen. Siehe *Wälle* auf Seite 17.
-wasser:
-  title: 'Wasser'
-  trait: ''
-  text: |
-    Eine [Schadensart](#schadensart), siehe *Schadensarten* auf Seite 26. Das Merkmal **Wasser +X** modifiziert diesen Schaden, siehe unter [Schadensart](#schadensart) im Kodex.
-wind:
-  title: 'Wind'
-  trait: ''
-  text: |
-    Eine [Schadensart](#schadensart), siehe *Schadensarten* auf Seite 26. Das Merkmal **Wind +/-X** modifiziert diesen Schaden, siehe unter [Schadensart](#schadensart) im Kodex.
-wuchs:
-  title: 'Wuchs'
-  trait: 'Zustandsplättchen'
-  text: |
-    Eine Kreatur mit dem Zustandsplättchen **Wuchs** hat an Größe zugenommen. Jedes Plättchen **Wuchs** lifert [Nahkampf +1](#nahkampf_x) und [Ureigenes Leben +3](#ureigenes_leben_x). Dieses Plättchen hat **keine** [Beseitigungskosten](#beseitigungskosten) und kann nicht durch Zauber oder Effekte entfernt werden, die Zustandsplättchen entfernen.
-wut:
-  title: 'Wut +X'
-  trait: ''
-  text: |
-    Wird diese [Kreatur](#kreatur) verwundet, reagiert sie extrem wild und aggressiv. Jedesmal, wenn sie von einer [gegnerischen](#gegner) Kreatur angegriffen wird und Schaden erleidet, legst du einen **Wutmarker** auf sie. Sie kann nie mehr als **X Wutmarker** besitzen. Sie erhält das Merkmal [Nahkampf +1](#nahkampf_x) pro Marker, der auf ihr liegt. Immer, wenn sie [geheilt](#heilung) wird oder sich [regeneriert](#regenerieren), nimmt man **1 Wutmarker** weg. Sobald sie keinen Schaden hat, entfernst du alle Plättchen **Wut**.
-zaeh:
-  title: 'Zäh -X'
-  trait: ''
-  text: |
-    Diese Kreatur ist hart und widersteht den Effekten von Angriffen. Immer, wenn der [Effektwürfel](#effektwuerfel) zum Ermitteln zusätzlicher Effekte eines Angriffs geworfen wird, modifiziert man den Wurf um **X**.
-zauberbindung:
-  title: 'Zauberbindung'
-  trait: ''
-  text: |
-    Wenn ein Zauber mit dem Merkmal **Zauberbindung** angewendet oder ein gebundener Zauber ersetzt wird, nimmst du den gebundenen Zauber aus dem Zauberbuch deines Magiers und nicht einen der in der Planungsphase ausgewählten Zauber.
-    Wenn ein Magier eine [Ausrüstung](#ausruestung) mit **Zauberbindung** auf einen anderen Magier anwendet, sucht sich der andere Magier aus seinem Zauberbuch den gebundenen Zauber aus.
-    Wenn ein gebundener Zauber gekontert wird, ist nur der Effekt gekontert, der Zauber selber bleibt gebunden (er wird weder zerstört noch abgeworfen). Das gilt auch, wenn der Zauber scheitert oder unwirksam wird (z. B. durch *Verhexen*), oder wenn sich das Ziel ändert oder sich bewegt.
-    Wenn du einen Gegenstand mit einem gebundenen Zauber stiehlst (z. B. durch *Verzauberung entwenden*), stiehlst du auch den gebundenen Zauber. Wenn dieser Zauber noch verdeckt ausliegt, darfst du ihn nun anschauen. Als Kontrollierender darf dein Magier diesen Zauber anwenden, solange es nicht aufgrund einer feindlichen Schule verboten ist. Wenn der gebundene Zauber ausgetauscht wird, kommt er in das Zauberbuch des Besitzers zurück. Siehe *Zauberbindung* auf Seite 21.
-zauberquelle:
-  title: 'Zauberquelle'
-  trait: ''
-  text: |
-    Diese [Beschwörung](#beschwoerung) kann in der Aufstellungsphase Zauber anwenden. Siehe *Zauberquellen* auf Seite 16.
-zerstoert:
-  title: 'Zerstört'
-  trait: 'Spielbegriff'
-  text: |
-    Ein zerstörtes [Objekt](#objekt) kommt aus dem Spiel und auf den [Ablagestapel](#ablagestapel) seines [Besitzers](#besitzer). [Kreaturen](#kreatur) und [Beschwörungen](#beschwoerung) sind zerstört, sobald der Schaden auf ihnen ihre [Lebenskraft](#leben) erreicht hat oder darüber liegt. Objekte können außerdem zerstört werden, wenn ein besonderer Zauber oder Effekt sie zerstört.
-zombie:
-  title: 'Zombie'
-  trait: 'Zustandsplättchen'
-  text: |
-    Diese Kreatur wurde vom Tode wiedererweckt. Sie erhält die Unterarten *Untot* und *Zombie*. Sie erhält die Merkmale [Immun gegen Übersinnlich](#immun_gegen_uebersinnlich), [Langsam](#langsam), [Nicht lebend](#nicht_lebend) und [Blutdurstig +0](#blutdurstig). Das *Zombieplättchen* besitzt **keine** [Beseitigungskosten](#beseitigungskosten) und kann durch Zauber und Effekte, die Zustandsplättchen entfernen, nicht beseitigt werden. Falls diese Kreatur [zerstört](#zerstoert) wird, wird sie [ausgelöscht](#ausloeschen). Falls eine Kreatur bereits das Merkmal [Langsam](#langsam) besitzt, während sie dieses Plättchen erhält, erhält sie außerdem ein Zustandsplättchen [Betäubt](#betaeubt).
-zone:
-  title: 'Zone'
-  trait: ''
-  text: |
-    Eine **Zone** ist eine viereckige Region in der Arena, die zur Bewegung, zur Platzierung von Objekten und zur Ermittlung der Reichweite dient.
-zonenangriff:
-  title: 'Zonenangriff oder Zonenzauber'
-  trait: ''
-  text: |
-    Dieser Angriff oder Zauber wirkt sich auf alle [Kreaturen](#kreatur) und [Beschwörungen](#beschwoerung) in der Zielzone aus, ohne sie tatsächlich einzeln zum Ziel zu haben. Er hat keinen Einfluss auf [Wälle](#wall) am [Zonenrand](#zonenrand). **Zonenangriffe** haben das Merkmal [Unvermeidbar](#unvermeidbar) und führen einen separaten Angriff gegen jedes Objekt der [Zone](#zone) aus. Siehe *Zonenangriffe* auf Seite 23.
-zoneneinmalig:
-  title: 'Zoneneinmalig'
-  trait: ''
-  text: |
-    Es kann nie mehr als **1** zoneneinmalige [Beschwörung](#beschwoerung) in jeder [Zone](#zone) liegen. Siehe *Zoneneinmalig* auf Seite 17.
-zonenrand:
-  title: 'Zonenrand'
-  trait: ''
-  text: |
-    Die Trennlinie zwischen zwei benachbarten [Zonen](#zone). [Wälle](#wall) werden immer auf einen **Zonenrand** gelegt.
-zustand:
-  title: 'Zustand'
-  trait: 'Spielbegriff'
-  text: |
-    [Objekte](#objekt) können unterschiedliche **Zustände** annehmen, die mit Plättchen angezeigt werden, die auf das Objekt gelegt werden. Alle **Zustände** können sich ansammeln, ihre Auswirkungen steigern sich entsprechend.
-    Siehe *Effekte und Zustände* auf Seite 25.
+traits:
+  attack_attribute: &attack_attribute 'Angriffsattribut'
+  attack_trait: &attack_trait 'Angriffsmerkmal'
+  condition_marker: &condition_marker 'Zustandsplättchen'
+  damage_type: &damage_type 'Schadensart'
+  effect: &effect 'Effekt'
+  game_marker: &game_marker 'Spieleplättchen'
+  game_term: &game_term 'Spielbegriff'
+  object_attribute: &object_attribute 'Objektattribut'
+  object_or_attack_trait: &object_or_attack_trait 'Angriffs- oder Objektmerkmal'
+  object_trait: &object_trait 'Objektmerkmal'
+  spell_attribute: &spell_attribute 'Zauberattribut'
+  spell_trait: &spell_trait 'Zaubermerkmal'
+  spell_type: &spell_type 'Zauberart'
+
+terms:
+  cancel:
+    title: 'Abgebrochen, aufgehoben'
+    trait: *game_term
+    text: |
+      Wenn ein Zauber, Angriff oder Effekt **abgebrochen** bzw. **aufgehoben** wird, stoppt er und hat keine weitere Auswirkung.
+  discard_pile:
+    title: 'Ablagestapel'
+    trait: *game_term
+    text: |
+      Jeder Spieler hat seinen eigenen Ablagestapel, auf dem er zerstörte [Objekte](#object) oder Zauber ablegt, nachdem er diese angewendet hat.
+      Siehe *Zauber ablegen* auf Seite 13.
+  activate:
+    title: 'Aktivieren'
+    trait: *game_term
+    text: |
+      Wenn du mit einer Kreatur eine Aktionsphase ausführst, aktivierst du sie. Drehe ihren Aktionsstein um und entferne ihr Plättchen [Wache](#guarding), falls sie eins besitzt.
+  bashed:
+    title: 'Angeschlagen'
+    trait: *game_term
+    text: |
+      Wenn eine Kreatur durch einen [Stoß](#push) in einen [Wall](#wall) gedrückt wird, der das Merkmal [Durchgang blockiert](#passage_blocked) hat, erhält sie das Merkmal **Angeschlagen**. Sie erleidet einen unvermeidbaren Angriff mit 3 Angriffswürfeln Schaden. Die Wände, die die Arena umgeben, besitzen alle das Merkmal [Durchgang blockiert](#passage_blocked).
+  attack_action:
+    title: 'Angriff (Zauber)'
+    trait: *game_term
+    text: |
+      Angriffszauber erlauben es dem Anwender, ein Ziel in der Arena anzugreifen. Angriffszauber besitzen eine **Angriffsleiste**, in der sich alle Informationen zum Ausführen des Angriffs befinden, darunter die Anzahl der Anrgiffswürfel, Auflistung zusätzlicher Effekte, Merkmale usw. Angriffszauber sind immer Fernangriffe. Siehe *Angriffe* auf Seite 22.
+  passage_attacks:
+    title: 'Angriff bei Durchgang'
+    trait: *object_trait
+    text: |
+      Alle Kreaturen, die sich durch einen solchen [Wall](#wall) bewegen, werden automatisch von diesem Wall angegriffen. Der Angriff findet statt, bevor die Kreatur sich bewegt. Siehe *Wälle* auf Seite 17.
+  charge_x:
+    title: 'Ansturm +X'
+    trait: *object_or_attack_trait
+    text: |
+      Die Kreatur erhält +X Angriffswürfel für ihren unmittelbar nächsten [Nahkampfangriff](#melee_attack), wenn sie diesen Angriff sofort nach einer Bewegungsaktion ausführt, in der sie sich um mindestens **1** [Zone](#zone) bewegt hat.
+  anwender:
+    title: 'Anwender'
+    trait: ''
+    text: |
+      Die Karte, von der aus eine Zauberkarte ausgespielt wird, ist der *Anwender* des Zaubers. Meistens handelt es sich dabei um deinen [Magier](#mage) – Zauber können aber auch von Vertrauten oder Zauberquellen angewendet werden. Man beachte den Unterschied zwischen *Anwenden* und *Ausführen* eines Zaubers (siehe *Zauber anwenden* auf Seite 13).
+  aufdeckkosten:
+    title: 'Aufdeckkosten'
+    trait: ''
+    text: |
+      Wenn man eine verdeckte Verzauberung aufdeckt, dreht man ihre Karte auf die Vorderseite. Der Kontrollierende bezahlt die Aufdeckkosten in Mana, falls gefordert (sie stehen über dem Symbol „*offenes Auge*“ der Karte), ansonsten wird die Verzauberung zerstört. Siehe *Verzauberungen aufdecken* auf Seite 18.
+  extendable:
+    title: 'Ausdehnung'
+    trait: *object_trait
+    text: |
+      Wenn du einen solchen [Wall](#wall) beschwörst, kannst du zusätzliche Kosten in Höhe der Manakosten und des Levels des Walls zahlen, wenn du den Zauber anwendest. Wenn du das tust, darfst du dir beim Ausführen des Zaubers einen zusätzlichen Wall des gleichen Namens aus deinem Zauberbuch nehmen und auf irgendeinen [Zonenrand](#zonenrand) legen, der mit dem Zonenrand des ersten Walls verbunden ist. Der zweite Wall muss in SL gelegt werden, darf aber außerhalb der Reichweite des Zaubers liegen. Siehe *Wälle* auf Seite 17.
+  obliterate:
+    title: 'Auslöschen'
+    trait: *effect
+    text: |
+      Wenn du ein [Objekt](#object) **auslöscht**, ist es endgültig und spurlos zerstört. Das Objekt wird zerstört und dann aus dem Spiel genommen. Es wird weder auf den [Ablagestapel](#discard_pile) gelegt, noch in ein Zauberbuch zurückgelegt. Alle Eigenschaften und Effekte, die auf diesem Objekt beschrieben oder daran *angefügt* sind (wie [Plättchen](#plaettchen) oder [Verzauberungen](#verzauberung), und bei der Zerstörung ausgelöst wurden, sind [aufgehoben](#cancel). Andere Zerstörungseffekte, die nicht Teil des augelöschten Objekts oder daran angefügt sind, können trotzdme geschehen.
+      *Beispiel: Wenn du ein Goblin-Grenadier auslöscht, wird er nicht explodieren. Wenn du eine Kreatur mit dem Plättchen* Ichthelliden-Larve *auslöscht, wird die Larve nicht ausschlüpfen. Wenn du eine Kreatur eines Gegners auslöscht, wird dessen Valshalla trotzdem einene* Zornmarker *erhalten.*
+  ausruestung:
+    title: 'Ausrüstung (Zauber)'
+    trait: ''
+    text: |
+      Ausrüstungszauber verleihen deinem [Magier](#mage) neue oder stärkere Eigenschaften. Solche Zauber können nur auf einen Magier angewendet werden. Wenn du einen Ausrüstungszauber anwendest, wird er deinem Magier angefügt. Er wird sich mit ihm bewegen und gilt als Teil von ihm, bis er zerstört wird. Jeder Ausrüstungszauber zeigt einen *Ort* am Körper deines Magiers. Dein Magier darf nur **1** Ausrüstungszauber pro Ort besitzen, außer bei Ringen, von denen er 2 haben darf. Außerdem darf der Magier nicht mehrere Ausrüstung mit demselben Namen tragen.
+  elusive:
+    title: 'Ausweichend'
+    trait: *object_trait
+    text: |
+      Eine solche Kreatur ist [schnell](#fast) und gerissen. Sie ignoriert gegnerische Kreaturen. Gegnerische Kreaturen können ihre Bewegung nicht einschränken. Sie ist nicht gezwungen, gegnerische [Wachen](#guarding) anzugreifen, wenn sie einen [Nahkampfangriff](#melee_attack) ausführt.
+  ethereal:
+    title: 'Ätherisch'
+    trait: *attack_trait
+    text: |
+      Dieser Angriff ist magisch verstärkt. Er fügt [körperlosen](#incorporeal) [Objekten](#object) vollen Schaden zu (alle Zahlen auf den Würfeln zählen, nicht nur die 1er). Körperlose Objekte können durch solche Angriffe Effekte und Zustände erleiden.
+  friendly:
+    title: 'Befreundet'
+    trait: *game_term
+    text: |
+      Ein befreundetes [Objekt](#object) ist eins, das derzeit vom Spieler selbst kontrolliert wird, oder (im Mehrpersonenspiel) von einem Spieler seines Teams.
+  finite_life:
+    title: 'Begrenztes Leben'
+    trait: *object_trait
+    text: |
+      Diese Kreatur kann nicht geheilt werden, nicht regenerieren und kein Leben dazu erhalten. Wenn die Kreatur Leben dazu erhalten hatte, bevor sie dieses Merkmal erhält, behält sie diese Lebenspunkte, kann aber kein weiteres Leben dazu erhalten. Alle [nicht lebenden](#nonliving) [Objekte](#object) besitzen das Merkmal [Begrenztes Leben](#finite_life).
+  conjuration:
+    title: 'Beschwörung (Zauber)'
+    trait: *spell_type
+    text: |
+      Ein Beschwörungszauber ruft ein [Objekt](#object) in der Arena hervor, das im Spiel bleibt, bis es zerstört wird. Beschwörungen besitzen genau wie Kreaturen Lebenskraft, können angegriffen werden, Schaden erleiden und zerstört werden. Im Gegensatz zu Kreaturen können Beschwörungen aber keine Aktionen ausführen und erhalten daher auch keinen Aktionsstein.
+      Wenn die Karte nichts anderes besagt, haben alle Beschwörungen folgende Merkmale: [Nicht Lebend](#nonliving), [Immun gegen Übersinnlich](#psychic_immunity) und [Unbeweglich](#unbeweglich). Einige Beschwörungen besitzen dass Merkmal [Lebend](#living), welches das sonst bei Beschwörungen übliche Merkmal [Nicht Lebend](#nonliving) ersetzt. Die meisten Beschwörungen haben eine [Zone](#zone) zum Ziel, und werden dieser Zone angefügt. Einige wenige Beschwörungen haben Objekte zum Ziel. Solche Zauber werden an das Zielobjekt angefügt und bewegen sich mit ihm. Wird das Zielobjekt zerstört oder [teleportiert](#teleportation) weg, wird die Beschwörung weggenommen und zerstört.
+      Fast alle Beschwörungen haben spezielle Effekte, so lange sie im Spiel sind.
+  beseitigungskosten:
+    title: 'Beseitigungskosten'
+    trait: ''
+    text: |
+      Die meisten Zustände haben Beseitigungskosten, die auf dem Plättchen als kleine schwarze Zahl in einem grauen Punkt gedruckt sind. Bestimmte Zauber oder Eigenschaften können dem Spieler erlauben, durch Bezahlung dieser Kosten den Zustand zu entfernen. Siehe *Beseitigungskosten* auf Seite 27.
+  owner:
+    title: 'Besitzer'
+    trait: *game_term
+    text: |
+      Der Besitzer eines Zaubers ist der Spieler, der diesen Zauber zu Beginn des Spiels in seinem Zauberbuch hatte.
+  betaeubt:
+    title: 'Betäubt'
+    trait: *condition_marker
+    text: |
+      Die Kreatur ist [handlungsunfähig](#incapacitated). Alle Plättchen Betäubt werden am Ende der Aktionsphase dieser Kreatur von ihr entfernt. Erleidet die Kreatur ein Plättchen „Betäubt“ durch eine [Schadensbarriere](#damage_barrier) oder einen [Gegenschlag](#counterstrike), gilt der Effekt erst in der nächsten Aktionsphase. Betäubt hat [Beseitigungskosten](#beseitigungskosten) von 4. Es hat keine Auswirkungen auf Beschwörungen.
+  move_action:
+    title: 'Bewegungsaktion'
+    trait: *game_term
+    text: |
+      Während ihrer Aktionsphase kann eine Kreatur eine Bewegungsaktion ausführen, die ihr erlaubt, sich von einer [Zone](#zone) in eine benachbarte Zone zu bewegen. Danach kann sie eine [Schnelle Aktion](#quick_action) ausführen. Siehe *Bewegung* auf Seite 9.
+  blitz:
+    title: 'Blitz +/-X'
+    trait: ''
+    text: |
+      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal Blitz +/-X modifiziert diesen Schaden, siehe unter *Schadensart* im Kodex.
+  blocks_los:
+    title: 'Blockiert SL'
+    trait: *object_trait
+    text: |
+      Dieser [Wall](#wall) blockiert die [Sichtlinie](#line_of_sight) (kurz: SL). Du kannst kein [Objekt](#object) oder eine [Zone](#zone) als Ziel wählen, wenn die Sichtlinie dorthin blockiert ist. Siehe *Sichtlinie* auf Seite 17.
+  bloodthirsty:
+    title: 'Blutdurstig +X'
+    trait: *object_trait
+    text: |
+      Diese Kreatur ist ein wildes Raubtier mit einem Verlangen nach Blut. Sie erhält +X Angriffswürfel, wenn sie einen [Nahkampfangriff](#melee_attack) gegen eine [lebende](#living) Kreatur ausführt, die 1 oder mehr Schaden erlitten hat. Wenn der Angriff [mehrere Schläge](#multiple_attacks) gegen dasselbe oder mehrere [Objekte](#object) ausführt, erhält er den Bonus lediglich für den ersten Angriff, bei dem dieser Bonus anwendbar ist. Sollte sich während der Aktionsphase der blutdurstigen Kreatur in ihrer [Zone](#zone) eine [lebende](#living) Gegnerkreatur mit **Schaden** befinden, **muss** sie diese im Nahkampf angreifen (wenn möglich). Gibt es mehr als eine zur Auswahl, oder wurde sie gleichzeitig [verhöhnt](#verhoehnen), kann sie sich die anzugreifende Kreatur aussuchen.
+  bleed:
+    title: 'Blutend'
+    trait: *condition_marker
+    text: |
+      Diese Kreatur hat eine tiefe, blutende Wunde erlitten. **Blutend** betritt nur [lebende Kreaturen](#living) (keine *Pflanzen*). Lege in der Erhaltungsphase **1** direkten Schaden auf diese Kreatur. Immer wenn diese Kreatur [geheilt](#heal) wird oder sich [regeneriert](#regenerieren), darfst du **1** Plättchen **Blutend** entfernen pro **1** Schaden, den du dafür weniger entfernst. [Begrenztes Leben](#finite_life) verhindert Heilung und Regeneration. Daher können in diesem Fall Plättchen **Blutend** nicht durch Heilung entfernt werden. Effekte, die [Zustandsplättchen](#condition) entfernen können, können Plättchen **Blutend** trotzdem entfernen. **Blutend** hat [Beseitigungsosten](#beseitigungskosten) von **2**.
+  direct_damage:
+    title: 'Direkter Schaden'
+    trait: *game_term
+    text: |
+      Ein Schaden, den die Kreatur sofort erleidet. Der Schaden ist [kritisch](#critical_damage) (geht an [Rüstung](#armor) vorbei). Er gilt nicht als Angriff und die Kreatur kann keine [Verteidigung](#defense) benutzen, um den Schaden zu vermeiden. Siehe *direkter Schaden* auf Seite 26.
+  doublestrike:
+    title: 'Doppelschlag'
+    trait: *attack_trait
+    text: |
+      Dieser Angriff führt einen zweiten Angriff gegen dasselbe Ziel als Teil derselben Angriffsaktion aus. Der zusätzliche Angriff erfolgt im Schritt 5: *Zusatzschläge*.
+  dreifacher_schlag:
+    title: 'Dreifacher Schlag'
+    trait: ''
+    text: |
+      Dieser Angriff führt zwei zusätzliche Angriffe gegen dasselbe Ziel als Teil derselben Angriffsaktion aus. Die zusätzlichen Angriffe erfolgen im Schritt 5: *Zusatzschläge*.
+  piercing_x:
+    title: 'Durchdringen +X'
+    trait: *attack_trait
+    text: |
+      Dieser Angriff zieht X von der [Rüstung](#armor) des Ziels ab, wenn man den Schaden ermittelt. Er kann die Rüstung des Ziels nicht unter 0 senken.
+  passage_blocked:
+    title: 'Durchgang blockiert'
+    trait: *object_trait
+    text: |
+      Kreaturen dürfen sich nicht durch diesen [Wall](#wall) bewegen. Wenn eine Kreatur in einen solchen Wall [gestoßen](#push) wird, ist sie [angeschlagen](#bashed). Die Wände, die die Arena umgeben, besitzen alle das Merkmal **Durchgang blockiert**, und wirken sich auch auf fliegende Kreaturen aus. Siehe *Wälle* auf Seite 17.
+  effect_die:
+    title: 'Effektwürfel'
+    trait: *game_term
+    text: |
+      Der 12-seitige Würfel (auch: **W12**) wird Effektwürfel genannt; er wird für das Ermitteln zusätzlicher Effekte bei Angriffen benutzt, für [Rettungswürfe](#escape_roll) und bestimmte andere Würfelwürfe.
+  autonomous:
+    title: 'Eigenständig'
+    trait: *object_trait
+    text: |
+      Diese [Ausrüsung](#ausruestung) wird einer Kreatur angefügt und funktioniert unabhängig von der Kreatur. Sie benötigt keinen Ausrüsungsort. Merkmale, Eigenschaften oder Zustände der Kreatur, der sie angefügt sind, beeinflussen die Ausrüsung nicht und können sie auch nicht verändern. Sie kann jedoch durch andere Ursachen und [Objekte](#object) beeinflusst werden. Wenn die Ausrüsung einen [Angriff](#attack_action) erlaubt, kann dieser einmal pro Runde als freie Aktion am Ende der Aktionsphase der Kreatur genutzt werden. Wenn der Angriff ein [Nahkampfangriff](#melee_attack) ist, gelten für ihn die normalen Regeln wie beim [Wache halten](#guarding); er löst jedoch weder einen [Gegenschlag](#counterstrike) noch eine Schadensbarriere aus, und er entfernt auch kein Plättchen Wache von seinem Ziel.
+  hinder:
+    title: 'Einschränken'
+    trait: *game_term
+    text: |
+      Eine Kreatur, die ihre Aktionsphase in einer [Zone](#zone) mit irgendeiner gegnerischen Kreatur beginnt, wird in ihrer [Bewegung](#move_action) eingeschränkt und darf sich in ihrer Aktionsphase nur um **1** Zone bewegen (sogar, wenn sie das Merkmal [Schnell](#fast) besitzt). Sollte sie sich in eine Zone bewegen, die von einer gegnerischen Kreatur besetzt ist, wird sie eingeschränkt, muss anhalten, und kann in dieser Aktionsphase keine weiteren Bewegungsaktionen mehr ausführen. Kreaturen mit den Merkmalen [Handlungsunfähig](#incapacitated), [Gezügelt](#gezuegelt) oder [Plage](#pest) schränken die Bewegung nicht ein. Fliegende Kreaturen können die Bewegung nicht fliegender Kreaturen nicht einschränken und umgekehrt. Ausweichende Kreaturen können in ihrer Bewegung nicht durch andere Kreaturen eingeschränkt werden.
+  einzigartig:
+    title: 'Einzigartig'
+    trait: ''
+    text: |
+      Jeder Spieler darf höchstens 1 Exemplar dieses [Objekts](#object) gleichzeitig im Spiel haben. Ähnlich wie [legendär](#legendary), allerdings darf jeder Spieler sein eigenes Exemplar im Spiel haben.
+  defrost:
+    title: 'Entfrosten'
+    trait: *attack_trait
+    text: |
+      Dies ist ein Merkmal von [Flammenangriffen](#flammen). Es wird in späteren Erweiterungen eine Bedeutung bekommen, wenn [Frostschaden](#frost) ins Spiel kommt.
+  entwurzeln_x:
+    title: 'Entwurzeln X'
+    trait: *object_trait
+    text: |
+      Diese Kreatur kann ihre Wurzeln aus den Boden ziehen und sich frei bewegen. Wenn diese Kreatur aktiviert wird, darfst du X Mana bezahlen. Wenn du das tust, verliert sie das Merkmal [Verwurzelt](#verwurzelt) bis zum Ende Ihre Aktionsphase.
+  epic:
+    title: 'Episch'
+    trait: *spell_trait
+    text: |
+      Nur **1** Exemplar dieses Zaubers darf sich im Zauberbuch eines [Magiers](#mage) befinden.
+  erfolgreich:
+    title: 'Erfolgreich'
+    trait: ''
+    text: |
+      Ein [Angriff](#attack_action) gilt als erfolgreich und als *Treffer*, wenn er weder durch den Zustand [Schwindlig](#daze) *verfehlt* hat, noch durch eine [Verteidigung](#defense) vermieden wurde.
+  ergreifen:
+    title: 'Ergreifen'
+    trait: *effect
+    text: |
+      Diese [Angriff](#attack_action) kann [Kreaturen](#creature) packen und in die eigene [Zone](#zone) zerren. **Ergreifen** ist ein [Stoß-Effekt](#push), bei der das Objekt eine Zone näher **in Richtung der Ursache des Stoßes bewegt** wird. Ergreifen hat keine Auswirkung auf [unhaltbare](#unhaltbar) oder [unbewegliche](#unbeweglich) Kreaturen.
+  erhaltung:
+    title: 'Erhaltung +X'
+    trait: ''
+    text: |
+      Der [Kontrollierende](#controller) dieses [Objekts](#object) bezahlt X Mana während jeder Erhaltungsphase, nicht der Kontrollierende der betroffenen Kreatur. Eine Ausnahme bildet Essensschwund. Es besitzt keine eigenen Erhaltungskosten, sondern gibt der betroffenen Kreatur das Merkmal **Erhaltung +2**, sodass der [Besitzer](#owner) der Kreatur diese Kosten bezahlen muss.
+  reach:
+    title: 'Erreichen'
+    trait: *attack_trait
+    text: |
+      Mit diesem [Nahkampfangriff](#melee_attack) kann man [fliegende](#flying) Kreaturen in derselben [Zone](#zone) zum Ziel haben und angreifen.
+  falle:
+    title: 'Falle'
+    trait: ''
+    text: |
+      Eine Verzauberung, die ausgelöst wird, wenn ein Gegner die [Zone](#zone) betritt. Siehe *Fallen* auf Seite 20.
+  faeulnis:
+    title: 'Fäulnis'
+    trait: ''
+    text: |
+      Dies ist ein [Giftzustand](#poison). Dieses [Objekt](#object) erhält jede Runde 1 [direkten Schaden](#direct_damage) während der Erhaltungsphase. Fäulnis hat [Beseitigungskosten](#beseitigungskosten) von 2.
+  ranged_attack:
+    title: 'Fernangriff'
+    trait: *attack_attribute
+    text: |
+      Dieser Angriff kann gegen Ziele innerhalb seiner kürzesten und weitesten Reichweite genutzt werden, und wenn sie sich in [Sichtlinie](#line_of_sight) befinden. Ein Fernangriff kann immer gegen eine [fliegende](#flying) Kreatur in derselben [Zone](#zone) ausgeführt werden, selbst wenn seine minimale Reichweite unterschritten wird. Fernangriffe lösen keine [Schadensbarrieren](#damage_barrier) oder [Gegenschläge](#counterstrike) aus. Fernangriffe ignorieren Wachen und entfernen keine Plättchen [Wache](#guarding) von Kreaturen, die Wache halten.
+  ranged_x:
+    title: 'Fernangriff +X'
+    trait: *object_trait
+    text: |
+      Diese Kreatur erhält +X Angriffswürfel, wenn sie einen [Fernangriff](#ranged_attack) ausführt. Wenn der Angriff [mehrere Schläge](#multiple_attacks) gegen dasselbe oder mehrere [Objekte](#object) ausführt, erhält er den Bonus lediglich für den ersten Angriff, bei dem dieser Bonus anwendbar ist. Das hat keine Auswirkung auf [Zonenangriffe](#zonenangriff). Dies ermöglicht aber keinen Fernangriff, falls die Kreatur keinen haben sollte.
+  festhaengend:
+    title: 'Festhängend'
+    trait: *condition_marker
+    text: |
+      Diese Kreatur erhält die Merkmale [Gezügelt](#gezuegelt) und [Unbeweglich](#unbeweglich). Am Ende jeder ihrer Aktionsphasen darf eine festhängende Kreatur einen [Rettungswurf](#escape_roll) versuchen: Bei einem Wurf von **7** oder mehr entfernt man **Festhängend**. Wird die Kreatur [teleportiert](#teleportation), zerstört man alle ihre Zustandsplättchen **Festhängend**. **Festhängend** hat keine Wirkung auf [unhaltbare](#unhaltbar) Kreaturen und [Beseitigungsosten](#beseitigungskosten) von **4**.
+  extinguish:
+    title: 'Feuer löschen'
+    trait: *attack_trait
+    text: |
+      Dieser Angriff löscht [Feuer](#flammen). Man reduziert im Schritt: *Würfel werfen* die Anzahl der [Angriffswürfel](#attack_action) um **X** und zieht **X** vom Ergebnis des [Effektwürfels](#effect_die) ab. Wie bei jedem [Angriff](#attack_action) wird mindestens **1** Würfel geworfen. **X** = Anzahl der Zustandsplättchen [In Brand](#burn) auf dem Verteidiger. Danach entfernt man alle Zustandsplättchen *In Brand* vom Verteidiger.
+      Ein [Wasserangriff](#wasser) (oder *Wasserangriffszauber*), der das Merkmal **Feuer löschen** hat, kann auch ein [Objekt](#object) mit dem Merkmal [Immun gegen Wasser](#immunitaet) als Ziel haben. In diesem Falle verursacht er keinen Schaden oder Effekte, außer alle Plättchen *In Brand* zu entfernen. Dies ist eine Ausnahme zu den normalen Immunitätsregeln. Daher können Wasserangriffe auch Feuer von brennenden Pflanzen-Objekten löschen, obwohl die Angriffe Pflanzen nicht schaden können.
+  burnproof:
+    title: 'Feuerfest'
+    trait: *object_trait
+    text: |
+      Das [Objekt](#object) kann nie den Zustand *In Brand* erhalten. Es kann zwar [Flammenschaden](#flammen) erleiden, aber nie *brennen*. Alle [körperlosen](#incorporeal) Objekte sind feuerfest.
+  flammen:
+    title: 'Flammen'
+    trait: ''
+    text: |
+      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Flammen +/-X** modifiziert diesen Schaden, siehe unter *Schadensart* im Kodex.
+  flying:
+    title: 'Fliegen'
+    trait: *object_trait
+    text: |
+      Eine Kreatur darf bei einem [Fernangriff](#ranged_attack) gegen ein [Objekt](#object) in derselben [Zone](#zone) die minimale Reichweite des Angriffs ignorieren, wenn entweder der Angreifer oder der [Verteidiger](#defender) (oder beide) das Merkmal **Fliegen** besitzen. Für weitere Regeln siehe *Fliegende Kreaturen* auf Seite 15.
+  formel:
+    title: 'Formel (Zauber)'
+    trait: ''
+    text: |
+      Formelzauber haben eine nur kurzzeitige Wirkung auf das Spiel. Beim Ausführen des Zaubers befolgst du die Anweisungen auf der Zauberkarte und legst sie dann auf deinen [Ablagestapel](#discard_pile).
+  frost:
+    title: 'Frost'
+    trait: ''
+    text: |
+      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Frost +/-X** modifiziert diesen Schaden, siehe unter Schadensart im Kodex. *Hinweis*: Frostschaden wird erst in späteren Erweiterungen eine Bedeutung bekommen.
+  counterstrike:
+    title: 'Gegenschlag'
+    trait: *attack_trait
+    text: |
+      Wenn eine Kreatur [Verteidiger](#defender) bei einem [Nahkampfangriff](#melee_attack) ist, und sie einen Nahkampfangriff als [Schnelle Aktion](#quick_action) mit dem Merkmal **Gegenschlag** besitzt, kann sie diesen Angriff im Schritt 7: *Gegenschlag* des Angriffs gegen den Angreifer einsetzen. Siehe *Gegenschlag* auf Seite 28.
+  enemy:
+    title: 'Gegner'
+    trait: *game_term
+    text: |
+      Jedes gegnerische [Objekt](#object), das zurzeit von einem gegnerischen Spieler kontrolliert wird.
+  geschmettert:
+    title: 'Geschmettert'
+    trait: *condition_marker
+    text: |
+      Die Kreatur ist [Handlungsunfähig](#incapacitated). Wenn diese Kreatur aktiviert wird, entfernt man das Plättchen **Geschmettert** und ersetzt es durch ein Zustandsplättchen [Schwindlig](#daze). [Unbewegliche](#unbeweglich) Kreaturen erhalten statt **Geschmettert** den Zustand *Schwindlig*. Wie gewohnt werden alle Plättchen *Schwindlig* am Ende der Aktionsphase der Kreatur weggenommen.
+      Geschmettert hat [Beseitigungskosten](#beseitigungskosten) von **3**.
+  gezuegelt:
+    title: 'Gezügelt'
+    trait: ''
+    text: |
+      Wenn eine Kreatur das Merkmal **Gezügelt** besitzt, kann sie keine [Bewegungsaktionen](#move_action) ausführen. Sie kann immer noch [gestoßen](#push) oder [teleportiert](#teleportation) werden. Abgesehen von Bewegungsaktionen kann eine gezügelte Kreatur weiterhin [Schnelle](#quick_action) oder [Vollständige Aktionen](#full_action) in ihrer Aktionsphase ausführen. Eine gezügelte Kreatur kann die Bewegung von Gegnern nicht einschränken. Eine gezügelte Kreatur kann [Wache halten](#guarding), allerdings dürfen angreifende Kreaturen sie ignorieren (es besteht kein Zwang, sie anzugreifen). Der einzige Vorteil einer gezügelten Kreatur, [Wache zu halten](#guarding), besteht im Merkmal [Gegenschlag](#counterstrike), das sie dadurch erhält. Fliegende Kreaturen verlieren das Merkmal [Fliegen](#flying) und können es auch nicht wieder erhalten, so lange sie gezügelt sind. Eine gezügelte Kreatur erleidet **–2** auf alle [Verteidigungswürfe](#defense).
+      [Unhaltbare](#unhaltbar) Kreaturen und alle [Beschwörungen](#conjuration) können nicht gezügelt werden.
+  poison:
+    title: 'Gift'
+    trait: *damage_type
+    text: |
+      Einige Angriffe besitzen das Merkmal **Gift**. Man beachte, dass viele Angriffe, selbst wenn sie nicht von der [Schadensart](#damage_type) *Gift* sind, dennoch Giftzustände hervorrufen können.
+  incapacitated:
+    title: 'Handlungsunfähig'
+    trait: *effect
+    text: |
+      Eine **handlungsunfähige** Kreatur kann keine Aktionen ausführen, inklusive [Bewegung](#move_action), [Angriff](#attack_action), [Wache halten](#guarding), Zauber anwenden oder [Gegenschlag](#counterstrike). Sie kann keinerlei [Verteidigungen](#defense) nutzen. Sollte ein Plättchen Wache auf ihr liegen, wird es sofort weggenommen. Eine fliegende Kreatur verliert das Merkmal [Fliegen](#flying) und kann es nicht wieder erlangen, so lange sie handlungsunfähig ist. Irgendwelche [Schadensbarrieren](#damage_barrier) auf handlungsunfähigen Kreaturen funktionieren weiterhin normal.
+      Eine handlungsunfähige Kreatur behindert die Bewegung von Gegnern nicht. Andere Kreaturen können die handlungsunfähige Kreatur ignorieren. Eine handlungsunfähige Kreatur hat weiterhin ihre Aktionsphase in der Runde, kann aber keine Aktionen dabei ausführen (normalerweise wird ihr Aktionsstein einfach umgedreht).
+      [Beschwörungen](#conjuration) können nicht handlungsunfähig werden.
+      Handlungsunfähige Magier funktionieren anders. Der Geist eines Magiers ist derart mächtig, dass er seine Magie trotz seiner Handlungsunfähigkeit weiterhin anwenden kann! Ein handlungsunfähiger [Magier](#mage) kann immer noch Aktionen zum Anwenden von [Schnellen Zaubern](#quick_spell) (keine Angriffe) einsetzen. Er kann keine Vollständigen Zauber oder [Angriffszauber](#attack_action) anwenden.
+  heal:
+    title: 'Heilung'
+    trait: *effect
+    text: |
+      Heilung entfernt Schaden von [lebenden](#living) Kreaturen und [Beschwörungen](#conjuration). Siehe *Schaden entfernen* auf Seite 26.
+  herbeirufen:
+    title: 'Herbeirufen'
+    trait: ''
+    text: |
+      Wenn du einen [Kreaturenzauber](#creature) anwendest, wird das auch *Herbeirufung* einer Kreatur genannt.
+  ichthellid_larva:
+    title: 'Ichthelliden-Larve'
+    trait: *condition_marker
+    text: |
+      Einer Kreatur mit diesen Zustandsplättchen wurde eine **Ichthelliden-Larve** eingepflanzt. Die **Ichthelliden-Larve** ist ein [Giftzustand](#poison) mit [Beseitigungsosten](#beseitigungskosten) von **5**. Die **Ichthelliden-Larve** wird vom [Kontrolleur](#controller) des *Ichthelliden* kontrolliert, der das Plättchen eingesetzt hat. Auf einer Kreatur darf höchstens **1** Plättchen **Ichthelliden-Larve** liegen. Wenn die von einer Larve betroffene Kreatur [zerstört](#destroyed) wird, darf der Kontrolleur der **Ichthelliden-Larve** eine *Ichthellidenkreatur* aus seinem Zauberbuch oder seinem [Ablagestapel](#discard_pile) wählen und sie verdeckt in die [Zone](#zone) legen, in der sich die Kreatur befand, bevor sie zerstört wurde. Dieser *Ichthellide* kommt am Ende der Runde ohne zu bezahlende Manakosten ins Spiel (vergleichbar mit dem [Reanimieren](#reanimate)-Effekt.)
+  ignore:
+    title: 'Ignorieren'
+    trait: *game_term
+    text: |
+      Eine ignorierte gegnerische [Kreatur](#creature) kann die Bewegung [befreundeter](#friendly) Kreaturen nicht [einschränken](#hinder). Eine ignorierte gegnerische Kreatur, die [Wache](#guarding) hält, muss nicht zwingend angegriffen werden, wenn man einen [Nahkampfangriff](#melee_attack) ausführt.
+  poison_immunity:
+    title: 'Immun gegen Gift'
+    trait: *object_trait
+    text: |
+      [Nicht lebende](#nonliving) Kreaturen sind immun gegen Gift. Siehe [Immunität](#immunitaet), hier im Kodex.
+  psychic_immunity:
+    title: 'Immun gegen Übersinnlich'
+    trait: *object_trait
+    text: |
+      Dieses [Objekt](#object) hat entweder ungeheuer mächtige Geistesgaben oder gar keine. Alle [Beschwörungen](#conjuration) sind immun gegen Übersinnlich. Siehe [Immunität](#immunitaet), hier im Kodex.
+  immunitaet:
+    title: 'Immunität'
+    trait: ''
+    text: |
+      Dieses [Objekt](#object) ist immun gegen alle Angriffe, Schaden, Zustände und Effekte der angegebenen [Schadensart](#damage_type), inklusive [kritischer Schaden](#critical_damage) und [direkter Schaden](#direct_damage). Es kann nicht zum Ziel eines Zaubers der angegebenen Art oder davon beeinflusst werden.
+  intercept:
+    title: 'Abfangen'
+    trait: *object_trait
+    text: |
+      Wenn diese Kreatur [Wache](#guarding) hällt und einen [Fernangriff](#ranged_attack) ein nicht [fliegendes](#flying) Objekt in derselben [Zone](#zone) zum Ziel hat, darf dise Kreatur den Fernangriff auf sich selbst lenken, vorausgesetzt, sie ist ein erlaubtes Ziel für diesen Angriff. Ein **Abfangen** muss sofort nach dem Schritt *Angriff erklären* angesagt werden und findet sofort statt, noch vor dem Schritt *Angriff vermeiden*. Die Kreatur verliert ihr Plättchen Wache am Ende des Angriffs, den sie abfängt. Ein [Zonenangriff](#zonenangriff) kann nicht abgefangen werden.
+
+      [Gezügelte](#gezuegelt) oder [Handlungsunfähige](#incapacitated) Kreaturen können nicht abfangen.
+  burn:
+    title: 'In Brand'
+    trait: *condition_marker
+    text: |
+      Das [Objekt](#object) brennt. Es handelt sich um einen [Flammenzustand](#flammen). In jeder Erhaltungsphase wirfst du mit **1** Angrifswürfel den [direkten Schaden](#direct_damage) pro Plättchen *In Brand* auf jedem Objekt. Bei einer **0** entfernst du das Plättchen *In Brand*. Plättchen *In Brand* haben [Beseitigungskosten](#beseitigungskosten) von **2**.
+  indirect:
+    title: 'Indirekt'
+    trait: *attack_trait
+    text: |
+      Die [Sichtlinie](#line_of_sight) (SL) dieses [Fernangriffs](#ranged_attack) wird nicht durch [Wälle](#wall) blockiert.
+  initiative:
+    title: 'Initiative'
+    trait: *game_term
+    text: |
+      Die Spieler haben abwechselnd die Initiative, die mit dem Plättchen *Initiative* angezeigt wird. Wer gerade die Initiative hat, darf als erster seine [Schnellzauberaktion](#quickcast_action) in einer [Schnellzauberphase](#quickcast_phase) ausführen, und er hat die erste Aktionsphase in der Aktionsstufe. Außerdem dient die Initiative dazu, alle Fragen der Reihenfolge zu klären.
+  climbing:
+    title: 'Klettern'
+    trait: *object_trait
+    text: |
+      Die Kreatur kann eine besondere [Vollständige Aktion](#full_action) ausführen, um über irgendeinen [körperlichen](#corporeal) [Wall](#wall) zu klettern und sich in die benachbarte [Zone](#zone) zu bewegen. Wenn der Wall das Merkmal [Angriff bei Durchgang](#passage_attacks) hat, greift er die Kreatur vor ihrer Bewegung an.
+  counter:
+    title: 'Kontern'
+    trait: *game_term
+    text: |
+      Ein Zauber, der gekontert wird, kann nicht ausgeführt werden. Er wird zerstört und kommt auf den [Ablagestapel](#discard_pile). Alle Kosten und Aktionen, die zum Anwenden des Zaubers ausgegeben wurden, sind verloren, falls nicht anders angegeben.
+  controller:
+    title: 'Kontrollierender'
+    trait: *game_term
+    text: |
+      Alle Zauber oder [Objekte](#object) im Spiel werden von dem Spieler kontrolliert, der sie angewendet hat. Der *Kontrollierende* kann seine Objekte benutzen und damit agieren, und er trifft alle Entscheidungen und Auswahlen für seine Zauber oder irgendwelche Eigenschaften, die seine Objekte haben.
+  corporeal:
+    title: 'Körperlich'
+    trait: *object_trait
+    text: |
+      Körperliche Objekte sind normale, physische [Objekte](#object). Alle [Kreaturen](#creature) und [Beschwörungen](#conjuration) sind körperlich, wenn sie nicht das Merkmal [Körperlos](#incorporeal) besitzen.
+  incorporeal:
+    title: 'Körperlos'
+    trait: *object_trait
+    text: |
+      Ein substanzloses, amorphes [Objekt](#object), dem Schaden fast nichts anhaben kann. Bei allen Angrifswürfeln, die diesem Objekt Schaden zufügen sollen, zählen nur die **1er** (die **2er** werden ignoriert), es sei denn, der Angriff hat das Merkmal [Ätherisch](#ethereal). Effekte oder Zustände von Angriffen, die nicht ätherisch sind, können ihm nichts anhaben. Alle körperlosen Objekte besitzen außerdem die Merkmale [Nicht Lebend](#nonliving), [Feuerfest](#burnproof) und [Unhaltbar](#unhaltbar). Körperlose Objekte haben kein Rüstungsattribut und können keine [Rüstung](#armor) erhalten. Siehe *Körperlos* auf Seite 15.
+  creature:
+    title: 'Kreatur (Zauber)'
+    trait: *spell_type
+    text: |
+      Kreaturenzauber rufen eine Kreatur herbei, die in der Arena für dich bis zu ihrer Zerstörung kämpft. Lege die Karte offen in die [Zielzone](#zone) des Spielplans. Kreaturenzauber haben die Reichweite **0-0**, und kommen daher immer in die [Zone](#zone), in der du sie anwendest. Lege einen Aktionsstein mit seiner inaktiven Seite nach oben auf die Kreatur (Kreaturen kommen immer inaktiv ins Spiel). Genau wie dein [Magier](#mage) haben Kreaturen Lebenskraft- und Rüstungs-Attribute und generell einen oder mehrere Angriffe. Wenn eine Kreatur Schaden in Höhe ihres Lebens (oder mehr) erleidet, ist sie [zerstört](#destroyed). Die meisten Kreaturen besitzen ein oder mehr besondere Merkmale, die auf der Karte abgedruckt sind, wodurch sie besondere Eigenschaften erhalten.
+  critical_damage:
+    title: 'Kritischer Schaden'
+    trait: *game_term
+    text: |
+      **Kritischer Schaden** geht an [Rüstung](#armor) vorbei (diese reduziert den erlittenen Schaden nicht). Kritischer Schaden wird auf den Würfeln als Ziffer in einem Stern angezeigt.
+  langsam:
+    title: 'Langsam'
+    trait: ''
+    text: |
+      Diese Kreatur ist sehr langsam. Wenn diese Kreatur eine [Bewegungsaktion](#move_action) ausgeführt, endet ihre Aktionsphase sofort. Sie erhält keine [Schnelle Aktion](#quick_action) nach der Bewegung. Wenn eine langsame Kreatur das Merkmal [Schnell](#fast) erhält, heben sich die beiden Merkmale auf.
+  life:
+    title: 'Leben'
+    trait: *object_attribute
+    text: |
+      Kreaturen und Beschwörungen haben ein Lebensattribut. Leben ist der maximale Schaden, den sie erleiden können, bevor sie zerstört werden.
+  life_x:
+    title: 'Leben +/-X'
+    trait: *object_trait
+    text: |
+      Das [Objekt](#object) erhält oder verliert X [Leben](#life). Leben erhalten ist nicht gleich Heilen und Leben verlieren ist nicht gleich Schaden. Änderungen beim Leben ändern die Menge an Schaden, die ein Objekt erleiden kann, bevor es zerstört wird.
+  living:
+    title: 'Lebend'
+    trait: *object_trait
+    text: |
+      Lebende [Objekte](#object) können [geheilt](#heal) werden, [regenerieren](#regenerieren) und [Leben erhalten](#life_x). Alle [Kreaturen](#creature) sind lebend, wenn sie nicht das Merkmal [Nicht Lebend](#nonliving) besitzen. Alle [Beschwörungen](#conjuration) sind nicht lebend, wenn sie nicht das Merkmal **Lebend** besitzen.
+  lifebond_x:
+    title: 'Lebensbund +X'
+    trait: *object_trait
+    text: |
+      Während der Erhaltungsphase darfst du entweder **X** Schaden von deinem [Magier](#mage) auf dieses [Objekt](#object) oder von diesem Objekt auf deinen Magier verschieben, ungeachtet der Entfernung und der [SL](#line_of_sight). Diese Eigenschaft wird nicht durch das Merkmal [Begrenztes Leben](#finite_life) beeinflusst.
+  legendary:
+    title: 'Legendär'
+    trait: *object_trait
+    text: |
+      Nur **1** Exemplar dieses [Objekts](#object) darf gleichzeitig im Spiel sein. Man darf keinen legendären Zauber anwenden, wenn ein Objekt mit dem gleichen Namen bereits im Spiel ist (erst, wenn das erste zerstört ist). Legendäre Objekte können nicht vom [Ablagestapel](#discard_pile) zurück ins Spiel gebracht werden, wenn ein anderes Exemplar davon bereits im Spiel ist.
+  level:
+    title: 'Level'
+    trait: *spell_attribute
+    text: |
+      Alle Zauber haben einen Level, der als kleine Zahl neben der Schule dieses Zaubers aufgedruckt ist. Der Level entspricht der ungefähren Macht dieses Zaubers. [Magier](#mage) gelten als Kreaturen mit dem **Level 6**. Manchmal wird der Level dazu benutzt, die Kosten eines Zaubers zu bestimmen, außerdem ist er wichtig beim Zusammenstellen von Zauberbüchern. Siehe Zauberlevel unter *Ausbildung* auf Seite 35.
+  mage:
+    title: 'Magier'
+    trait: *game_term
+    text: |
+      Diese Kreatur ist ein Magier, und sie stellt den Spieler im Spiel dar. Der Magier kann Mana sammeln, Zauber anwenden und er kann jede Runde eine spezielle [Schnellzauberaktion](#quickcast_action) ausführen. Der Magier ist eine Kreatur mit **Level 6**. Wenn dein Magier zerstört wurde, verlierst du das Spiel!
+  magebind:
+    title: 'Magierbindung +X'
+    trait: *object_trait
+    text: |
+      Eine solche [Verzauberung](#verzauberung) ist nicht so einfach auf einen [Magier](#mage) anwendbar. Wenn diese Verzauberung einem Magier angefügt wird, werden die [Aufdeckkosten](#aufdeckkosten) um X erhöht. Diese angepassten Aufdeckkosten gelten allgemein für Zauber, Eigenschaften oder Effekte, die sich auf die Aufdeckkosten dieses Zaubers beziehen.
+  mana_drain:
+    title: 'Manaabzug +X'
+    trait: *attack_trait
+    text: |
+      Wenn dieser Angriff einer gegnerischen [Kreatur](#creature) Schaden zufügt, verliert der Kontrollierende der Kreatur X Mana aus seinem Manavorrat (wenn er welches hat). Wenn der Angriff [mehrere Schläge](#multiple_attacks) gegen dasselbe oder mehrere [Objekte](#object) ausführt, erhält er den Bonus lediglich für den ersten Angriff, bei dem dieser Bonus anwendbar ist.
+  channeling:
+    title: 'Manasammlung'
+    trait: *object_attribute
+    text: |
+      Einige [Objekte](#object) haben das Manasammlungsattribut. Es gibt an, wie viel Mana sie jede Runde während der Manasammlungsphase bekommen.
+  channeling_x:
+    title: 'Manasammlung +/- X'
+    trait: *object_trait
+    text: |
+      Modifiziert das [Manasammlungsattribut](#channeling) einer [Kreatur](#creature) um **+/– X**. Die Manasammlung kann nie unter **0** fallen. Modifiziert nur einen vorhandenen Manasammlungswert, [Objekte](#object) ohne Manasammlungsattribut sind davon nicht betroffen.
+  mana_transfer_x:
+    title: 'Manaübertragung +X'
+    trait: *attack_trait
+    text: |
+      Genau wie [Manaabzug +X](#mana_drain), mit folgendem Zusatz: Wer diesen Angriff [kontrolliert](#controller), erhält Mana in Höhe des Manaverlustes.
+  ready_marker:
+    title: 'Marker'
+    trait: *game_term
+    text: |
+      Ein Marker ist ein kleiner Markierungschip, der der einen an bestimmte Dinge erinnern soll. Mage Wars liegen keine Marker bei – wenn im Spiel Marker gefordert werden, nimm geeignetes, gerade nicht benötigtes Ersatzmaterial aus diesem Spiel, bzw. Münzen oder Glassteine etc. Dies betrifft die Effekte *Bann* (Karte: Verbannen), *Zorn* (Valshalla) und *Rüstung* (Krone des Schutzes).
+  multiple_attacks:
+    title: 'Mehrfachangriff'
+    trait: *game_term
+    text: |
+      Einige [Angriffe](#attack_action) bestehen aus mehreren separaten Angriffen gegen dasselbe oder unterschiedliche Ziele. Mehrfachangriffe sind solche mit den Merkmalen [Doppelschlag](#doublestrike), [Dreifacher Schlag](#dreifacher_schlag) und [Rundschlag](#rundschlag).
+  melee_x:
+    title: 'Nahkampf +X'
+    trait: *object_trait
+    text: |
+      Diese Kreatur erhält +X Angriffswürfel, wenn sie einen [Nahkampfangriff](#melee_attack) ausführt. Wenn der [Angriff](#attack_action) [mehrere Schläge](#multiple_attacks) gegen dasselbe oder mehrere [Objekte](#object) ausführt, erhält er den Bonus lediglich für den ersten Angriff, bei dem dieser Bonus anwendbar ist. Dies ermöglicht aber keinen Nahkampfangriff, falls die Kreatur keinen haben sollte. Es hat keinen Einfluss auf [Fernangriffe](#ranged_x), [Schadensbarrieren](#damage_barrier) oder andere Nicht-Nahkampfangriffe.
+  melee_attack:
+    title: 'Nahkampfangriff'
+    trait: *game_term
+    text: |
+      Ein Angriff aus nächster Nähe, der nur Ziele in der gleichen [Zone](#zone) betreffen kann. Er kann eine [Schadensbarriere](#damage_barrier) oder einen [Gegenschlag](#counterstrike) auslösen. Beim Ausführen eines Nahkampfangriffs musst du eine gegnerische [Wache](#guarding) angreifen, falls sich eine in deiner Zone aufhält. Ein Nahkampfangriff entfernt das Plättchen Wache von einer Wache haltenden Kreatur.
+  nonliving:
+    title: 'Nicht Lebend'
+    trait: *object_trait
+    text: |
+      Alle nicht lebenden [Kreaturen](#creature) haben die Merkmale [Immun gegen Gift](#poison_immunity) und [Begrenztes Leben](#finite_life). Alle Kreaturen sind lebend, wenn sie nicht das Merkmal **Nicht Lebend** besitzen. Alle [Beschwörungen](#conjuration) sind nicht lebend, wenn sie nicht das Merkmal [Lebend](#living) besitzen. [Körperlose Objekte](#incorporeal) haben dieses Merkmal immer.
+  novice:
+    title: 'Novize'
+    trait: *spell_trait
+    text: |
+      Grundlegende Lehrlingszauber. Alle Magier können für 1 Zauberpunkt Novizenzauber in ihr Zauberbuch stecken, selbst wenn sie in dieser Art Schule nicht ausgebildet oder ihr gegenüber feindlich eingestellt sind.
+  mage_only:
+    title: 'Nur für Magier'
+    trait: *spell_trait
+    text: |
+      Einige Zauber sind auf bestimmte Magierklassen beschränkt. Beispielsweise kann ein Zauber das Merkmal *Nur für Hexenmeister* oder *Nur für heiligen Magier* besitzen. Siehe *Zaubermerkmale, die das Zauberbuch beeinflussen* auf Seite 36.
+  aegis:
+    title: 'Obhut X'
+    trait: *object_trait
+    text: |
+      Alle [Angriffe](#attack_action) gegen dieses [Objekt](#object) haben X Angriffswürfel weniger. Es darf aber nie weniger als 1 Angriffswürfel geworfen werden. Das Merkmal **Obhut** kann nicht mit anderen Obhutmerkmalen kombiniert oder zusammengezählt werden. Wenn ein Objekt mehr als ein Merkmal Obhut besitzt, benutzt du nur das höchste. Dieses Merkmal kann einen Angriff nie auf unter 1 Würfel reduzieren.
+  object:
+    title: 'Objekt'
+    trait: *game_term
+    text: |
+      [Verzauberungen](#verzauberung), [Ausrüstung](#ausruestung), [Kreaturen](#creature) und [Beschwörungen](#conjuration) sind Zauber, die im Spiel zu Objekten werden und die nach dem Anwenden im Spiel bleiben. Auch der [Magier](#mage) gilt als Objekt. [Formeln](#formel) und [Angriffszauber](#attack_action) werden nie zu Objekten.
+  or_attacks:
+    title: 'ODER-Angriffe'
+    trait: *attack_trait
+    text: |
+      Einige [Angriffe](#attack_action) haben in ihrer Angriffsleiste ein *ODER*. Beispielsweise gibt Ludwig Boltstorms Angriffsleiste **2** Alternativen an; der Angriff kann entweder das Merkmal [Rundschlag](#rundschlag) haben oder ein [Zonenangriff](#zonenangriff) mit dem Merkmal [Unvermeidbar](#unvermeidbar) sein. Wenn der Angriff erklärt wird, muss der [Kontrollierende](#controller) entscheiden, welche dieser Alternativen für diesen Angriff gelten soll.
+  pest:
+    title: 'Plage'
+    trait: *object_trait
+    text: |
+      Eine kleine, nervige Kreatur, die Gegner nicht [behindern](#hinder) kann. Gegnerische Kreaturen können eine **Plage** mit Plättchen [Wache](#guarding) ignorieren, wenn sie einen [Nahkampfangriff](#melee_attack) gegen ein anderes Ziel ausführen wollen.
+  plaettchen:
+    title: 'Plättchen *Bereit*'
+    trait: ''
+    text: |
+      Plättchen *Bereit* werden benutzt, um anzuzeigen, wenn Eigenschaften benutzt wurden. Wenn eine [Kreatur](#creature) beispielsweise eine [Verteidigung](#defense) besitzt, braucht sie ein Plättchen *Bereit*, das deren Verwendung anzeigt (dann zeigt das Plättchen die graue *Benutzt*-Seite), und wenn die Verteidigung wieder einsetzbar ist (dann wird das Plättchen auf seine grüne *Bereit*-Seite gedreht). Plättchen *Bereit* werden alle in der Grundstellungsphase auf die grüne *Bereit*-Seite gedreht.
+  ranken:
+    title: 'Ranken'
+    trait: *game_marker
+    text: |
+      *Rankenplättchen* sind lebende [Beschwörungen](#conjuration) mit Lebenskraft **1**, keiner [Rüstung](#armor), und sie können keine Rüstung erhalten. Gegnerische, nicht [fliegende](#flying) Kreaturen werden durch *Rankenplättchen* in der Bewegung [eingeschränkt](#hinder). Jede beliebige Anzahl an Schaden zerstört ein *Rankenplättchen*, egal wie hoch dessen Lebenskraft sein sollte. Sie können nicht Ziel von [Fernangriffen](#ranged_attack) sein. In einer [Zone](#zone) fürfen beliebig viele *Rankenplättchen* liegen.
+      Wenn die Druidin, ein [Vertrauter](#familiar) oder eine *Baum-Zauberquelle* unter ihrer Kontrolle einen *Rankenzauber* anwenden, darfst du als zusätzliche Kosten zur Anwendung des Zaubers ein *Rankenplättchen* unter ihrer Kontrolle zerstören. Wenn du das tust, darfst du die Reichweite des Zaubers ignorieren, wenn du die Zone des zerstörten *Rankenplättchens*, ein [Objekt](#object) in dieser Zone oder einen inhrer [Zonenränder](#zonenrand) zum Ziel wählst. Dieser *Rankenzauber* muss ein erlaubtes Ziel haben. Wenn zwei oder mehr Druiden mitspielen, sollte jeder eine andere Seite der *Rankenplättchen* benutzten, damit sie zuzuordnen sind.
+  reanimate:
+    title: 'Reanimieren'
+    trait: *effect
+    text: |
+      Diese [Kreatur](#creature) wird vom Tode wiedererweckt. Wenn diese Kreatur [zerstört](#destroyed) wird, wird sie vom [Ablagestapel](#discard_pile) in die [Zone](#zone) bewegt, in der sie gerade zerstört wurde, und zwar verdeckt mit einem verdeckten Aktionsstein drauf. Diese Kreatur gilt zunächst als aus dem Spiel. Am Ende der Runde wird die Kreaturkarte aufgdeckt und ins Spiel herbeigerufen. **Reanimieren** geschieht nicht, wenn die Kreatur bei der Zerstörung aus dem Spiel genommen wird. Siehe [Auslöschen](#obliterate).
+      Beachte, dass der Magier, der den Effekt der Reanimation [kontrolliert](#controller), das Objekt ist, das die Kreatur ins Spiel beschwört, falls nicht etwas anderes besagt.
+  regenerieren:
+    title: 'Regenerieren X'
+    trait: ''
+    text: |
+      Dieses [Objekt](#object) heilt X Schaden von sich (wegnehmen) in jeder Erhaltungsphase. Das Merkmal **Regenerieren** kann nicht mit anderen Merkmalen Regenerieren kombiniert oder zusammengezählt werden. Wenn ein Objekt mehr als ein Merkmal Regenerieren besitzt, benutzt du nur das höchste. Das Merkmal [Begrenztes Leben](#finite_life) verhindert regenerieren.
+  rekonstruieren:
+    title: 'Rekonstruieren'
+    trait: *effect
+    text: |
+      **Rekonstruieren** ist ein Effekt, der Schaden von [nicht lebenden](#nonliving) Kreaturen entfernt. Es gilt nicht als [Regeneration](#regenerieren) oder [Heilung](#heal) und wird nicht durch das Merkmal [Begrenztes Leben](#finite_life) beeinflusst.
+  escape_roll:
+    title: 'Rettungswurf'
+    trait: *game_term
+    text: |
+      Einige [Zustände](#condition) und [Verzauberungen](#verzauberung) benötigen einen **Rettungswurf** (mit dem [Effektwürfel](#effect_die), um zu erfahren, ob man sie von der Kreatur nehmen kann, der sie angefügt sind.
+  rundschlag:
+    title: 'Rundschlag'
+    trait: ''
+    text: |
+      Dieser [Angriff](#attack_action) geschieht in einem weiten, ausladenden Bogen und kann **2** unterschiedliche Ziele in derselben [Zone](#zone) haben und treffen. Der zweite Angriff geschieht am Ende des Angriffsablaufs des ersten Angriffs. Man beginnt einen neuen Angriffsablauf mit dem Schritt 1: *Angriff erklären*. *Hinweis*: Der zweite Angriff kann nicht gegen dasselbe Ziel des ersten Angriffs erfolgen. Wenn es kein anderes, erlaubtes Ziel für den zweiten Angriff gibt, hat das Merkmal **Rundschlag** keine Auswirkung in dieser Runde.
+  armor:
+    title: 'Rüstung'
+    trait: *object_attribute
+    text: |
+      Während eines [Angriffs](#attack_action) wird die **Rüstung** vom Normalen Schaden der Angriffswürfel abgezogen. [Kritischen Schaden](#critical_damage) reduziert sie nicht. Wenn das Rüstungssymbol eines Objekts rot durchgestrichen ist, darf es niemals eine Rüstung besitzen; der Rüstungswert dieser Kreatur ist immer **null**.
+  armor_x:
+    title: 'Rüstung +/- X'
+    trait: *object_trait
+    text: |
+      Modifiziert ein [Rüstungsattribut](#armor) um +/– X. Rüstung kann nie unter **0** fallen.
+  damage_type:
+    title: 'Schadensart'
+    trait: *attack_attribute
+    text: |
+      Schaden kann zu einer bestimmter Art gehören – wie *Flammen* oder *Blitz*. Siehe *Schadensarten* auf Seite 26.
+  damage_type_x:
+    title: 'Schadensart +/- X'
+    trait: *object_trait
+    text: |
+      Bei [Angriffen](#attack_action) gegen das [Objekt](#object), die dieser [Schadensart](#damage_type) angehören, wird die Anzahl ihrer Angriffswürfel um X verändert, außerdem wird das Ergebnis des [Effektwurfs](#effect_die) um X verändert. Gleiche Schadensartmodifikatoren werden zusammengerechnet. Bei einem Angriff kann aber nie weniger als **1** Angriffswürfel geworfen werden. Siehe *Schadensmodifikatoren* auf Seite 26.
+  damage_barrier:
+    title: 'Schadensbarriere'
+    trait: *object_trait
+    text: |
+      Eine **Schadensbarriere** umgibt ein [Objekt](#object) und führt einen automatischen Angriff gegen jeden Gegner aus, der ein Objekt im Nahkampf angreift, das von einer solchen Barriere umgeben ist. Siehe *Schadensbarrieren* auf Seite 27.
+  schlaf:
+    title: 'Schlaf'
+    trait: ''
+    text: |
+      Dies ist ein übersinnlicher Zustand. Diese Kreatur ist in einen tiefen Schlaf gefallen und ist [handlungsunfähig](#incapacitated). Sollte diese Kreatur Schaden erleiden (z. B. durch den Angriff einer befreundeten Kreatur), wird Schlaf entfernt und durch ein Plättchen [Schwindlig](#daze) ersetzt (es ist der Einfachheit halber auf die Rückseite des Plättchens gedruckt). **Schlaf** hat [Beseitigungskosten](#beseitigungskosten), die dem [Level](#level) der schlafenden Kreatur entsprechen.
+  fast:
+    title: 'Schnell'
+    trait: *object_trait
+    text: |
+      Diese Kreatur darf **2** [Bewegungsaktionen](#move_action) ausführen, bevor sie eine [Schnelle Aktion](#quick_action) ausführt. Sie darf ein Maximum von **2** Bewegungsaktionen während ihrer Aktionsphase ausführen. Wenn eine schnelle Kreatur das Merkmal [Langsam](#langsam) erhält, heben sich die Merkmale auf. Siehe *Schnelle Kreaturen* auf Seite 14.
+  quick_action:
+    title: 'Schnelle Aktion'
+    trait: *game_term
+    text: |
+      In ihrer Aktionsphase können [Kreaturen](#creature) eine [Bewegungsaktion](#move_action) ausführen, gefolgt von einer **Schnellen Aktion**. Schnelle Aktionen umfassen [Wache halten](#guarding), einen [Schnellen Zauber](#quick_spell) anwenden, ein zweite Bewegungsaktion ausführen oder einen Angriff als Schnelle Aktion ausführen: Siehe *Schnelle Aktionen* auf Seite 11.
+  quick_spell:
+    title: 'Schneller Zauber'
+    trait: *game_term
+    text: |
+      Ein **Schneller Zauber** benötigt eine [Schnelle Aktion](#quick_action), um angewendet zu werden. Er hat das Symbol für Schnelle Aktion (Blitz) in seiner Wirkungsleiste, direkt rechts von seinen Zauberkosten.
+  quickcast_action:
+    title: 'Schnellzauberaktion'
+    trait: *game_term
+    text: |
+      Jeder [Magier](#mage) kann pro Runde eine besondere zusätzliche Aktion ausführen, die **Schnellzauberaktion**. Sie erlaubt es ihm, einen [Schnellen Zauber](#quick_spell) anzuwenden, zusätzlich zu anderen Aktionen, die er in dieser Runde ausführen möchte. Die **Schnellzauberaktion** kann vor oder nach einer beliebigen, befreundeten Aktionsphase genutzt werden, oder in einer [Schnellzauberphase](#quickcast_phase), und es wird ein Schnellzauberstein benutzt, um sie anzuzeigen. Siehe *Schnellzauberaktion* auf Seite 8.
+  quickcast_phase:
+    title: 'Schnellzauberphase'
+    trait: *game_term
+    text: |
+      Es gibt eine **Schnellzauberphase** zu Beginn und Ende jeder Aktionsstufe. Sie stellt eine Möglichkeit für jeden Spieler dar, seine [Schnellzauberaktion](#quickcast_action) zum Anwenden eines [Schnellen Zaubers](#quick_spell) zu nutzen, in Reihenfolge der [Initiative](#initiative). Siehe *Schnellzauberphase* auf Seite 8.
+  schwach:
+    title: 'Schwach'
+    trait: ''
+    text: |
+      Ein [Giftzustand](#poison), der eine [Kreatur](#creature) schwächt. Pro Plättchen **Schwach** verliert die Kreatur **1** Angriffswüfel bei allen Angriffen ohne Zauber, die sie ausführt. Das kann einen Angriff nie auf **0** Würfel reduzieren. Es hat keine Auswirkung auf [Schadensbarrieren](#damage_barrier) oder [Angriffszauber](#attack_action). Schwach hat [Beseitigungskosten](#beseitigungskosten) von **2**.
+  lumbering:
+    title: 'Schwerfällig'
+    trait: *object_trait
+    text: |
+      Diese Kreatur ist ungeschickt und/oder humpelt. Sie gilt in ihrer Bewegung immer als [eingeschränkt](#hinder) und kann daher nur bis zu **1** Bewegungsaktion während ihrer Aktionsphase ausführen, auch dann, wenn sie das Merkmal [Schnell](#fast) erhält.
+  daze:
+    title: 'Schwindlig'
+    trait: *condition_marker
+    text: |
+      Die [Kreatur](#creature) ist orientierungslos und/oder geblendet. Immer, wenn sie einen Angriff ausführt, wird der [Effektwürfel](#effect_die) geworfen. Normalerweise geschieht das am Ende des Schritts 1: *Angriff erklären*; wenn der Angriff diesen Schritt jedoch überspringen sollte, wirft man den Effektwürfel, sobald der Angriff beginnt. Wenn das Ergebnis **7** oder mehr ist, wird der Angriff normal ausgeführt. Wenn das Ergebnis **6** oder weniger ist, *verfehlt* der Angriff sein Ziel und gilt als vermieden (auch wenn er [unvermeidbar](#unvermeidbar) ist).
+      Wenn es sich um einen [Zonenangriff](#zonenangriff), [Rundschlag](#rundschlag) oder [mehrfachen Angriff](#multiple_attacks) handelt, wird nur einmal geprüft: Der gesamte Angriff schlägt entweder fehl oder ist ganz normal erfolgreich.
+      Wenn eine Kreatur mehr als ein Plättchen **Schwindlig** hat, wird der Würfel trotzdem nur einmal geworfen. Zusätzlich erleidet eine schwindlige Kreatur jedoch einen Strafabzug von **2** auf alle [Verteidigungswürfe](#defense) pro Plättchen **Schwindlig**, das auf ihr liegt. Alle Plättchen **Schwindlig** werden am Ende der Aktionsphase der Kreatur weggenommen.
+      Schwindlig hat [Beseitigungskosten](#beseitigungskosten) von **2**.
+      [Beschwörungen](#conjuration) können nie schwindlig werden.
+  line_of_sight:
+    title: 'SL (Sichtlinie)'
+    trait: *game_term
+    text: |
+      Du kannst kein [Objekt](#object) und keine [Zone](#zone) zum Ziel haben, wenn die **Sichtlinie** dorthin blockiert ist. Einige [Wälle](#wall) besitzen das Merkmal [Blockiert SL](#blocks_los). Siehe *Wälle* auf Seite 17.
+  push:
+    title: 'Stoß'
+    trait: *effect
+    text: |
+      Der Effekt **Stoß** wird durch einige Zauber und [Angriffe](#attack_action) ausgelöst, die das Ziel in eine benachbarte [Zone](#zone) bewegen. Wenn der Effekt nichts anderes besagt, muss sich die gestoßene [Kreatur](#creature) um **1** Zone weit in die entgegengesetzte Richtung der Ursache des Stoßes bewegen. Wenn es eine Richtungswahl geben sollte (wenn eine Kreatur diagonal gegenüber gestoßen wird oder die Ursache des Stoßes in derselben Zone ist), legt der **Verursacher** des Stoßes die Richtung fest.
+      Einige Zauber stoßen in eine Zufallsrichtung. Um die Richtung festzulegen, bestimmst du eine Seite des Spielplans als *Norden* und wirfst den [Effektwürfel](#effect_die): 1 bis 3 stößt die Kreatur nach Norden, 4–6 = Osten, 7–9 = Süden, 10–12 = Westen.
+      Eine Kreatur kann durch einen [Wall](#wall) gestoßen werden, aber nur, wenn dieser Wall nicht das Merkmal [Durchgang blockiert](#passage_blocked) besitzt. Die gestoßene Kreatur erleidet jegliche Angriffe des Walls, falls dieser das Merkmal [Angriff bei Durchgang](#passage_attacks) besitzt. Wenn eine Kreatur in einen Wall mit dem Merkmal Durchgang blockiert gestoßen wird, wird sie durch diesen Wall angeschlagen und erleidet einen [unvermeidbaren](#unvermeidbar) Angriff mit **3** Angriffswürfeln. Beachte, dass die Wälle, welche die Arena umgeben, alle das Merkmal Durchgang blockiert besitzen. Beachte außerdem, dass [fliegende](#flying) Kreaturen Wälle ignorieren, außer denen, welche die Arena umgeben.
+      Einige Kreaturen und alle Beschwörungen besitzen das Merkmal [Unbeweglich](#unbeweglich). Sie können nicht gestoßen werden und ignorieren alle Stoßeffekte.
+  teleportation:
+    title: 'Teleportation'
+    trait: ''
+    text: |
+      Ein Effekt, der ein Objekt direkt in eine andere [Zone](#zone) bewegt, und dabei [Wälle](#wall) und [Objekte](#object) ignoriert. Siehe *Teleportation* auf Seite 10.
+  thorgs_verhoehnen:
+    title: 'Thorgs Verhöhnen'
+    trait: *condition_marker
+    text: |
+      Thorg, das Oberhaupt der Leibwache, kann seine Feinde [verhöhnen](#verhoehnen). Wenn sich die verhöhnte Kreatur in einer [Zone](#zone) befindet, die zu Thorg angrenzend ist, muss sie sich entweder in Thorgs Zone bewegen oder, falls möglich, einen [Fernkampfangriff](#ranged_attack) ausführen, der Thorg zum Ziel hat. Wenn sie in Thorgs Zone ist oder sich in Thorgs Zone bewegt, muss sie nach Möglichkeit einen Angriff auf Thorg ausführen.
+      **Thorgs Verhöhnen** wirkt nicht bei [Magiern](#mage) oder Kreaturen, die [Immun gegen Übersinnlich](#psychic_immunity) sind. Außerdem kann Thorg sich nicht selbst verhöhnen. Thorgs Verhöhnen zwingt eine Kreatur nicht, sich durch einen [Wall](#wall) mit dem Merkmal [Angriff bei Durchgang](#passage_attacks) zu bewegen. Sollte die verhöhnte Kreatur gezwungen sein, eine dazu konkurrierende Aktion durch einen anderen Effekt auszuführen (etwa durch [Blutdurstig](#bloodthirsty), entscheidet der [Kontrollierende](#controller), welche dieser Aktionen er ausführt.
+      Man entfernt Thorgs Plättchen Verhöhnt am Ende der Aktionsphase der verhöhnten Kreatur, oder sobald Thorg aktiviert wird, je nachdem, was früher eintritt.
+  cantrip:
+    title: 'Trick'
+    trait: *object_trait
+    text: |
+      Immer, wenn dieser Zauber [zerstört](#destroyed) oder abgelegt wird, kommt er nicht auf den [Ablagestapel](#discard_pile), sondern ins Zauberbuch seines Besitzers zurück.
+  unbeweglich:
+    title: 'Unbeweglich'
+    trait: ''
+    text: |
+      Das Objekt kann nicht [gestoßen](#push) werden. Alle [Beschwörungen](#conjuration) besitzen das Merkmal **Unbeweglich**.
+  unhaltbar:
+    title: 'Unhaltbar'
+    trait: ''
+    text: |
+      Diese Kreatur hat einen glatten und/oder amorphen Körper, was es schwierig macht, sie festzuhalten. Einige Zauber, Zustände und Effekte funktionieren gegen unhaltbare Kreaturen nicht. Alle [körperlosen](#incorporeal) Kreaturen haben das Merkmal **Unhaltbar**.
+  unrein:
+    title: 'Unrein'
+    trait: *condition_marker
+    text: |
+      Dieser Fluch- oder Giftangriff verursacht eine unreine oder infizierte Wunde, die nicht heilen wird. Dies ist ein [Giftzustand](#poison). Das Plättchen **Unrein** zählt als **3** Schäden, die nicht [geheilt](#heal) oder [regeneriert](#regenerieren) werden können. Das Plättchen hat [Beseitigungskosten](#beseitigungskosten) von **3** und kann nirmal durch Zauber oder Eigenschaften entfernt werden, die Zustände beseitigen, sogar wenn das unreine [Objekt](#object) das Merkmal [Begrenztes Leben](#finite_life) besitzt.
+      Wird ein Plättchen **Unrein** durch einen Angriff platziert, zählt der Schaden durch *Unrein* **nicht** als Schaden des Angriffs, da der Schaden durch den *Giftzustand* verursacht wird.
+  invisible:
+    title: 'Unsichtbar'
+    trait: *object_trait
+    text: |
+      Dieses Objekt ist **unsichtbar** und kann nicht zum Ziel werden (es gibt keine [SL](#line_of_sight) zu diesem Objekt). Es kann jedoch von Angriffen, Zaubern oder Eigenschaften betroffen sein, die es nicht direkt zum Ziel haben, wie etwa [Zonenangriffe oder -zauber](#zonenangriff). Es kann ebenso von [Schadensbarrieren](#damage_barrier) und [Gegenschlägen](#counterstrike) angegriffen werden. So lange es das Merkmal **Unsichtbar** besitzt, erhält es auch die Merkmale Plage und Ausweichen. Auch Verzauberungen und Ausrüstungen, die an ein Objekt mit dem Merkmal **Unsichtbar** angefügt sind, erhalten das Merkmal **Unsichtbar** (angefügte Beschwörungen jedoch nicht).
+  unvermeidbar:
+    title: 'Unvermeidbar'
+    trait: ''
+    text: |
+      [Verteidigungen](#defense) können nicht eingesetzt werden, um den Angriff zu vermeiden. Siehe *Verteidigung* auf Seite 24.
+  unverwuestlich:
+    title: 'Unverwüstlich'
+    trait: *object_trait
+    text: |
+      Dieses [Objekt](#object) ist unglaublich widerstandsfähig, was Schaden angeht. Es ignoriert sämtlichen *nicht kritischen* Schaden aus Angriffen. Direkter Schaden und *Angriffseffekte* gelten wie üblich.
+  indestructible:
+    title: 'Unzerstörbar'
+    trait: *object_trait
+    text: |
+      Dieses Objekt kann weder beschädigt noch durch Schaden [zerstört](#destroyed) werden. Es kann allerdings durch andere Effekte oder Eigenschaften zerstört werden, die eine Zerstörung ohne das Zufügen von Schaden bewirken.
+  innate_life_x:
+    title: 'Ureigenes Leben +X'
+    trait: *object_trait
+    text: |
+      Die Lebenskraft dieser [Kreatur](#creature) ist höher als normalerweise. Dies liegt üblicherweise an einer erhöhten Größe oder Masse. **Ureigenes Leben** umgeht das Merkmal [Begrenztes Leben](#finite_life).
+  vampirisch:
+    title: 'Vampirisch'
+    trait: ''
+    text: |
+      Wenn dieser Angriff einer [lebenden](#living) Kreatur Schaden zufügt, [heilt](#heal) sich der Angreifer (Schaden wegnehmen) um den **halben** verursachten Schaden (aufrunden). Wenn der Angriff mehr Schaden verursacht, als die Kreatur noch restliche Lebenspunkte besitzt, zählt der überzählige Schaden **nicht** für die Heilung. Die restlichen Lebenspunkte einer Kreatur bestehen aus ihrem Leben minus der bereits erlittenen Schadenspunkte.
+      Wenn der Angriff mehrere Angriffe gegen dasselbe oder mehrere Objekte ausführt, erhält er den Bonus lediglich für den ersten Angriff, den er ausführt.
+      Mehrere Merkmale **Vampirisch** werden nicht zusammengezählt oder kombiniert; wenn eine Kreatur das Merkmal mehrmals erwirbt, wird sie behandelt, als ob sie es nur einmal hätte.
+  hidden_enchantment:
+    title: 'Verdeckte Verzauberung'
+    trait: *game_term
+    text: |
+      Alle [Verzauberungen](#verzauberung) werden verdeckt angewendet und bleiben so für deinen Gegner unkenntlich. Alle Verzauberungen haben Zauberkosten von **2** Mana, wie über dem Symbol des geschlossenen Auges auf der Zauberkarte ablesbar. Wenn sie aufgedeckt werden (Vorderseite nach oben), bezahlt der sie [kontrollierende](#controller) Spieler ihre [Aufdeckkosten](#aufdeckkosten). Siehe *Verzauberungen* auf Seite 18.
+  obscured:
+    title: 'Verdunkelt'
+    trait: *object_trait
+    text: |
+      Dieses [Objekt](#object) ist schlecht zu sehen. Es kann nicht zum Ziel werden, wenn es mehr als **1** [Zone](#zone) entfernt ist (das gilt auch für alle Zwecke: [Fernangriffe](#ranged_attack), Zauber, Eigenschaften usw.). Alle [Verzauberungen](#verzauberung) und [Ausrüstungen](#ausruestung), die dem Objekt angefügt sind, erhalten ebenfalls das Merkmal **Verdunkelt**, angefügte [Beschwörungen](#conjuration) jedoch nicht.
+  verhoehnen:
+    title: 'Verhöhnen'
+    trait: ''
+    text: |
+      Das ist ein besonderer Zustand, der durch den Angriff bestimmter Kreaturen entstehen kann (im Basisspiel: *Sosruko, Frettchen-Vertrauter*). Lege das Plättchen **Verhöhnen** auf die Kreatur.
+      Die Verhöhnte Kreatur **muss** einen [Nahkampfangriff](#melee_attack) gegen Sosruko in ihrer nächsten Aktionsphase ausführen, wenn sie kann, und wenn Sosruko in ihrer [Zone](#zone) ist. Sollte es nötig sein, wegen eines hierzu im Widerspruch stehenden Effekts einen Angriff auf ein anderes Ziel auszuführen (etwa durch das Merkmal [Blutdurstig](#bloodthirsty), entscheidet der [Kontrollierende](#controller), welches Ziel er angreift. Man entfernt das Plättchen **Verhöhnen** am Ende der Aktionsphase dieser Kreatur oder immer, wenn Sosruko aktiviert wird.
+      Greift sich die Kreatur selber an, darf sie sich nicht selbst verhöhnen; in diesem Fall wird das Plättchen Verhöhnen nicht auf die Kreatur gelegt.
+  prevention_effects:
+    title: 'Verhinderungseffekte'
+    trait: *effect
+    text: |
+      Einige Zauber können ein Ereignis verhindern, falls bestimmte Kosten nicht bezahlt werden. Beispiele dafür sind *Rüstungsschutz* und *Wächterstein der Verzauberungen*. Diese Kosten müssen für jedes betroffene Objekt bezahlt werden, ansonsten wird der Effekt für das jeweilige Objekt aufgehoben. Man hat die Wahl, für welche Objekte man die Kosten bezahlt.
+  cripple:
+    title: 'Verkrüppelt'
+    trait: *condition_marker
+    text: |
+      Dies ist ein [Giftzustand](#poison). Die Kreatur ist [gezügelt](#gezuegelt). Am Ende jeder ihrer Aktionsphasen können verkrüppelte Kreaturen einen [Rettungswurf](#escape_roll) versuchen: bei einem Wurf von **7** oder höher wird **Verkrüppelt** entfernt. **Verkrüppelt** hat [Beseitigungskosten](#beseitigungskosten) von **4**. Es hat keine Auswirkungen auf [Beschwörungen](#conjuration).
+  corrode:
+    title: 'Verrostend'
+    trait: *condition_marker
+    text: |
+      **Verrostend** ist ein *Säurezustand*, der [Rüstung](#armor) wegfrisst. Für jedes Zustandsplättchen **Verrostend** auf einer [Kreatur](#creature) oder [Beschwörung](#conjuration) erhält sie Rüstung **-1**. Objekte können nie so viele Plättchen **Verrostend** auf sich haben, dass ihre Rüstung unter **0** fallen würde (etwaige zusätzliche Plättchen werden sofort zerstört). Wenn ein Objekt so viele Zustandsplättchen **Verrostend** erhalten würde, dass seine Rüstung auf unter **0** fällt, erhält es stattdessen nur so viele Plättchen **Verrostend**, dass seine Rüstung **0** beträgt und erleidet je **1** Punkt **direkten** Säureschaden pro überzähligen Plättchen. **Verrostend** hat keine Wirkung auf [körperlose](#incorporeal) Kreaturen und [Beseitigungskosten](#beseitigungskosten) von **2**.
+      *Beispiel: Eine Druidin hat 2 Plättchen* Verrostend *auf sich und eine Bärenfellrüstung. Ihr aktueller Rüstungswert beträgt 0. Erhielte sie einen weiteren Zustand* Verrostend*, würde sie stattdessen 1 direkten Säureschaden erleiden. Sie entscheidet sich, Windwurmhaut anzuwenden, die an denselben Ort wie die Bärenfellrüstung kommt und letztere damit ersetzt. Dadurch, dass die Bärenfellrüstung entfernt wird, hat die Druidin 0 Rüstung, weswegen beide Plättchen* Verrostend *sofort zerstört werden. Danach kommt die Windwurmhaut ins Spiel und die Druidin hat jetzt eine Rüstung von 2.*
+  devour:
+    title: 'Verschlingen'
+    trait: *attack_trait
+    text: |
+      Diese Kreatur frisst andere Kreaturen! Wenn ein Angriff mit **Verschlingen** eine [körperliche](#corporeal) Kreatur zerstören würde, wird die Kreatur stattdessen [ausgelöscht](#obliterate).
+  defender:
+    title: 'Verteidiger'
+    trait: *game_term
+    text: |
+      Eine [Kreatur](#creature) oder [Beschwörung](#conjuration), die angegriffen wird. Sie ist nicht notwendigerweise das Ziel dieses Angriffs (siehe [Zonenangriff](#zonenangriff) im Kodex).
+  defense:
+    title: 'Verteidigung'
+    trait: *object_attribute
+    text: |
+      Einige Objekte besitzen das Attribut **Verteidigung**, welches die Fähigkeit zur Vermeidung eines Angriffs darstellt. Die Zahl auf der Verteidigung gibt an, was man mit dem [Effektwürfel](#effect_die) erzielen muss, um den Angriff erfolgreich zu vermeiden. Siehe *Verteidigung* auf Seite 24.
+  familiar:
+    title: 'Vertrauter'
+    trait: *object_trait
+    text: |
+      Dieses [Objekt](#object) kann Zauber anwenden. Siehe *Vertraute* auf Seite 16.
+  verwurzelt:
+    title: 'Verwurzelt'
+    trait: *object_trait
+    text: |
+      Diese Kreatur ist fest im Boden verwachsen. Sie kann keine [Bewegungsaktionen](#move_action) ausführen und hat das Merkmal [Unbeweglich](#unbeweglich). Sie ist nicht [gezügelt](#gezuegelt), also kann sie normal [Wache halten](#guarding), Gegner in der Bewegung [einschränken](#hinder) und [abfangen](#intercept). Eine verwurzelte Kreatur verliert das Merkmal [Fliegen](#flying) und kann es nicht erhalten.
+  verzauberung:
+    title: 'Verzauberung (Zauber)'
+    trait: ''
+    text: |
+      **Verzauberungen** unterscheiden sich von allen anderen Arten von Zaubern, weil sie verdeckt gespielt werden. Dein Gegner weiß erst, was deine **Verzauberung** macht, wenn du sie aufdeckst (siehe [verdeckte Verzauberung](#hidden_enchantment) im Kodex). **Verzauberungen** erzeugen ein Objekt in der Arena, das im Spiel bleibt, bis es zerstört wird. Da **Verzauberungen** keine Lebenskraft besitzen, können sie nicht angegriffen werden und keinen Schaden erleiden. **Verzauberungen** werden immer ihrem Ziel angefügt. Verzauberungen haben keinerlei Auswirkung, so lange sie verdeckt liegen! Du kannst deine Verzauberung **jederzeit** aufdecken, außer Verzauberungen mit roten Aufdeckkosten, die du zu einem bestimmten Zeitpunkt aufdecken musst. (siehe [Aufdeckkosten](#aufdeckkosten) im Kodex).
+  full_action:
+    title: 'Vollständige Aktion'
+    trait: *game_term
+    text: |
+      Wenn eine Kreatur in ihrer Aktionsphase keine [Bewegungsaktion](#move_action) ausführt, darf sie eine **Vollständige Aktion** ausführen. Vollständige Aktionen umfassen [Vollständige Zauber](#vollstaendiger_zauber) oder das Ausführen Vollständiger Angriffe (die auf der Kreaturenkarte mit dem Symbol für **Vollständige Aktion** gekennzeichnet sind, einer Sanduhr). Siehe *Vollständige Aktionen* auf Seite 11.
+  vollstaendiger_zauber:
+    title: 'Vollständiger Zauber'
+    trait: *game_term
+    text: |
+      Ein Vollständiger Zauber benötigt eine [Vollständige Aktion](#full_action), um ihn anzuwenden. Er hat das Symbol für Vollständige Aktion (Sanduhr) in seiner Wirkungsleiste, direkt rechts von seinen Zauberkosten.
+  magecast:
+    title: 'Vom Magier angewendet'
+    trait: *spell_trait
+    text: |
+      Dieser Zauber kann nur durch einen [Magier](#mage) angewendet werden. Andere [Objekte](#object), die Zauber anwenden können, dürfen ihn nicht anwenden.
+  guarding:
+    title: 'Wache halten'
+    trait: *game_term
+    text: |
+      Als [Schnelle Aktion](#quick_action) kann eine Kreatur wählen, **Wache zu halten**, um ihre [Zone](#zone) zu schützen und um das Merkmal [Gegenschlag](#counterstrike) zu erhalten. Siehe *Wache halten* auf Seite 29.
+  wachsam:
+    title: 'Wachsam'
+    trait: *object_trait
+    text: |
+      Diese Kreatur [bewacht](#guarding), schützt und behütet befreundete Objekte dauerhaft. Am Ende ihrer Aktionsphase darfst du das Plättchen [Wache](#guarding) auf diese Kreatur legen, wenn es noch keines haben sollte.
+  wall:
+    title: 'Wall'
+    trait: ''
+    text: |
+      **Wälle** sind eine Unterart eines [Beschwörungszaubers](#conjuration). Sie sind querformatig gedruckt. Anders als andere Beschwörungen werden sie immer auf einen [Zonenrand](#zonenrand) gelegt (die Grenze zwischen zwei Zonen). Wallkarten können ein oder mehrere besondere Merkmale besitzen. Siehe *Wälle* auf Seite 17.
+  wasser:
+    title: 'Wasser'
+    trait: ''
+    text: |
+      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Wasser +X** modifiziert diesen Schaden, siehe unter [Schadensart](#damage_type) im Kodex.
+  wind:
+    title: 'Wind'
+    trait: ''
+    text: |
+      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Wind +/-X** modifiziert diesen Schaden, siehe unter [Schadensart](#damage_type) im Kodex.
+  growth:
+    title: 'Wuchs'
+    trait: *condition_marker
+    text: |
+      Eine Kreatur mit dem Zustandsplättchen **Wuchs** hat an Größe zugenommen. Jedes Plättchen **Wuchs** lifert [Nahkampf +1](#melee_x) und [Ureigenes Leben +3](#innate_life_x). Dieses Plättchen hat **keine** [Beseitigungskosten](#beseitigungskosten) und kann nicht durch Zauber oder Effekte entfernt werden, die Zustandsplättchen entfernen.
+  rage_x:
+    title: 'Wut +X'
+    trait: *object_trait
+    text: |
+      Wird diese [Kreatur](#creature) verwundet, reagiert sie extrem wild und aggressiv. Jedesmal, wenn sie von einer [gegnerischen](#enemy) Kreatur angegriffen wird und Schaden erleidet, legst du einen **Wutmarker** auf sie. Sie kann nie mehr als **X Wutmarker** besitzen. Sie erhält das Merkmal [Nahkampf +1](#melee_x) pro Marker, der auf ihr liegt. Immer, wenn sie [geheilt](#heal) wird oder sich [regeneriert](#regenerieren), nimmt man **1 Wutmarker** weg. Sobald sie keinen Schaden hat, entfernst du alle Plättchen **Wut**.
+  zaeh:
+    title: 'Zäh -X'
+    trait: ''
+    text: |
+      Diese Kreatur ist hart und widersteht den Effekten von Angriffen. Immer, wenn der [Effektwürfel](#effect_die) zum Ermitteln zusätzlicher Effekte eines Angriffs geworfen wird, modifiziert man den Wurf um **X**.
+  zauberbindung:
+    title: 'Zauberbindung'
+    trait: ''
+    text: |
+      Wenn ein Zauber mit dem Merkmal **Zauberbindung** angewendet oder ein gebundener Zauber ersetzt wird, nimmst du den gebundenen Zauber aus dem Zauberbuch deines Magiers und nicht einen der in der Planungsphase ausgewählten Zauber.
+      Wenn ein Magier eine [Ausrüstung](#ausruestung) mit **Zauberbindung** auf einen anderen Magier anwendet, sucht sich der andere Magier aus seinem Zauberbuch den gebundenen Zauber aus.
+      Wenn ein gebundener Zauber gekontert wird, ist nur der Effekt gekontert, der Zauber selber bleibt gebunden (er wird weder zerstört noch abgeworfen). Das gilt auch, wenn der Zauber scheitert oder unwirksam wird (z. B. durch *Verhexen*), oder wenn sich das Ziel ändert oder sich bewegt.
+      Wenn du einen Gegenstand mit einem gebundenen Zauber stiehlst (z. B. durch *Verzauberung entwenden*), stiehlst du auch den gebundenen Zauber. Wenn dieser Zauber noch verdeckt ausliegt, darfst du ihn nun anschauen. Als Kontrollierender darf dein Magier diesen Zauber anwenden, solange es nicht aufgrund einer feindlichen Schule verboten ist. Wenn der gebundene Zauber ausgetauscht wird, kommt er in das Zauberbuch des Besitzers zurück. Siehe *Zauberbindung* auf Seite 21.
+  zauberquelle:
+    title: 'Zauberquelle'
+    trait: ''
+    text: |
+      Diese [Beschwörung](#conjuration) kann in der Aufstellungsphase Zauber anwenden. Siehe *Zauberquellen* auf Seite 16.
+  destroyed:
+    title: 'Zerstört'
+    trait: *game_term
+    text: |
+      Ein zerstörtes [Objekt](#object) kommt aus dem Spiel und auf den [Ablagestapel](#discard_pile) seines [Besitzers](#owner). [Kreaturen](#creature) und [Beschwörungen](#conjuration) sind zerstört, sobald der Schaden auf ihnen ihre [Lebenskraft](#life) erreicht hat oder darüber liegt. Objekte können außerdem zerstört werden, wenn ein besonderer Zauber oder Effekt sie zerstört.
+  zombie:
+    title: 'Zombie'
+    trait: *condition_marker
+    text: |
+      Diese Kreatur wurde vom Tode wiedererweckt. Sie erhält die Unterarten *Untot* und *Zombie*. Sie erhält die Merkmale [Immun gegen Übersinnlich](#psychic_immunity), [Langsam](#langsam), [Nicht lebend](#nonliving) und [Blutdurstig +0](#bloodthirsty). Das *Zombieplättchen* besitzt **keine** [Beseitigungskosten](#beseitigungskosten) und kann durch Zauber und Effekte, die Zustandsplättchen entfernen, nicht beseitigt werden. Falls diese Kreatur [zerstört](#destroyed) wird, wird sie [ausgelöscht](#obliterate). Falls eine Kreatur bereits das Merkmal [Langsam](#langsam) besitzt, während sie dieses Plättchen erhält, erhält sie außerdem ein Zustandsplättchen [Betäubt](#betaeubt).
+  zone:
+    title: 'Zone'
+    trait: ''
+    text: |
+      Eine **Zone** ist eine viereckige Region in der Arena, die zur Bewegung, zur Platzierung von Objekten und zur Ermittlung der Reichweite dient.
+  zonenangriff:
+    title: 'Zonenangriff oder Zonenzauber'
+    trait: ''
+    text: |
+      Dieser Angriff oder Zauber wirkt sich auf alle [Kreaturen](#creature) und [Beschwörungen](#conjuration) in der Zielzone aus, ohne sie tatsächlich einzeln zum Ziel zu haben. Er hat keinen Einfluss auf [Wälle](#wall) am [Zonenrand](#zonenrand). **Zonenangriffe** haben das Merkmal [Unvermeidbar](#unvermeidbar) und führen einen separaten Angriff gegen jedes Objekt der [Zone](#zone) aus. Siehe *Zonenangriffe* auf Seite 23.
+  zoneneinmalig:
+    title: 'Zoneneinmalig'
+    trait: ''
+    text: |
+      Es kann nie mehr als **1** zoneneinmalige [Beschwörung](#conjuration) in jeder [Zone](#zone) liegen. Siehe *Zoneneinmalig* auf Seite 17.
+  zonenrand:
+    title: 'Zonenrand'
+    trait: ''
+    text: |
+      Die Trennlinie zwischen zwei benachbarten [Zonen](#zone). [Wälle](#wall) werden immer auf einen **Zonenrand** gelegt.
+  condition:
+    title: 'Zustand'
+    trait: *game_term
+    text: |
+      [Objekte](#object) können unterschiedliche **Zustände** annehmen, die mit Plättchen angezeigt werden, die auf das Objekt gelegt werden. Alle **Zustände** können sich ansammeln, ihre Auswirkungen steigern sich entsprechend.
+      Siehe *Effekte und Zustände* auf Seite 25.

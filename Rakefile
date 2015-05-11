@@ -2,6 +2,7 @@ require 'rake'
 require 'yaml'
 require 'kramdown'
 require 'erb'
+require 'active_support/inflector'
 
 FILE_BASE_NAME = 'Mage_Wars_Codex_DE'
 
@@ -10,7 +11,7 @@ task :markdown do
   yaml = YAML.load_file("#{__dir__}/#{FILE_BASE_NAME}.yml")
 
   File.open("#{__dir__}/#{FILE_BASE_NAME}.markdown", 'w') do |file|
-    yaml.sort.each do |key, value|
+    yaml['terms'].sort_by{|k, v| ActiveSupport::Inflector.transliterate(v['title'])}.each do |key, value|
       file.write "## <a id='#{key}'></a>#{value['title']}\n\n"
       file.write "#### *#{value['trait']}*\n\n" unless value['trait'].empty?
       file.write "#{value['text']}\n"
