@@ -115,6 +115,7 @@ terms:
     trait: *spell_type
     txt: |
       Ein Beschwörungszauber ruft ein [Objekt](#object) in der Arena hervor, das im Spiel bleibt, bis es zerstört wird. Beschwörungen besitzen genau wie Kreaturen Lebenskraft, können angegriffen werden, Schaden erleiden und zerstört werden. Im Gegensatz zu Kreaturen können Beschwörungen aber keine Aktionen ausführen und erhalten daher auch keinen Aktionsstein.
+
       Wenn die Karte nichts anderes besagt, haben alle Beschwörungen folgende Merkmale: [Nicht Lebend](#nonliving), [Immun gegen Übersinnlich](#psychic_immunity) und [Unbeweglich](#unmovable). Einige Beschwörungen besitzen dass Merkmal [Lebend](#living), welches das sonst bei Beschwörungen übliche Merkmal [Nicht Lebend](#nonliving) ersetzt. Die meisten Beschwörungen haben eine [Zone](#zone) zum Ziel, und werden dieser Zone angefügt. Einige wenige Beschwörungen haben Objekte zum Ziel. Solche Zauber werden an das Zielobjekt angefügt und bewegen sich mit ihm. Wird das Zielobjekt zerstört oder [teleportiert](#teleport) weg, wird die Beschwörung weggenommen und zerstört.
       Fast alle Beschwörungen haben spezielle Effekte, so lange sie im Spiel sind.
   controller:
@@ -132,6 +133,7 @@ terms:
     trait: *condition_marker
     txt: |
       **Verrostend** ist ein *Säurezustand*, der [Rüstung](#armor) wegfrisst. Für jedes Zustandsplättchen **Verrostend** auf einer [Kreatur](#creature) oder [Beschwörung](#conjuration) erhält sie Rüstung **-1**. Objekte können nie so viele Plättchen **Verrostend** auf sich haben, dass ihre Rüstung unter **0** fallen würde (etwaige zusätzliche Plättchen werden sofort zerstört). Wenn ein Objekt so viele Zustandsplättchen **Verrostend** erhalten würde, dass seine Rüstung auf unter **0** fällt, erhält es stattdessen nur so viele Plättchen **Verrostend**, dass seine Rüstung **0** beträgt und erleidet je **1** Punkt **direkten** Säureschaden pro überzähligen Plättchen. **Verrostend** hat keine Wirkung auf [körperlose](#incorporeal) Kreaturen und [Beseitigungskosten](#removal_cost) von **2**.
+
       *Beispiel: Eine Druidin hat 2 Plättchen* Verrostend *auf sich und eine Bärenfellrüstung. Ihr aktueller Rüstungswert beträgt 0. Erhielte sie einen weiteren Zustand* Verrostend*, würde sie stattdessen 1 direkten Säureschaden erleiden. Sie entscheidet sich, Windwurmhaut anzuwenden, die an denselben Ort wie die Bärenfellrüstung kommt und letztere damit ersetzt. Dadurch, dass die Bärenfellrüstung entfernt wird, hat die Druidin 0 Rüstung, weswegen beide Plättchen* Verrostend *sofort zerstört werden. Danach kommt die Windwurmhaut ins Spiel und die Druidin hat jetzt eine Rüstung von 2.*
   counter:
     title: Kontern
@@ -713,8 +715,11 @@ terms:
     trait: *object_trait
     txt: |
       Wenn ein Zauber mit dem Merkmal **Zauberbindung** angewendet oder ein gebundener Zauber ersetzt wird, nimmst du den gebundenen Zauber aus dem Zauberbuch deines Magiers und nicht einen der in der Planungsphase ausgewählten Zauber.
+
       Wenn ein Magier eine [Ausrüstung](#equipment) mit **Zauberbindung** auf einen anderen Magier anwendet, sucht sich der andere Magier aus seinem Zauberbuch den gebundenen Zauber aus.
+
       Wenn ein gebundener Zauber gekontert wird, ist nur der Effekt gekontert, der Zauber selber bleibt gebunden (er wird weder zerstört noch abgeworfen). Das gilt auch, wenn der Zauber scheitert oder unwirksam wird (z. B. durch *Verhexen*), oder wenn sich das Ziel ändert oder sich bewegt.
+
       Wenn du einen Gegenstand mit einem gebundenen Zauber stiehlst (z. B. durch *Verzauberung entwenden*), stiehlst du auch den gebundenen Zauber. Wenn dieser Zauber noch verdeckt ausliegt, darfst du ihn nun anschauen. Als Kontrollierender darf dein Magier diesen Zauber anwenden, solange es nicht aufgrund einer feindlichen Schule verboten ist. Wenn der gebundene Zauber ausgetauscht wird, kommt er in das Zauberbuch des Besitzers zurück. Siehe *Zauberbindung* auf Seite 21.
   stuck:
     title: Festhängend
@@ -746,13 +751,16 @@ terms:
     trait: *condition_marker
     txt: |
       Dieser Fluch- oder Giftangriff verursacht eine unreine oder infizierte Wunde, die nicht heilen wird. Dies ist ein [Giftzustand](#poison). Das Plättchen **Unrein** zählt als **3** Schäden, die nicht [geheilt](#heal) oder [regeneriert](#regenerate_x) werden können. Das Plättchen hat [Beseitigungskosten](#removal_cost) von **3** und kann nirmal durch Zauber oder Eigenschaften entfernt werden, die Zustände beseitigen, sogar wenn das unreine [Objekt](#object) das Merkmal [Begrenztes Leben](#finite_life) besitzt.
+
       Wird ein Plättchen **Unrein** durch einen Angriff platziert, zählt der Schaden durch *Unrein* **nicht** als Schaden des Angriffs, da der Schaden durch den *Giftzustand* verursacht wird.
   taunt:
     title: Verhöhnen
     trait: *effect
     txt: |
       Das ist ein besonderer Zustand, der durch den Angriff bestimmter Kreaturen entstehen kann (im Basisspiel: *Sosruko, Frettchen-Vertrauter*). Lege das Plättchen **Verhöhnen** auf die Kreatur.
+
       Die Verhöhnte Kreatur **muss** einen [Nahkampfangriff](#melee_attack) gegen Sosruko in ihrer nächsten Aktionsphase ausführen, wenn sie kann, und wenn Sosruko in ihrer [Zone](#zone) ist. Sollte es nötig sein, wegen eines hierzu im Widerspruch stehenden Effekts einen Angriff auf ein anderes Ziel auszuführen (etwa durch das Merkmal [Blutdurstig](#bloodthirsty), entscheidet der [Kontrollierende](#controller), welches Ziel er angreift. Man entfernt das Plättchen **Verhöhnen** am Ende der Aktionsphase dieser Kreatur oder immer, wenn Sosruko aktiviert wird.
+
       Greift sich die Kreatur selber an, darf sie sich nicht selbst verhöhnen; in diesem Fall wird das Plättchen Verhöhnen nicht auf die Kreatur gelegt.
   teleport:
     title: Teleportation
@@ -821,7 +829,9 @@ terms:
     trait: *attack_trait
     txt: |
       Wenn dieser Angriff einer [lebenden](#living) Kreatur Schaden zufügt, [heilt](#heal) sich der Angreifer (Schaden wegnehmen) um den **halben** verursachten Schaden (aufrunden). Wenn der Angriff mehr Schaden verursacht, als die Kreatur noch restliche Lebenspunkte besitzt, zählt der überzählige Schaden **nicht** für die Heilung. Die restlichen Lebenspunkte einer Kreatur bestehen aus ihrem Leben minus der bereits erlittenen Schadenspunkte.
+
       Wenn der Angriff mehrere Angriffe gegen dasselbe oder mehrere Objekte ausführt, erhält er den Bonus lediglich für den ersten Angriff, den er ausführt.
+
       Mehrere Merkmale **Vampirisch** werden nicht zusammengezählt oder kombiniert; wenn eine Kreatur das Merkmal mehrmals erwirbt, wird sie behandelt, als ob sie es nur einmal hätte.
   vigilant:
     title: Wachsam
@@ -833,6 +843,7 @@ terms:
     trait: *game_marker
     txt: |
       *Rankenplättchen* sind lebende [Beschwörungen](#conjuration) mit Lebenskraft **1**, keiner [Rüstung](#armor), und sie können keine Rüstung erhalten. Gegnerische, nicht [fliegende](#flying) Kreaturen werden durch *Rankenplättchen* in der Bewegung [eingeschränkt](#hinder). Jede beliebige Anzahl an Schaden zerstört ein *Rankenplättchen*, egal wie hoch dessen Lebenskraft sein sollte. Sie können nicht Ziel von [Fernangriffen](#ranged_attack) sein. In einer [Zone](#zone) fürfen beliebig viele *Rankenplättchen* liegen.
+
       Wenn die Druidin, ein [Vertrauter](#familiar) oder eine *Baum-Zauberquelle* unter ihrer Kontrolle einen *Rankenzauber* anwenden, darfst du als zusätzliche Kosten zur Anwendung des Zaubers ein *Rankenplättchen* unter ihrer Kontrolle zerstören. Wenn du das tust, darfst du die Reichweite des Zaubers ignorieren, wenn du die Zone des zerstörten *Rankenplättchens*, ein [Objekt](#object) in dieser Zone oder einen inhrer [Zonenränder](#zone_border) zum Ziel wählst. Dieser *Rankenzauber* muss ein erlaubtes Ziel haben. Wenn zwei oder mehr Druiden mitspielen, sollte jeder eine andere Seite der *Rankenplättchen* benutzten, damit sie zuzuordnen sind.
   wall:
     title: Wall
