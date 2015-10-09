@@ -23,7 +23,7 @@ You'll need the latest [KOMA-Script](http://www.ctan.org/pkg/koma-script) versio
 
 ## Todos
 
-* add [Forged in Fire](http://www.arcanewonders.com/products/forged-in-fire-spell-tome-expansion)  translation.
+* add [Battlegrounds Domination](http://www.arcanewonders.com/mage-wars-games/battlegrounds-domination) translation.
 
 ## Disclaimer
 
