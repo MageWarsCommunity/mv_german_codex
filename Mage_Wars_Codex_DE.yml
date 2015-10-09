@@ -114,7 +114,7 @@ terms:
     title: Beschwörung (Zauber)
     trait: *spell_type
     txt: |
-      Ein Beschwörungszauber ruft ein [Objekt](#object) in der Arena hervor, das im Spiel bleibt, bis es zerstört wird. Beschwörungen besitzen genau wie Kreaturen Lebenskraft, können angegriffen werden, Schaden erleiden und zerstört werden. Im Gegensatz zu Kreaturen können Beschwörungen aber keine Aktionen ausführen und erhalten daher auch keinen Aktionsstein.
+      Ein Beschwörungszauber ruft ein [Objekt](#object) in der Arena hervor, das im Spiel bleibt, bis es zerstört wird. Beschwörungen besitzen genau wie Kreaturen [Lebenskraft](#life), können angegriffen werden, Schaden erleiden und zerstört werden. Im Gegensatz zu Kreaturen können Beschwörungen aber keine Aktionen ausführen und erhalten daher auch keinen Aktionsstein.
 
       Wenn die Karte nichts anderes besagt, haben alle Beschwörungen folgende Merkmale: [Nicht Lebend](#nonliving), [Immun gegen Übersinnlich](#psychic_immunity) und [Unbeweglich](#unmovable). Einige Beschwörungen besitzen dass Merkmal [Lebend](#living), welches das sonst bei Beschwörungen übliche Merkmal [Nicht Lebend](#nonliving) ersetzt. Die meisten Beschwörungen haben eine [Zone](#zone) zum Ziel, und werden dieser Zone angefügt. Einige wenige Beschwörungen haben Objekte zum Ziel. Solche Zauber werden an das Zielobjekt angefügt und bewegen sich mit ihm. Wird das Zielobjekt zerstört oder [teleportiert](#teleport) weg, wird die Beschwörung weggenommen und zerstört.
       Fast alle Beschwörungen haben spezielle Effekte, so lange sie im Spiel sind.
@@ -149,7 +149,7 @@ terms:
     title: Kreatur (Zauber)
     trait: *spell_type
     txt: |
-      Kreaturenzauber rufen eine Kreatur herbei, die in der Arena für dich bis zu ihrer Zerstörung kämpft. Lege die Karte offen in die [Zielzone](#zone) des Spielplans. Kreaturenzauber haben die Reichweite **0-0**, und kommen daher immer in die [Zone](#zone), in der du sie anwendest. Lege einen Aktionsstein mit seiner inaktiven Seite nach oben auf die Kreatur (Kreaturen kommen immer inaktiv ins Spiel). Genau wie dein [Magier](#mage) haben Kreaturen Lebenskraft- und Rüstungs-Attribute und generell einen oder mehrere Angriffe. Wenn eine Kreatur Schaden in Höhe ihres Lebens (oder mehr) erleidet, ist sie [zerstört](#destroyed). Die meisten Kreaturen besitzen ein oder mehr besondere Merkmale, die auf der Karte abgedruckt sind, wodurch sie besondere Eigenschaften erhalten.
+      Kreaturenzauber rufen eine Kreatur herbei, die in der Arena für dich bis zu ihrer Zerstörung kämpft. Lege die Karte offen in die [Zielzone](#zone) des Spielplans. Kreaturenzauber haben die Reichweite **0-0**, und kommen daher immer in die [Zone](#zone), in der du sie anwendest. Lege einen Aktionsstein mit seiner inaktiven Seite nach oben auf die Kreatur (Kreaturen kommen immer inaktiv ins Spiel). Genau wie dein [Magier](#mage) haben Kreaturen [Lebenskraft](#life)- und [Rüstungs](#armor)-Attribute und generell einen oder mehrere Angriffe. Wenn eine Kreatur Schaden in Höhe ihres Lebens (oder mehr) erleidet, ist sie [zerstört](#destroyed). Die meisten Kreaturen besitzen ein oder mehr besondere Merkmale, die auf der Karte abgedruckt sind, wodurch sie besondere Eigenschaften erhalten.
   cripple:
     title: Verkrüppelt
     trait: *condition_marker
@@ -216,6 +216,11 @@ terms:
     trait: *game_term
     txt: |
       Ein Schaden, den die Kreatur sofort erleidet. Der Schaden ist [kritisch](#critical_damage) (geht an [Rüstung](#armor) vorbei). Er gilt nicht als Angriff und die Kreatur kann keine [Verteidigung](#defense) benutzen, um den Schaden zu vermeiden. Siehe *direkter Schaden* auf Seite 26.
+  disable:
+    title: Inaktiv
+    trait: *condition_marker
+    txt: |
+      Inaktiv ist ein Zustand, der die Funktion eines [Objekts](#object) kurzfristig außer Kraft setzt. Wenn ein Objekt ein oder mehrere Plättchen **Inaktiv** besitzt, ist es inaktiv. Inaktive Objekte verlieren alle Angriffsleisten, Aktionsleisten und Eigenschaften (nicht jedoch ihre Merkmale). (Eine Eigenschaft ist alles, was im Textfeld der Karte steht, außer die Definitionen für *X* bei Karten die von X abhängige Attribute oder Manakosten haben.) Es verliert keine seinter **Attribute** oder seiner Unterklassen (Atrriute umfassen [Lebenskraft](#life), [Rüstung](#armor), [Verteidigungen](#defense) und [Manasammlung](#channeling)). In jeder Grundstellungsphase entfernt man ein Plättchen **Inaktiv** von jedem Objekt, es sei denn, dieses Plättchen wurde erst in dieser Vorbereitungsstufe platziert. Bei Objekten mit mehreren Plättchen **Inaktiv** darauf wird in jeder Grundstellungsphase immer **nur 1** entfernt. Inaktiv hat **keine** [Beseitigungsosten](#removal_cost) und kann nicht durch Zauber oder Eigenschaften entfernt werden, die Zustandsplättchen entfernen.
   discard_pile:
     title: Ablagestapel
     trait: *game_term
@@ -227,6 +232,11 @@ terms:
     trait: *attack_trait
     txt: |
       Dieser Angriff führt einen zweiten Angriff gegen dasselbe Ziel als Teil derselben Angriffsaktion aus. Der zusätzliche Angriff erfolgt im Schritt 5: *Zusatzschläge*.
+  dissipate:
+    title: Schwindend X
+    trait: *object_trait
+    txt: |
+      [Objekte](#object) mit **Schwindend X** halten nur einen kleinen Augenblick, bis sie verschwinden. Wenn ein Objekt mit **Schwindend X** ins Spiel kommt, erhält es **X** Marker *Schwindend*. In jeder Erhaltungsphase entfernt man 1 Marker *Schwindend*. Wenn der letzte Marker entfernt wurde, wird das Objekt zerstört.
   effect_die:
     title: Effektwürfel
     trait: *game_term
@@ -236,12 +246,12 @@ terms:
     title: Ausweichend
     trait: *object_trait
     txt: |
-      Eine solche Kreatur ist [schnell](#fast) und gerissen. Sie ignoriert gegnerische Kreaturen. Gegnerische Kreaturen können ihre Bewegung nicht einschränken. Sie ist nicht gezwungen, gegnerische [Wachen](#guarding) anzugreifen, wenn sie einen [Nahkampfangriff](#melee_attack) ausführt.
+      Eine solche Kreatur ist [schnell](#fast) und gerissen. Sie ignoriert gegnerische Kreaturen. Gegnerische Kreaturen können ihre Bewegung nicht [einschränken](#hinder). Sie ist nicht gezwungen, gegnerische [Wachen](#guarding) anzugreifen, wenn sie einen [Nahkampfangriff](#melee_attack) ausführt.
   enchantment:
     title: Verzauberung (Zauber)
     trait: *game_term
     txt: |
-      **Verzauberungen** unterscheiden sich von allen anderen Arten von Zaubern, weil sie verdeckt gespielt werden. Dein Gegner weiß erst, was deine **Verzauberung** macht, wenn du sie aufdeckst (siehe [verdeckte Verzauberung](#hidden_enchantment) im Kodex). **Verzauberungen** erzeugen ein Objekt in der Arena, das im Spiel bleibt, bis es zerstört wird. Da **Verzauberungen** keine Lebenskraft besitzen, können sie nicht angegriffen werden und keinen Schaden erleiden. **Verzauberungen** werden immer ihrem Ziel angefügt. Verzauberungen haben keinerlei Auswirkung, so lange sie verdeckt liegen! Du kannst deine Verzauberung **jederzeit** aufdecken, außer Verzauberungen mit roten Aufdeckkosten, die du zu einem bestimmten Zeitpunkt aufdecken musst. (siehe [Aufdeckkosten](#reveal_cost) im Kodex).
+      **Verzauberungen** unterscheiden sich von allen anderen Arten von Zaubern, weil sie verdeckt gespielt werden. Dein Gegner weiß erst, was deine **Verzauberung** macht, wenn du sie aufdeckst (siehe [verdeckte Verzauberung](#hidden_enchantment) im Kodex). **Verzauberungen** erzeugen ein Objekt in der Arena, das im Spiel bleibt, bis es zerstört wird. Da **Verzauberungen** keine [Lebenskraft](#life) besitzen, können sie nicht angegriffen werden und keinen Schaden erleiden. **Verzauberungen** werden immer ihrem Ziel angefügt. Verzauberungen haben keinerlei Auswirkung, so lange sie verdeckt liegen! Du kannst deine Verzauberung **jederzeit** aufdecken, außer Verzauberungen mit roten Aufdeckkosten, die du zu einem bestimmten Zeitpunkt aufdecken musst. (siehe [Aufdeckkosten](#reveal_cost) im Kodex).
   enemy:
     title: Gegner
     trait: *game_term
@@ -400,7 +410,7 @@ terms:
     title: Ureigenes Leben +X
     trait: *object_trait
     txt: |
-      Die Lebenskraft dieser [Kreatur](#creature) ist höher als normalerweise. Dies liegt üblicherweise an einer erhöhten Größe oder Masse. **Ureigenes Leben** umgeht das Merkmal [Begrenztes Leben](#finite_life).
+      Die [Lebenskraft](#life) dieser [Kreatur](#creature) ist höher als normalerweise. Dies liegt üblicherweise an einer erhöhten Größe oder Masse. **Ureigenes Leben** umgeht das Merkmal [Begrenztes Leben](#finite_life).
   intercept:
     title: Abfangen
     trait: *object_trait
@@ -667,7 +677,7 @@ terms:
     title: Gezügelt
     trait: *object_trait
     txt: |
-      Wenn eine Kreatur das Merkmal **Gezügelt** besitzt, kann sie keine [Bewegungsaktionen](#move_action) ausführen. Sie kann immer noch [gestoßen](#push) oder [teleportiert](#teleport) werden. Abgesehen von Bewegungsaktionen kann eine gezügelte Kreatur weiterhin [Schnelle](#quick_action) oder [Vollständige Aktionen](#full_action) in ihrer Aktionsphase ausführen. Eine gezügelte Kreatur kann die Bewegung von Gegnern nicht einschränken. Eine gezügelte Kreatur kann [Wache halten](#guarding), allerdings dürfen angreifende Kreaturen sie ignorieren (es besteht kein Zwang, sie anzugreifen). Der einzige Vorteil einer gezügelten Kreatur, [Wache zu halten](#guarding), besteht im Merkmal [Gegenschlag](#counterstrike), das sie dadurch erhält. Fliegende Kreaturen verlieren das Merkmal [Fliegen](#flying) und können es auch nicht wieder erhalten, so lange sie gezügelt sind. Eine gezügelte Kreatur erleidet **–2** auf alle [Verteidigungswürfe](#defense).
+      Wenn eine Kreatur das Merkmal **Gezügelt** besitzt, kann sie keine [Bewegungsaktionen](#move_action) ausführen. Sie kann immer noch [gestoßen](#push) oder [teleportiert](#teleport) werden. Abgesehen von Bewegungsaktionen kann eine gezügelte Kreatur weiterhin [Schnelle](#quick_action) oder [Vollständige Aktionen](#full_action) in ihrer Aktionsphase ausführen. Eine gezügelte Kreatur kann die Bewegung von Gegnern nicht [einschränken](#hinder). Eine gezügelte Kreatur kann [Wache halten](#guarding), allerdings dürfen angreifende Kreaturen sie ignorieren (es besteht kein Zwang, sie anzugreifen). Der einzige Vorteil einer gezügelten Kreatur, [Wache zu halten](#guarding), besteht im Merkmal [Gegenschlag](#counterstrike), das sie dadurch erhält. Fliegende Kreaturen verlieren das Merkmal [Fliegen](#flying) und können es auch nicht wieder erhalten, so lange sie gezügelt sind. Eine gezügelte Kreatur erleidet **–2** auf alle [Verteidigungswürfe](#defense).
       [Unhaltbare](#uncontainable) Kreaturen und alle [Beschwörungen](#conjuration) können nicht gezügelt werden.
   reveal_cost:
     title: Aufdeckkosten
@@ -814,6 +824,11 @@ terms:
     trait: *object_trait
     txt: |
       Das Objekt kann nicht [gestoßen](#push) werden. Alle [Beschwörungen](#conjuration) besitzen das Merkmal **Unbeweglich**.
+  unstoppable:
+    title: Unaufhaltsam
+    trait: *object_trait
+    txt: |
+      Diese Kratur ist außergewöhnlich groß, schwer und/oder stark, eventuell durch mächtige Magie belebt. Es ist völlig unmöglich, sie zu halten oder zu [stoßen](#push). Diese Kratur kann nicht in ihrer Bewegung [eingeschränkt](#hinder) werden. Sie hat außerdem die Merkmale [Unbeweglich](#unmovable) und [Unhaltbar](#uncontainable).
   upkeep_x:
     title: Erhaltung +X
     trait: *object_trait
@@ -842,7 +857,7 @@ terms:
     title: Ranken
     trait: *game_marker
     txt: |
-      *Rankenplättchen* sind lebende [Beschwörungen](#conjuration) mit Lebenskraft **1**, keiner [Rüstung](#armor), und sie können keine Rüstung erhalten. Gegnerische, nicht [fliegende](#flying) Kreaturen werden durch *Rankenplättchen* in der Bewegung [eingeschränkt](#hinder). Jede beliebige Anzahl an Schaden zerstört ein *Rankenplättchen*, egal wie hoch dessen Lebenskraft sein sollte. Sie können nicht Ziel von [Fernangriffen](#ranged_attack) sein. In einer [Zone](#zone) fürfen beliebig viele *Rankenplättchen* liegen.
+      *Rankenplättchen* sind lebende [Beschwörungen](#conjuration) mit [Lebenskraft](#life) **1**, keiner [Rüstung](#armor), und sie können keine Rüstung erhalten. Gegnerische, nicht [fliegende](#flying) Kreaturen werden durch *Rankenplättchen* in der Bewegung [eingeschränkt](#hinder). Jede beliebige Anzahl an Schaden zerstört ein *Rankenplättchen*, egal wie hoch dessen Lebenskraft sein sollte. Sie können nicht Ziel von [Fernangriffen](#ranged_attack) sein. In einer [Zone](#zone) fürfen beliebig viele *Rankenplättchen* liegen.
 
       Wenn die Druidin, ein [Vertrauter](#familiar) oder eine *Baum-Zauberquelle* unter ihrer Kontrolle einen *Rankenzauber* anwenden, darfst du als zusätzliche Kosten zur Anwendung des Zaubers ein *Rankenplättchen* unter ihrer Kontrolle zerstören. Wenn du das tust, darfst du die Reichweite des Zaubers ignorieren, wenn du die Zone des zerstörten *Rankenplättchens*, ein [Objekt](#object) in dieser Zone oder einen inhrer [Zonenränder](#zone_border) zum Ziel wählst. Dieser *Rankenzauber* muss ein erlaubtes Ziel haben. Wenn zwei oder mehr Druiden mitspielen, sollte jeder eine andere Seite der *Rankenplättchen* benutzten, damit sie zuzuordnen sind.
   wall:
