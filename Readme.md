@@ -23,8 +23,6 @@ You'll need the latest [KOMA-Script](http://www.ctan.org/pkg/koma-script) versio
 
 ## Todos
 
-* add [Battlegrounds Domination](http://www.arcanewonders.com/mage-wars-games/battlegrounds-domination) translation.
-
 ## Disclaimer
 
 This is an unofficial German Mage Wars® codex. It it not for sale/re-sale.
