@@ -3,12 +3,15 @@ traits:
   attack_trait: &attack_trait 'Angriffsmerkmal'
   condition_marker: &condition_marker 'Zustandsplättchen'
   damage_type: &damage_type 'Schadensart'
+  domination_term: &domination_term 'Vorherrschaft-Begriff'
   effect: &effect 'Effekt'
   game_marker: &game_marker 'Spieleplättchen'
   game_term: &game_term 'Spielbegriff'
+  mage_trait: &mage_trait 'Magiermerkmal'
   object_attribute: &object_attribute 'Objektattribut'
   object_or_attack_trait: &object_or_attack_trait 'Angriffs- oder Objektmerkmal'
   object_trait: &object_trait 'Objektmerkmal'
+  special_tile: &special_tile 'Spezialplättchen'
   spell_attribute: &spell_attribute 'Zauberattribut'
   spell_trait: &spell_trait 'Zaubermerkmal'
   spell_type: &spell_type 'Zauberart'
@@ -24,13 +27,18 @@ terms:
     trait: *object_trait
     txt: |
       Alle [Angriffe](#attack_action) gegen dieses [Objekt](#object) haben X Angriffswürfel weniger. Es darf aber nie weniger als 1 Angriffswürfel geworfen werden. Das Merkmal **Obhut** kann nicht mit anderen Obhutmerkmalen kombiniert oder zusammengezählt werden. Wenn ein Objekt mehr als ein Merkmal Obhut besitzt, benutzt du nur das höchste. Dieses Merkmal kann einen Angriff nie auf unter 1 Würfel reduzieren.
+  anchored:
+    title: Verankert
+    trait: *object_trait
+    txt: |
+      Dieses [Objekt](#object) hat eine außergewöhnliche Verbindung zur astralen Ebene Etherias und widersteht jedem Versuch, es magisch zu transportieren. Objekte mit diesem Merkmalen können nicht [teleportiert](#teleport) werden.
   armor:
     title: Rüstung
     trait: *object_attribute
     txt: |
       Während eines [Angriffs](#attack_action) wird die **Rüstung** vom Normalen Schaden der Angriffswürfel abgezogen. [Kritischen Schaden](#critical_damage) reduziert sie nicht. Wenn das Rüstungssymbol eines Objekts rot durchgestrichen ist, darf es niemals eine Rüstung besitzen; der Rüstungswert dieser Kreatur ist immer **null**.
   armor_x:
-    title: Rüstung +/- X
+    title: Rüstung +/-X
     trait: *object_trait
     txt: |
       Modifiziert ein [Rüstungsattribut](#armor) um +/– X. Rüstung kann nie unter **0** fallen.
@@ -90,7 +98,7 @@ terms:
     txt: |
       Einige [Objekte](#object) haben das Manasammlungsattribut. Es gibt an, wie viel Mana sie jede Runde während der Manasammlungsphase bekommen.
   channeling_x:
-    title: Manasammlung +/- X
+    title: Manasammlung +/-X
     trait: *object_trait
     txt: |
       Modifiziert das [Manasammlungsattribut](#channeling) einer [Kreatur](#creature) um **+/– X**. Die Manasammlung kann nie unter **0** fallen. Modifiziert nur einen vorhandenen Manasammlungswert, [Objekte](#object) ohne Manasammlungsattribut sind davon nicht betroffen.
@@ -171,7 +179,7 @@ terms:
     txt: |
       Schaden kann zu einer bestimmter Art gehören – wie *Flammen* oder *Blitz*. Siehe *Schadensarten* auf Seite 26.
   damage_type_x:
-    title: Schadensart +/- X
+    title: Schadensart +/-X
     trait: *object_trait
     txt: |
       Bei [Angriffen](#attack_action) gegen das [Objekt](#object), die dieser [Schadensart](#damage_type) angehören, wird die Anzahl ihrer Angriffswürfel um X verändert, außerdem wird das Ergebnis des [Effektwurfs](#effect_die) um X verändert. Gleiche Schadensartmodifikatoren werden zusammengerechnet. Bei einem Angriff kann aber nie weniger als **1** Angriffswürfel geworfen werden. Siehe *Schadensmodifikatoren* auf Seite 26.
@@ -307,7 +315,7 @@ terms:
     title: Flammen +/-X
     trait: *attack_trait
     txt: |
-      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Flammen +/-X** modifiziert diesen Schaden, siehe unter *Schadensart* im Kodex.
+      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Flammen +/-X ** modifiziert diesen Schaden, siehe unter *Schadensart* im Kodex.
   flying:
     title: Fliegen
     trait: *object_trait
@@ -322,7 +330,7 @@ terms:
     title: Frost +/-X
     trait: *attack_trait
     txt: |
-      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Frost +/-X** modifiziert diesen Schaden, siehe unter Schadensart im Kodex. *Hinweis*: Frostschaden wird erst in späteren Erweiterungen eine Bedeutung bekommen.
+      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Frost +/-X ** modifiziert diesen Schaden, siehe unter Schadensart im Kodex. *Hinweis*: Frostschaden wird erst in späteren Erweiterungen eine Bedeutung bekommen.
   full_action:
     title: Vollständige Aktion
     trait: *game_term
@@ -358,6 +366,11 @@ terms:
     trait: *game_term
     txt: |
       Eine Kreatur, die ihre Aktionsphase in einer [Zone](#zone) mit irgendeiner gegnerischen Kreatur beginnt, wird in ihrer [Bewegung](#move_action) eingeschränkt und darf sich in ihrer Aktionsphase nur um **1** Zone bewegen (sogar, wenn sie das Merkmal [Schnell](#fast) besitzt). Sollte sie sich in eine Zone bewegen, die von einer gegnerischen Kreatur besetzt ist, wird sie eingeschränkt, muss anhalten, und kann in dieser Aktionsphase keine weiteren Bewegungsaktionen mehr ausführen. Kreaturen mit den Merkmalen [Handlungsunfähig](#incapacitated), [Gezügelt](#restrained) oder [Plage](#pest) schränken die Bewegung nicht ein. Fliegende Kreaturen können die Bewegung nicht fliegender Kreaturen nicht einschränken und umgekehrt. Ausweichende Kreaturen können in ihrer Bewegung nicht durch andere Kreaturen eingeschränkt werden.
+  hit:
+    title: Treffer
+    trait: *game_term
+    txt: |
+      Wenn ein Angriff den Schritt *Schaden \& Effekte* erreicht, gilt er bezogen auf sein Ziel als **Treffer**. Wenn dieser Schritt  übersprungen wird (z.B. verfehlt der Angriff durch einen Zustand [Schwindlig](#daze) oder wird durch eine Verteidigung vermieden) oder wenn der Angriff aufgehoben wird, bevor dieser Schritt durchgeführt wird (z.B. benutzt das Ziel *Göttliche Einmischung*, um sich wegzuteleportieren), dann ist der Angriff **kein Treffer**.
   ichthellid_larva:
     title: Ichthelliden-Larve
     trait: *condition_marker
@@ -448,11 +461,16 @@ terms:
     trait: *object_trait
     txt: |
       Während der Erhaltungsphase darfst du entweder **X** Schaden von deinem [Magier](#mage) auf dieses [Objekt](#object) oder von diesem Objekt auf deinen Magier verschieben, ungeachtet der Entfernung und der [SL](#line_of_sight). Diese Eigenschaft wird nicht durch das Merkmal [Begrenztes Leben](#finite_life) beeinflusst.
+  lifelink_x:
+    title: Lebenskopplung +X
+    trait: *mage_trait
+    txt: |
+      Dies ist ein Magiermerkmal, das in Teamspielen benutzt werden kann. In der Erhaltungsphase kann ein [Magier](#mage) mit diesem Merkmal bis zu X Schaden zu einem Magier seines Teams übertragen oder von diesem übernehmen.
   lightning_x:
     title: Blitz +/-X
     trait: *attack_trait
     txt: |
-      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal Blitz +/-X modifiziert diesen Schaden, siehe unter *Schadensart* im Kodex.
+      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal Blitz +/-X  modifiziert diesen Schaden, siehe unter *Schadensart* im Kodex.
   line_of_sight:
     title: SL (Sichtlinie)
     trait: *game_term
@@ -513,6 +531,11 @@ terms:
     trait: *game_term
     txt: |
       Während ihrer Aktionsphase kann eine Kreatur eine Bewegungsaktion ausführen, die ihr erlaubt, sich von einer [Zone](#zone) in eine benachbarte Zone zu bewegen. Danach kann sie eine [Schnelle Aktion](#quick_action) ausführen. Siehe *Bewegung* auf Seite 9.
+  moving_conjurations:
+    title: Bewegliche Beschwörung
+    trait: ''
+    txt: |
+      [Beschwörungen](#conjuration) sind der [Zone](#zone) angefügt, in der sie sich befinden, allerdings können sich einige Beschwörungen bewegen (wie *Regenwolke*). Eine Beschwörung kann sich nur in eine Zone bewegen, der sie regelmäßig angefügt werden kann. Du kannst also *keine* Beschwörung in eine Zone bewegen, der bereits eine Beschwörung mit demselben Namen angefügt ist (jede Zone darf höchstens 1 Beschwörung desselben Namens gleichzeitig besitzen).
   multiple_attacks:
     title: Mehrfachangriff
     trait: *game_term
@@ -694,6 +717,11 @@ terms:
     trait: *condition_marker
     txt: |
       Dies ist ein [Giftzustand](#poison). Dieses [Objekt](#object) erhält jede Runde 1 [direkten Schaden](#direct_damage) während der Erhaltungsphase. Fäulnis hat [Beseitigungskosten](#removal_cost) von 2.
+  skeelax:
+    title: Das Verhöhnen von *Skeelax, Verhöhnender Kobold*
+    trait: *effect
+    txt: |
+      Skeelax ist eine besondere [Kreatur](#creature), die ihre Feinde [verhöhnt](#taunt), damit sie ihn [angreifen](#attack_action). Sein *Dreizack*-Angriff kann ein Plättchen [Verhöhnt](#taunt) auf sein Ziel legen. Eine Verhöhnte Kreatur **muss** in ihrer nächsten Aktionsphase einen [Nahkampfangriff](#melee_attack) gegen *Skeelax, Verhöhnender Kobold* ausführen, wenn sie kann, es sei denn *Skeelax* ist nicht in derselben [Zone](#zone). Die Verhöhnende Kreatur darf sich *nicht* bewegen oder irgendeine andere Aktion ausführen, wenn sie in der Lage ist, einen Nahkampfangriff auf *Skeelax* auszuführen.
   slam:
     title: Geschmettert
     trait: *condition_marker
@@ -860,11 +888,31 @@ terms:
       *Rankenplättchen* sind lebende [Beschwörungen](#conjuration) mit [Lebenskraft](#life) **1**, keiner [Rüstung](#armor), und sie können keine Rüstung erhalten. Gegnerische, nicht [fliegende](#flying) Kreaturen werden durch *Rankenplättchen* in der Bewegung [eingeschränkt](#hinder). Jede beliebige Anzahl an Schaden zerstört ein *Rankenplättchen*, egal wie hoch dessen Lebenskraft sein sollte. Sie können nicht Ziel von [Fernangriffen](#ranged_attack) sein. In einer [Zone](#zone) fürfen beliebig viele *Rankenplättchen* liegen.
 
       Wenn die Druidin, ein [Vertrauter](#familiar) oder eine *Baum-Zauberquelle* unter ihrer Kontrolle einen *Rankenzauber* anwenden, darfst du als zusätzliche Kosten zur Anwendung des Zaubers ein *Rankenplättchen* unter ihrer Kontrolle zerstören. Wenn du das tust, darfst du die Reichweite des Zaubers ignorieren, wenn du die Zone des zerstörten *Rankenplättchens*, ein [Objekt](#object) in dieser Zone oder einen inhrer [Zonenränder](#zone_border) zum Ziel wählst. Dieser *Rankenzauber* muss ein erlaubtes Ziel haben. Wenn zwei oder mehr Druiden mitspielen, sollte jeder eine andere Seite der *Rankenplättchen* benutzten, damit sie zuzuordnen sind.
+  v_tar:
+    title: V'Tar
+    trait: *domination_term
+    txt: |
+      Dies ist die rohe, unveränderte Kraft der Ebene von Voltari. Sie hat unzählige Einsatzmöglichkeiten, darunter das Instandsetzen des [V'Torrak](#v_torrak_artifact), um den Vorherrschafts-Sieg zu erringen (siehe *Was is V'Tar* auf Seite 7).
+  v_tar_orb:
+    title: V'Tar-Kugel
+    trait: *domination_term
+    txt: |
+      Die V'Tar-Kugeln sind der Schlüssel zum Antrieb des uralten [V'Torrak-Artefakts](#v_torrak_artifact). Im Szenario *Die Vorherrschaft* kämpfen [Magier](#mage) um die Kontrolle dieser Kugeln. (Siehe *V'Tar Kugeln* und *V'Tar-Energie* auf Seite 7.)
+  v_torrak_artifact:
+    title: V'Torrak-Artefakt
+    trait: *special_tile
+    txt: |
+      Diese [Zone](#zone) enthällt ein lägenderes V'Torrak-Artefakt, das die Grenzen zwischen den Welten aufbrechen und seinen Kontrolleur nahezu unendlich viel Mana verschaffen kann. (Siehe den V'Torrak-Abschnitt auf Seite 3.)
   wall:
     title: Wall
     trait: *game_term
     txt: |
       **Wälle** sind eine Unterart eines [Beschwörungszaubers](#conjuration). Sie sind querformatig gedruckt. Anders als andere Beschwörungen werden sie immer auf einen [Zonenrand](#zone_border) gelegt (die Grenze zwischen zwei Zonen). Wallkarten können ein oder mehrere besondere Merkmale besitzen. Siehe *Wälle* auf Seite 17.
+  warded:
+    title: Beschützt
+    trait: *object_trait
+    txt: |
+      Dieses [Objekt](#object) ist vor feindlicher Magie geschützt. Es kann nicht Ziel einer vom Gegnerkontrollierten [Formel](#incantation) oder [Verzauberung](#enchantment) werden. Es kann jedoch von gegnerischen Formeln oder Verzauberungen betroffen sein, die es nicht direkt zum Ziel haben, wie etwa einem [Zonenangriff](#zone_attack_or_spell).
   water_x:
     title: Wasser +/-X
     trait: *attack_trait
@@ -879,7 +927,7 @@ terms:
     title: Wind +/-X
     trait: *attack_trait
     txt: |
-      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Wind +/-X** modifiziert diesen Schaden, siehe unter [Schadensart](#damage_type) im Kodex.
+      Eine [Schadensart](#damage_type), siehe *Schadensarten* auf Seite 26. Das Merkmal **Wind +/-X ** modifiziert diesen Schaden, siehe unter [Schadensart](#damage_type) im Kodex.
   zombie:
     title: Zombie
     trait: *condition_marker
@@ -900,6 +948,11 @@ terms:
     trait: *game_term
     txt: |
       Die Trennlinie zwischen zwei benachbarten [Zonen](#zone). [Wälle](#wall) werden immer auf einen **Zonenrand** gelegt.
+  zone_control:
+    title: Zonenkontrolle
+    trait: *game_term
+    txt: |
+      Ein Spieler kontrolliert eine [Zone](#zone), wenn er eine [Kreatur](#creature) in dieser Zone kontrolliert und sein(e) Gegner keine. [Plagen](#pest) sowie [handlungsunfähige](#incapacitated) Kreaturen werden dabei nicht beachtet.
   zone_exclusive:
     title: Zoneneinmalig
     trait: *object_trait

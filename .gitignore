@@ -7,3 +7,5 @@ Gemfile.lock
 *.pdf
 *.tex
 *.markdown
+*.idx
+*.toc

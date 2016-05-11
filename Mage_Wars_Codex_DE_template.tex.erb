@@ -31,7 +31,8 @@
   linkcolor={orange},
   pdftitle={Unofficial German Mage Wars Codex},
   bookmarks=true,
-  pdfstartview=FitH
+  pdfstartview=FitH,
+  pdfpagemode=UseOutlines
 }
 % enable German 'Umlaute'
 \usepackage{polyglossia}
@@ -39,6 +40,8 @@
 % use a two sided column
 \usepackage{multicol}
 \setlength{\columnsep}{10mm}
+% set index
+\makeindex
 % the document beginns here
 \begin{document}
 \begin{multicols}{2}
@@ -47,6 +50,7 @@
 <% @data['terms'].sort_by{|k, v| ActiveSupport::Inflector.transliterate(v['title'])}.each do |key, value| %>
   \section*{<%= value['title'].sub(/\*(.*?)\*/, "\\textit{\\1}") %>\hypertarget{<%= key %>}{}}
   <%= "\\subsubsection*{#{value['trait']}}" unless value['trait'].empty? %>
+  <%= "\\index{#{value['title']}}"%>
   <%= value['txt'].gsub(/\*\*(.*?)\*\*/, "\\textbf{\\1}").gsub(/\*(.*?)\*/, "\\textit{\\1}").gsub(/\[(.*?)\]\(#(.*?)\)/, "\\hyperlink{\\2}{\\1}") %>\\
 <% end %>
 

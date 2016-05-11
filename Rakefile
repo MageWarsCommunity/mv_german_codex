@@ -5,7 +5,7 @@ require 'erb'
 require 'active_support/inflector'
 
 FILE_BASE_NAME = 'Mage_Wars_Codex_DE'
-XELATEX_BINARY = '/usr/texbin/xelatex'
+XELATEX_BINARY = '/usr/bin/xelatex'
 
 desc 'create Markdown file'
 task :markdown do
