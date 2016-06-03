@@ -4,7 +4,6 @@ Gemfile.lock
 *.log
 *.out
 *.html
-*.pdf
 *.tex
 *.markdown
 *.idx
